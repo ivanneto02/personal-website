@@ -1,19 +1,19 @@
-.App {
+.MajorArticles {
   text-align: center;
 }
 
-.App-logo {
+.MajorArticles-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .MajorArticles-logo {
+    animation: MajorArticles-logo-spin infinite 20s linear;
   }
 }
 
-.App-header {
+.MajorArticles-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -24,11 +24,11 @@
   color: white;
 }
 
-.App-link {
+.MajorArticles-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+@keyframes MajorArticles-logo-spin {
   from {
     transform: rotate(0deg);
   }
