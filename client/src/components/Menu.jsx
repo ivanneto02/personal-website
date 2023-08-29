@@ -16,17 +16,18 @@ const Menu = () => {
                 <h2>Menu</h2>
             </header>
             <ul>
-                <li><a href="index.html">Homepage</a></li>
+                <li><a href="/">Homepage</a></li>
                 <li>
                     <span
                         className={`opener ${active1 ? "active" : ""}`}
                         onClick={() => setActive1(!active1)}
                     >Minecraft</span>
                     <ul>
-                        <li><a href="#">Manacube</a></li>
-                        <li><a href="#">Hypixel</a></li>
-                        <li><a href="#">Mods/Clients</a></li>
-                        <li><a href="#">Plugins/Servers</a></li>
+                        <li><a href="/manacube">Manacube</a></li>
+                        <li><a href="/hypixel">Hypixel</a></li>
+                        <li><a href="/modsclients">Mods/Clients</a></li>
+                        <li><a href="/plugins">Plugins/Servers</a></li>
+                        <li><a href="/visuals">Visuals</a></li>
                     </ul>
                 </li>
                 <li>
@@ -35,10 +36,10 @@ const Menu = () => {
                         onClick={() => setActive2(!active2)}
                     >Freelance Work</span>
                     <ul>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Client Stories</a></li>
-                        <li><a href="#">Tips and Tricks</a></li>
-                        <li><a href="#">Monetary Analysis</a></li>
+                        <li><a href="/projects">Projects</a></li>
+                        <li><a href="/clientstories">Client Stories</a></li>
+                        <li><a href="/tipsandtricks">Tips and Tricks</a></li>
+                        <li><a href="/monetaryanalysis">Monetary Analysis</a></li>
                     </ul>
                 </li>
                 <li>
@@ -47,11 +48,11 @@ const Menu = () => {
                         onClick={() => setActive3(!active3)}
                     >Personal Blog</span>
                     <ul>
-                        <li><a href="#">Brief entries</a></li>
-                        <li><a href="#">Long entries</a></li>
-                        <li><a href="#">Thoughts/Ideas</a></li>
-                        <li><a href="#">Travel</a></li>
-                        <li><a href="#">Pets</a></li>
+                        <li><a href="/briefentries">Brief entries</a></li>
+                        <li><a href="/longentries">Long entries</a></li>
+                        <li><a href="/thoughtsideas">Thoughts/Ideas</a></li>
+                        <li><a href="/travel">Travel</a></li>
+                        <li><a href="/pets">Pets</a></li>
                     </ul>
                 </li>
                 <li>

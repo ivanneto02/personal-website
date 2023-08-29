@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import Header from "../../components/Header";
 
-class TipsAndTricks extends Component {
+class Visuals extends Component {
     render() {
         return (
             <div id="main">
@@ -10,14 +10,13 @@ class TipsAndTricks extends Component {
                     <Header />
                     <section>
                         <header className="content">
-                            <h1>TipsAndTricks</h1>
+                            <h1>Visuals</h1>
                         </header>
                     </section>
-                    
                 </div>
             </div>
         );
     }
 }
 
-export default TipsAndTricks;
+export default Visuals;
