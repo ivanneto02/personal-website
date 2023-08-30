@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 import "../styles/Menu.css";
 
@@ -14,18 +15,18 @@ const Menu = () => {
                 <h2>Menu</h2>
             </header>
             <ul>
-                <li><a href="/">Homepage</a></li>
+                <li><Link to="/">Homepage</Link></li>
                 <li>
                     <span
                         className={`opener ${active1 ? "active" : ""}`}
                         onClick={() => setActive1(!active1)}
                     >Minecraft</span>
                     <ul>
-                        <li><a href="/manacube">Manacube</a></li>
-                        <li><a href="/hypixel">Hypixel</a></li>
-                        <li><a href="/modsclients">Mods/Clients</a></li>
-                        <li><a href="/plugins">Plugins/Servers</a></li>
-                        <li><a href="/visuals">Visuals</a></li>
+                        <li><Link to="/manacube">Manacube</Link></li>
+                        <li><Link to="/hypixel">Hypixel</Link></li>
+                        <li><Link to="/modsclients">Mods/Clients</Link></li>
+                        <li><Link to="/plugins">Plugins/Servers</Link></li>
+                        <li><Link to="/visuals">Visuals</Link></li>
                     </ul>
                 </li>
                 <li>
@@ -34,10 +35,10 @@ const Menu = () => {
                         onClick={() => setActive2(!active2)}
                     >Freelance Work</span>
                     <ul>
-                        <li><a href="/projects">Projects</a></li>
-                        <li><a href="/clientstories">Client Stories</a></li>
-                        <li><a href="/tipsandtricks">Tips and Tricks</a></li>
-                        <li><a href="/monetaryanalysis">Monetary Analysis</a></li>
+                        <li><Link to="/projects">Projects</Link></li>
+                        <li><Link to="/clientstories">Client Stories</Link></li>
+                        <li><Link to="/tipsandtricks">Tips and Tricks</Link></li>
+                        <li><Link to="/monetaryanalysis">Monetary Analysis</Link></li>
                     </ul>
                 </li>
                 <li>
@@ -46,11 +47,11 @@ const Menu = () => {
                         onClick={() => setActive3(!active3)}
                     >Personal Blog</span>
                     <ul>
-                        <li><a href="/briefentries">Brief entries</a></li>
-                        <li><a href="/longentries">Long entries</a></li>
-                        <li><a href="/thoughtsideas">Thoughts/Ideas</a></li>
-                        <li><a href="/travel">Travel</a></li>
-                        <li><a href="/pets">Pets</a></li>
+                        <li><Link to="/briefentries">Brief entries</Link></li>
+                        <li><Link to="/longentries">Long entries</Link></li>
+                        <li><Link to="/thoughtsideas">Thoughts/Ideas</Link></li>
+                        <li><Link to="/travel">Travel</Link></li>
+                        <li><Link to="/pets">Pets</Link></li>
                     </ul>
                 </li>
                 <li>
@@ -59,7 +60,7 @@ const Menu = () => {
                         onClick={() => setActive4(!active4)}
                     >Miscellaneous</span>
                     <ul>
-                        <li><a href="/homepage">I don't know yet :)</a></li>
+                        <li><Link to="/homepage">I don't know yet :)</Link></li>
                     </ul>
                 </li>
             </ul>
