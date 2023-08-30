@@ -20,7 +20,6 @@ class App extends Component {
     render() {
         return (
             <div className="wrapper">
-                {/* <h1>Marine Mammals</h1> */}
                 <BrowserRouter>
                     <div id="wrapper">
                         <Routes>
