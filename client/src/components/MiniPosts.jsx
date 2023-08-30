@@ -6,15 +6,15 @@ class MiniPosts extends Component {
             <section>
                 <div className="mini-posts">
                     <article>
-                        <a href="#" className="image"><img src="images/img-placeholder.png" alt="" /></a>
+                        <a href="/" className="image"><img src="images/img-placeholder.png" alt="" /></a>
                         <p>Nothing here yet :)</p>
                     </article>
                     <article>
-                        <a href="#" className="image"><img src="images/img-placeholder.png" alt="" /></a>
+                        <a href="/" className="image"><img src="images/img-placeholder.png" alt="" /></a>
                         <p>Nothing here yet :)</p>
                     </article>
                     <article>
-                        <a href="#" className="image"><img src="images/img-placeholder.png" alt="" /></a>
+                        <a href="/" className="image"><img src="images/img-placeholder.png" alt="" /></a>
                         <p>Nothing here yet :)</p>
                     </article>
                 </div>

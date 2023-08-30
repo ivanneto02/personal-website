@@ -5,8 +5,6 @@ import reportWebVitals from './reportWebVitals'
 
 import App from "./app"
 
-import ClientStories from "./pages/index";
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>

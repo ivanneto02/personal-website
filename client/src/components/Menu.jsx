@@ -1,6 +1,4 @@
-import React, { Component, useState } from "react";
-import styled from "styled-components";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useState } from "react";
 
 import "../styles/Menu.css";
 
@@ -61,7 +59,7 @@ const Menu = () => {
                         onClick={() => setActive4(!active4)}
                     >Miscellaneous</span>
                     <ul>
-                        <li><a href="#">I don't know yet :)</a></li>
+                        <li><a href="/homepage">I don't know yet :)</a></li>
                     </ul>
                 </li>
             </ul>

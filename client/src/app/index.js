@@ -1,9 +1,8 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 // import components
-import MainContent from "../components/MainContent"
 import SideBar from "../components/SideBar"
 
 import "./../assets/css/main.css";

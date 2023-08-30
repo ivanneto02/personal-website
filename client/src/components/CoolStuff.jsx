@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import styled from "styled-components"
 
 import MiniPosts from "./MiniPosts"
 
@@ -12,7 +11,7 @@ class CoolStuff extends Component {
                 </header>
                 <MiniPosts />
                 <ul className="actions">
-                    <li><a href="#" className="button">More</a></li>
+                    <li><a href="/" className="button">More</a></li>
                 </ul>
             </section>
         );

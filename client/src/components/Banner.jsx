@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import styled from "styled-components"
 
 class Banner extends Component {
     render() {
@@ -14,7 +13,7 @@ class Banner extends Component {
                     <p>For the most part, this website will test consist of four different sections of areas I want to talk about: Minecraft, Freelance Work, Research Work, and a small Personal Blog. Please check these out, and let me know if there are any corrections you would like to make. Feel free to reach me on my email, or on my LinkedIn to connect with me!</p>
                 </div>
                 <span className="image object">
-                    <img src="images/pfp.jpg" style={{width:"25rem", height:"30rem"}} />
+                    <img src="images/pfp.jpg" style={{width:"25rem", height:"30rem"}} alt="" />
                 </span>
             </section>
         );

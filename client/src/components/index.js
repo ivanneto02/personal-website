@@ -15,8 +15,5 @@ import SearchBar from "./SearchBar"
 import SideBar from "./SideBar"
 import SideBarButton from "./SideBarButton"
 
-// Add article button
-import AddArticleButton from "./AddArticleButton"
-
 export { AllTest, Banner, Contact, CoolStuff, Footer, Header, MainContent, MajorFeatures, MajorPosts,
 Menu, MiniPosts, RelevantArticles, Scripts, SearchBar, SideBar, SideBarButton }

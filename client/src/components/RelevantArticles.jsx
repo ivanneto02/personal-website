@@ -1,7 +1,4 @@
 import React, { Component } from "react";
-import styled from "styled-components";
-
-import MajorArticles from "./MajorPosts";
 
 class RelevantArticles extends Component {
     render() {
@@ -12,51 +9,51 @@ class RelevantArticles extends Component {
                 </header>
                 <div className="posts">
                     <article>
-                        <a href="#" className="image"><img src="images/img-placeholder.png" alt="" /></a>
+                        <a href="/" className="image"><img src="images/img-placeholder.png" alt="" /></a>
                         <h3>Literally empty</h3>
                         <p>This will start filling up once I write content.</p>
                         <ul className="actions">
-                            <li><a href="#" className="button">More</a></li>
+                            <li><a href="/" className="button">More</a></li>
                         </ul>
                     </article>
                     <article>
-                        <a href="#" className="image"><img src="images/img-placeholder.png" alt="" /></a>
+                        <a href="/" className="image"><img src="images/img-placeholder.png" alt="" /></a>
                         <h3>Literally empty</h3>
                         <p>This will start filling up once I write content.</p>
                         <ul className="actions">
-                            <li><a href="#" className="button">More</a></li>
+                            <li><a href="/" className="button">More</a></li>
                         </ul>
                     </article>
                     <article>
-                        <a href="#" className="image"><img src="images/img-placeholder.png" alt="" /></a>
+                        <a href="/" className="image"><img src="images/img-placeholder.png" alt="" /></a>
                         <h3>Literally empty</h3>
                         <p>This will start filling up once I write content.</p>
                         <ul className="actions">
-                            <li><a href="#" className="button">More</a></li>
+                            <li><a href="/" className="button">More</a></li>
                         </ul>
                     </article>
                     <article>
-                        <a href="#" className="image"><img src="images/img-placeholder.png" alt="" /></a>
+                        <a href="/" className="image"><img src="images/img-placeholder.png" alt="" /></a>
                         <h3>Literally empty</h3>
                         <p>This will start filling up once I write content.</p>
                         <ul className="actions">
-                            <li><a href="#" className="button">More</a></li>
+                            <li><a href="/" className="button">More</a></li>
                         </ul>
                     </article>
                     <article>
-                        <a href="#" className="image"><img src="images/img-placeholder.png" alt="" /></a>
+                        <a href="/" className="image"><img src="images/img-placeholder.png" alt="" /></a>
                         <h3>Literally empty</h3>
                         <p>This will start filling up once I write content.</p>
                         <ul className="actions">
-                            <li><a href="#" className="button">More</a></li>
+                            <li><a href="/" className="button">More</a></li>
                         </ul>
                     </article>
                     <article>
-                        <a href="#" className="image"><img src="images/img-placeholder.png" alt="" /></a>
+                        <a href="/" className="image"><img src="images/img-placeholder.png" alt="" /></a>
                         <h3>Literally empty</h3>
                         <p>This will start filling up once I write content.</p>
                         <ul className="actions">
-                            <li><a href="#" className="button">More</a></li>
+                            <li><a href="/" className="button">More</a></li>
                         </ul>
                     </article>
                 </div>
