@@ -1,11 +1,13 @@
 import React, { Component } from "react"
+import { Link } from "react-router-dom";
 
 class MajorFeatures extends Component {
     render() {
         return (
+            <>
             <section>
                 <header className="major">
-                    <h2>Main Aspects of my Website</h2>
+                    <h2>Personal Aspects of my Website</h2>
                 </header>
                 <div className="features">
                     <article>
@@ -38,6 +40,24 @@ class MajorFeatures extends Component {
                     </article>
                 </div>
             </section>
+            <section>
+                <header className="major">
+                    <h2> Other Website Content</h2>
+                </header>
+                    <article>
+                            <p>
+                                This website contains much more content you can check out in the menu. Articles are written fairly often, and I like to display
+                                them. Take a look at the <Link className="highlight" to="/blog">Personal Blog</Link> page to see my blog categories and read some of
+                                my work. This blog is only for fun and to flesh out many ideas I have about the world.
+                            </p>
+
+                            <p>
+                                Also included are my book and movie reviews. While I don't read as much as I should, I really enjoy reading fantasy world books. I include
+                                as much as I can about books I have read in the past and currently in the <Link className="highlight" to="/books">Book Reviews</Link> page.
+                            </p>
+                    </article>
+            </section>
+            </>
         )
     }
 }

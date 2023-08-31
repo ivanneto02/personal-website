@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Component, useState } from "react";
 
 import styled from "styled-components";
 
@@ -33,6 +33,8 @@ const SideBar = () => {
                 <Menu />
                 <CoolStuff />
                 <Contact />
+            </div>
+            <div className="inner">
                 <Footer />
             </div>
         </SideBarDiv>

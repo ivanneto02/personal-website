@@ -5,7 +5,7 @@ class RelevantArticles extends Component {
         return (
             <section>
                 <header className="major">
-                    <h2>Relevant Articles</h2>
+                    <h2>Articles</h2>
                 </header>
                 <div className="posts">
                     <article>

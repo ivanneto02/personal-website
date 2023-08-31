@@ -8,6 +8,9 @@ const Menu = () => {
     const [active2, setActive2] = useState(false);
     const [active3, setActive3] = useState(false);
     const [active4, setActive4] = useState(false);
+    const [active5, setActive5] = useState(true);
+    const [active6, setActive6] = useState(false);
+    const [active7, setActive7] = useState(false);
 
     return (
         <nav id="menu">
@@ -16,6 +19,18 @@ const Menu = () => {
             </header>
             <ul>
                 <li><Link to="/">Homepage</Link></li>
+                <li>
+                    <span
+                        className={`opener ${active5 ? "active" : ""}`}
+                        onClick={() => setActive5(!active5)}
+                    >Services</span>
+                    <ul>
+                        <li><Link to="/tutoring">Tutoring</Link></li>
+                        <li><Link to="/development">Development</Link></li>
+                        <li><Link to="/driving">Rideshare</Link></li>
+                        <li><Link to="/booking">Book me</Link></li>
+                    </ul>
+                </li>
                 <li>
                     <span
                         className={`opener ${active1 ? "active" : ""}`}
@@ -47,11 +62,32 @@ const Menu = () => {
                         onClick={() => setActive3(!active3)}
                     >Personal Blog</span>
                     <ul>
+                        <li><Link to="/blog">About</Link></li>
                         <li><Link to="/briefentries">Brief entries</Link></li>
                         <li><Link to="/longentries">Long entries</Link></li>
                         <li><Link to="/thoughtsideas">Thoughts/Ideas</Link></li>
                         <li><Link to="/travel">Travel</Link></li>
                         <li><Link to="/pets">Pets</Link></li>
+                    </ul>
+                </li>
+                <li>
+                    <span
+                        className={`opener ${active6 ? "active" : ""}`}
+                        onClick={() => setActive6(!active6)}
+                    >Research</span>
+                    <ul>
+                        <li><Link to="/research">Nothing here yet</Link></li>
+                    </ul>
+                </li>
+                <li>
+                    <span
+                        className={`opener ${active7 ? "active" : ""}`}
+                        onClick={() => setActive7(!active7)}
+                    >Reviews</span>
+                    <ul>
+                        <li><Link to="/books">Books</Link></li>
+                        <li><Link to="/movies">Movies</Link></li>
+                        <li><Link to="/anime">Anime</Link></li>
                     </ul>
                 </li>
                 <li>
