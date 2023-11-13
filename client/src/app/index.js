@@ -53,6 +53,7 @@ class App extends Component {
                         </Routes>
                         <SideBar />
                     </div>
+                    
                 </BrowserRouter>
           </div>
         );

@@ -17,6 +17,21 @@ CREATE TABLE user
 );
 
 /*
+-- Holds blog post information
+*/
+DROP TABLE IF EXISTS blog_post;
+CREATE TABLE blog_post
+(
+    id INTEGER,
+    ts TIMESTAMP,
+    content TEXT,
+    title VARCHAR(255),
+    user_id INTEGER,
+    PRIMARY KEY (id),
+    FOREIGN KEY (user_id) REFERENCES user(id)
+);
+
+/*
 -- Holds comment information
 */
 DROP TABLE IF EXISTS comment;
@@ -29,21 +44,6 @@ CREATE TABLE comment
     user_id INTEGER,
     PRIMARY KEY (id),
     FOREIGN KEY (blog_post_id) REFERENCES blog_post(id),
-    FOREIGN KEY (user_id) REFERENCES user(id)
-);
-
-/*
--- Holds blog post information
-*/
-DROP TABLE IF EXISTS blog_post;
-CREATE TABLE blog_post
-(
-    id INTEGER,
-    ts TIMESTAMP,
-    content TEXT,
-    title VARCHAR(255),
-    user_id INTEGER,
-    PRIMARY KEY (id),
     FOREIGN KEY (user_id) REFERENCES user(id)
 );
 
@@ -71,4 +71,24 @@ CREATE TABLE blog_post_tag
     PRIMARY KEY (blog_post_id, tag_id),
     FOREIGN KEY (blog_post_id) REFERENCES blog_post(id),
     FOREIGN KEY (tag_id) REFERENCES tag(id)
+);
+
+/*
+-- Holds booking information from users
+*/
+DROP TABLE IF EXISTS booking;
+CREATE TABLE booking
+(
+    id INTEGER,
+    user_id INTEGER,
+    user_name VARCHAR(255),
+    name VARCHAR(255),
+    ts TIMESTAMP,
+    service VARCHAR(255),
+    time VARCHAR(255),
+    comment TEXT,
+    email VARCHAR(255),
+    phone VARCHAR(255),
+    PRIMARY KEY (id),
+    FOREIGN KEY (user_id) REFERENCES user(id)
 );

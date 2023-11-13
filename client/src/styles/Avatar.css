@@ -1,0 +1,29 @@
+.avatarHolder {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.avatar {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+#avatarImage {
+    display: flex;
+    width: 3em;
+    height: auto;
+    /* overflow: auto; */
+    /* object-fit: cover; */
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.avatarCircle {
+    margin-right: 2%;
+}
+
+.avatarName {
+    display: flex;
+    align-items: center;
+}
