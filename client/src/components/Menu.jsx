@@ -27,7 +27,7 @@ const Menu = () => {
                     <ul>
                         <li><Link to="/tutoring">Tutoring</Link></li>
                         <li><Link to="/development">Development</Link></li>
-                        <li><Link to="/driving">Rideshare</Link></li>
+                        {/* <li><Link to="/driving">Rideshare</Link></li> */}
                         <li><Link to="/booking">Book me</Link></li>
                     </ul>
                 </li>
@@ -51,9 +51,9 @@ const Menu = () => {
                     >Freelance Work</span>
                     <ul>
                         <li><Link to="/projects">Projects</Link></li>
-                        <li><Link to="/clientstories">Client Stories</Link></li>
-                        <li><Link to="/tipsandtricks">Tips and Tricks</Link></li>
-                        <li><Link to="/monetaryanalysis">Monetary Analysis</Link></li>
+                        {/* <li><Link to="/clientstories">Client Stories</Link></li> */}
+                        {/* <li><Link to="/tipsandtricks">Tips and Tricks</Link></li> */}
+                        {/* <li><Link to="/monetaryanalysis">Monetary Analysis</Link></li> */}
                     </ul>
                 </li>
                 <li>
@@ -63,11 +63,11 @@ const Menu = () => {
                     >Personal Blog</span>
                     <ul>
                         <li><Link to="/blog">About</Link></li>
-                        <li><Link to="/briefentries">Brief entries</Link></li>
-                        <li><Link to="/longentries">Long entries</Link></li>
-                        <li><Link to="/thoughtsideas">Thoughts/Ideas</Link></li>
-                        <li><Link to="/travel">Travel</Link></li>
-                        <li><Link to="/pets">Pets</Link></li>
+                        {/* <li><Link to="/briefentries">Brief entries</Link></li> */}
+                        {/* <li><Link to="/longentries">Long entries</Link></li> */}
+                        {/* <li><Link to="/thoughtsideas">Thoughts/Ideas</Link></li> */}
+                        {/* <li><Link to="/travel">Travel</Link></li> */}
+                        {/* <li><Link to="/pets">Pets</Link></li> */}
                     </ul>
                 </li>
                 <li>
@@ -86,8 +86,8 @@ const Menu = () => {
                     >Reviews</span>
                     <ul>
                         <li><Link to="/books">Books</Link></li>
-                        <li><Link to="/movies">Movies</Link></li>
-                        <li><Link to="/anime">Anime</Link></li>
+                        {/* <li><Link to="/movies">Movies</Link></li> */}
+                        {/* <li><Link to="/anime">Anime</Link></li> */}
                     </ul>
                 </li>
                 <li>

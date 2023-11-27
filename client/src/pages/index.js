@@ -3,6 +3,7 @@ import { Hypixel, Manacube, ModsClients, PluginsServers, Visuals } from "./minec
 import { NothingHere } from "./miscellaneous/index";
 import { BriefEntries, LongEntries, Pets, ThoughtsIdeas, Travel } from "./personal_blog/index";
 import { Home } from "./homepage/index";
+import { Tutoring } from "./services";
 
 // Export all components from all modules
 export {
@@ -10,5 +11,5 @@ export {
     Hypixel, Manacube, ModsClients, PluginsServers,
     NothingHere,
     BriefEntries, LongEntries, Pets, ThoughtsIdeas, Travel,
-    Home, Visuals
+    Home, Visuals, Tutoring
 };

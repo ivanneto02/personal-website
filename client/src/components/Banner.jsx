@@ -10,23 +10,20 @@ class Banner extends Component {
                         <h1>Ivan Neto</h1>
                         <p>A Computer Science major at University of California, Riverside</p>
                     </header>
-                    <h2> Introduction </h2>
+                    <h2>Introduction</h2>
                     <p>
-                        Welcome to my personal and professional website! The vision for this website is to
-                        collect several aspects of my life together and provide a fun product you can interact with.
-                        You can also see professional services I provide, which are meant for me to make a living
-                        while pursuing my degree.
+                        Welcome to my personal website! Among other things, I enjoy web development as a side hobby.
+                        I sought out to build this website for one main reason: I really wanted more
+                        experience with React and backends. Computer Science is fun, but I really like to test the 
+                        concepts I learn in the classroom in more real-world settings. I wanted to really experience
+                        the full-stack development process.
                     </p>
-                    <h2> Professional Services </h2>
+                    <h2> My Vision </h2>
                     <p>
-                        I provide <span className="highlight">3</span> main professional services:
+                        This website will be limited to my personal enjoyment and hobbies, as well as some articles and
+                        reviews that I plan to organize in here. I mostly want this to be a personal archive of all of the
+                        things I enjoy doing in a day-to-day. {/*If you're here for my professional work, please check out <insertlink> */}
                     </p>
-                    <ol>
-                        <li> Math, writing, and programming <span className="highlight">tutoring</span></li>
-                        <li> <span className="highlight">Web development</span> and other freelance projects</li>
-                        <li> <span className="highlight">Rideshare</span> driving on your schedule</li>
-                    </ol>
-                    <p> You can book me on the <Link to="/book" className="highlight">booking page</Link>. Instructions for booking are provided there. </p>
                 </div>
                 <div>
                     <span className="image object">

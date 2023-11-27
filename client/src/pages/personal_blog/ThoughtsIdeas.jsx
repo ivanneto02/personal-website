@@ -13,7 +13,6 @@ class ThoughtsIdeas extends Component {
                             <h1>ThoughtsIdeas</h1>
                         </header>
                     </section>
-                    
                 </div>
             </div>
         );
