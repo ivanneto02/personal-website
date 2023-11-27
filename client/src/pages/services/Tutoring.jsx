@@ -12,6 +12,12 @@ class Tutoring extends Component {
                     <section>
 
                         <h1>Tutoring</h1>
+
+                        <p>
+                            If you're interested in receiving tutoring from me (yay!), **please reach out to me by
+                            email (<b>ivan.a.neto@email.ucr.edu</b>) to discuss pricing and particular needs.
+                        </p>
+
                     </section>
 
                     <section>
@@ -83,24 +89,44 @@ class Tutoring extends Component {
                         <h3>Machine Learning and Data Science</h3>
 
                         <p>
-                           
+                            Most of my work throughout my University career has to do with Machine Learning and Data Science. During Summer 2021, 2022, and 2023,
+                            I partook in several summer researchships that taught me the basics of Machine Learning with frameworks
+                            such as <b>Tensorflow</b> and <b>Pytorch</b>. Further, data manipulation tools in Python such
+                            as <b>Numpy</b>, <b>Pandas</b>, and <b>Matplotlib</b> were utilized for visualization.
+                        </p>
+
+                        <p>
+                            In terms of projects in this area, the resume link at the top contains this information. For the most part, the projects follow
+                            a "Data Science Pipeline". This pipeline is standardized among several projects, and it mostly contains (1) preprocessing, (2) visualization,
+                            (3) feature engineering, and (4) prediction or regression - depending on the project I'm doing.
                         </p>
 
 
                     </section>
 
                     <section>
-                        <h2>Teaching Philosophy</h2>
-                    </section>
-
-                    <section>
                         <h2>Tutoring Experience</h2>
-                    </section>
 
-                    <section>
-                        <h2>Methods and Techniques</h2>
-                    </section>
+                        <h3>High School Tutoring</h3>
 
+                        <ul>
+                            <li>Summer 2018 - AP Calculus AB Tutoring</li>
+                            <li>Summer 2018 - Algebra Tutoring</li>
+                            <li>Summer 2018 - Geology Tutoring</li>
+                        </ul>
+
+                        <h3>College Tutoring</h3>
+
+                        <ul>
+                            <li>Fall 2022-Present - Supplemental Instruction Leader</li>
+                            <ul>
+                                <li>CS010A - Introduction to Programming in C/C++</li>
+                                <li>CS010B - Introduction to Object Oriented Programming in C/C++</li>
+                                <li>CS010C - Introductory Data Structures and Algorithms in C/C++</li>
+                            </ul>
+                        </ul>
+
+                    </section>
 
                 </div>
             </div>
