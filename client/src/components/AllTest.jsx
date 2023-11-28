@@ -8,7 +8,7 @@ class AllTest extends Component {
 						<div className="inner">
 								<header id="header">
 									<ul className="icons">
-										<li><a alt="nothing" href="https://www.linkedin.com/in/ivan-neto/" className="icon brands fa-linkedin"> Linkedin<span className="label">Linkedin</span></a></li>
+										<li><a href="https://www.linkedin.com/in/ivan-neto/" className="icon brands fa-linkedin"> Linkedin<span className="label">Linkedin</span></a></li>
 									</ul>
 								</header>
 
@@ -22,7 +22,7 @@ class AllTest extends Component {
 										<p>For the most part, this website will consist of four different sections of areas I want to talk about: Minecraft, Freelance Work, Research Work, and a small Personal Blog. Please check these out, and let me know if there are any corrections you would like to make. Feel free to reach me on my email, or on my LinkedIn to connect with me!</p>
 									</div>
 									<span className="image object">
-										<img src="images/pfp.jpg" style={{width:"25rem", height:"25rem"}}/>
+										<img alt="" src="images/pfp.jpg" style={{width:"25rem", height:"25rem"}}/>
 									</span>
 								</section>
 
