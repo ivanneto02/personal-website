@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -71,14 +71,95 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ## Packages installed
 
-### In backend
+### In `/backend`
     - mongoose
     - mongodb
     - cors
 
-### In client
+### In `/client`
     - styled-components
     - react-table
     - react-router-dom
     - axios
-    - bootstrap
+    - bootstrap -->
+
+# Repository for my Website (ivanneto.dev)
+
+This holds the code to make my website work.
+
+# Packages required in `client`
+```
+axios
+bootstrap
+node-sass
+react
+react-dom
+react-router-dom
+react-scripts@latest
+react-table
+sass
+serve
+styled-components
+web-vitals
+```
+
+# Packages required in `backend`
+```
+body-parser
+cors
+express
+```
+
+# For development
+
+## 1. Open two terminals to `/`
+
+## 2. Running `client`
+
+```
+> cd client
+> npm start
+```
+
+## 3. Running `backend`
+
+```
+> cd backend
+> npm start
+```
+
+At this point you'll have the backend server running in a terminal, and the frontend React app running in the other terminal.
+
+===
+
+# For deployment
+
+## 1. Open two terminals to `/`
+
+## 2. Create frontend build
+
+```
+> cd client
+> npm run build
+```
+
+## 3. Install `serve` (skip if installed)
+
+```
+> sudo npm install -g serve
+```
+
+## 4. Serve the build
+
+```
+> serve ./build
+```
+
+## 5. Start backend server (or remote server)
+
+Start at root directory
+
+```
+> cd backend
+> npm start
+```
