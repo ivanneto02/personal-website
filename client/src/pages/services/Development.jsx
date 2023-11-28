@@ -51,12 +51,8 @@ class Development extends Component {
                                         We develop a <b>static</b> website to display your personal information as you need.
                                     </p>
 
-                                    <PricingTag oneTimePayment={"10"} monthlyPayment={"25"}/>
+                                    <PricingTag oneTimePayment={"600.00"} monthlyPayment={"10.00"}/>
                                     
-                                    <ul class="pricinglist">
-                                        <li><span className="icon solid fa-dollar-sign"></span> <b class="pricing">800 OTP</b></li>
-                                        <li><b class="pricing">25/mo</b></li>
-                                    </ul>
                                 </div>
                             </article>
                             <article>
@@ -65,10 +61,9 @@ class Development extends Component {
                                     <p>
                                         We develop a <b>static</b> website to display your professional information as you need.
                                     </p>
-                                    <ul class="pricinglist">
-                                        <li><b class="pricing">1000 OTP</b></li>
-                                        <li><b class="pricing">25/mo</b></li>
-                                    </ul>
+
+                                    <PricingTag oneTimePayment={"800.00"} monthlyPayment={"10.00"}/>
+
                                 </div>
                             </article>
                             <article>
@@ -77,40 +72,51 @@ class Development extends Component {
                                     <p>
                                         We develop a <b>static</b> website to display your wanted content as you need.
                                     </p>
-                                    <ul class="pricinglist">
-                                        <li><b class="pricing">500 OTP</b></li>
-                                        <li><b class="pricing">25/mo</b></li>
-                                    </ul>
+                                    
+                                    <PricingTag oneTimePayment={"650.00-1200.00"} monthlyPayment={"10.00"}/>
+                                    
                                 </div>
                             </article>
                             <article>
                                 <div className="content">
                                     <h3>Full-Stack Personal Website</h3>
 
-                                    <ul class="pricinglist">
-                                        <li><b class="pricing">1000 OTP</b></li>
-                                        <li><b class="pricing">25/mo</b></li>
-                                    </ul>
+                                    <p>
+                                        We develop a <b>full-stack</b> website to display your personal information as you need.
+                                        You can also display hosted information (articles, reviews, etc), and upload information (through forms)
+                                        as needed for your personal use.
+                                    </p>
+
+                                    <PricingTag oneTimePayment={"800.00"} monthlyPayment={"25.00"}/>
+
                                 </div>
                             </article>
                             <article>
                                 <div className="content">
                                     <h3>Full-Stack Professional Website</h3>
 
-                                    <ul class="pricinglist">
-                                        <li><b class="pricing">1200 OTP</b></li>
-                                        <li><b class="pricing">25/mo</b></li>
-                                    </ul>
+                                    <p>
+                                        We develop a <b>full-stack</b> website to display your professional information as you need.
+                                        You can also display hosted information (products, items, etc), and upload information (through forms)
+                                        as needed for your business.
+                                    </p>
+
+                                    <PricingTag oneTimePayment={"1000.00"} monthlyPayment={"25.00"}/>
+
                                 </div>
                             </article>
                             <article>
                                 <div className="content">
                                     <h3>Full-Stack Other Website</h3>
 
-                                    <ul class="pricinglist">
-                                        <li><b class="pricing">1200 OTP</b></li>
-                                        <li><b class="pricing">25/mo</b></li>
-                                    </ul>
+                                    <p>
+                                        In the case that you may need a <b>full-stack</b> solution to a problem with a website and a server,
+                                        this is the option for you. Pricing may vary depending on the expertise and time required, as well as
+                                        your budget.
+                                    </p>
+
+                                    <PricingTag oneTimePayment={"1000.00-2000.00"} monthlyPayment={"25.00"}/>
+
                                 </div>
                             </article>
                         </div>

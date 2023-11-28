@@ -1,11 +1,18 @@
 .pricing {
-    font-family: "Georgia";
-    font-size: 3rem;
+    color:aqua;
+    font-family: "Courier New";
+    font-size: 2rem;
 }
 
 .pricinglist {
-    font-size: 2rem;
+    font-size: 1rem;
     list-style-type: none;
     margin-left: 0;
     padding: 0;
+}
+
+.pricingtag {
+    border: 3px solid white;
+    border-radius: 0.5rem;
+    padding: 1rem;
 }
