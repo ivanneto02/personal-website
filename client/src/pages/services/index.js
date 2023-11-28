@@ -1,3 +1,4 @@
 import Tutoring from "./Tutoring"
+import Development from "./Development"
 
-export { Tutoring }
+export { Tutoring, Development }

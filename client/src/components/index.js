@@ -14,6 +14,7 @@ import Scripts from "./Scripts"
 import SearchBar from "./SearchBar"
 import SideBar from "./SideBar"
 import SideBarButton from "./SideBarButton"
+import PricingTag from "./PricingTag"
 
 export { AllTest, Banner, Contact, CoolStuff, Footer, Header, MainContent, MajorFeatures, MajorPosts,
-Menu, MiniPosts, RelevantArticles, Scripts, SearchBar, SideBar, SideBarButton }
+Menu, MiniPosts, RelevantArticles, Scripts, SearchBar, SideBar, SideBarButton, PricingTag }

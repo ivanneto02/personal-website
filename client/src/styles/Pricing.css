@@ -1,0 +1,11 @@
+.pricing {
+    font-family: "Georgia";
+    font-size: 3rem;
+}
+
+.pricinglist {
+    font-size: 2rem;
+    list-style-type: none;
+    margin-left: 0;
+    padding: 0;
+}

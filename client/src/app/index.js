@@ -12,7 +12,7 @@ import {
     Home, Hypixel, Manacube, ModsClients, PluginsServers,
     ClientStories, MonetaryAnalysis, Projects, TipsAndTricks,
     BriefEntries, LongEntries, Pets,ThoughtsIdeas, Travel,
-    Visuals, Tutoring
+    Visuals, Tutoring, Development
 } from "../pages/";
 
 // Old code keep just in case
@@ -29,6 +29,7 @@ class App extends Component {
 
                             {/* Services Routes */}
                             <Route path="/tutoring" element={<Tutoring/>} />
+                            <Route path="/development" element={<Development/>}/>
 
                             {/* Minecraft Routes */}
                             <Route path="/hypixel" element={<Hypixel/>} />
