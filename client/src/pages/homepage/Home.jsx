@@ -20,7 +20,7 @@ class Home extends Component {
                     <section id="banner">
                         {/* <div className="content"> */}
                             <div id="banner_image_holder">
-                                <img id="banner_image" src="images/pfp.jpg"/>
+                                <img id="banner_image" src="images/pfp.jpg" alt=""/>
                                 <header id="banner_image_content">
                                     <h2>Ivan Neto</h2>
                                     <p>Alumni of University of California, Riverside</p>
