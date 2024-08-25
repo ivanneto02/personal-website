@@ -18,16 +18,15 @@ const Menu = () => {
                 <h2>Menu</h2>
             </header>
             <ul>
-                <li><Link to="/">Homepage</Link></li>
+                <li><Link to="/" id="homepage">Homepage</Link></li>
                 <li>
                     <span
                         className={`opener ${active5 ? "active" : ""}`}
                         onClick={() => setActive5(!active5)}
                     >Services</span>
-                    <ul>
+                    <ul id="submenu">
                         <li><Link to="/tutoring">Tutoring</Link></li>
                         <li><Link to="/development">Development</Link></li>
-                        {/* <li><Link to="/driving">Rideshare</Link></li> */}
                         <li><Link to="/booking">Book me</Link></li>
                     </ul>
                 </li>
@@ -36,7 +35,7 @@ const Menu = () => {
                         className={`opener ${active1 ? "active" : ""}`}
                         onClick={() => setActive1(!active1)}
                     >Minecraft</span>
-                    <ul>
+                    <ul id="submenu">
                         <li><Link to="/manacube">Manacube</Link></li>
                         <li><Link to="/hypixel">Hypixel</Link></li>
                         <li><Link to="/modsclients">Mods/Clients</Link></li>
@@ -49,7 +48,7 @@ const Menu = () => {
                         className={`opener ${active2 ? "active" : ""}`}
                         onClick={() => setActive2(!active2)}
                     >Freelance Work</span>
-                    <ul>
+                    <ul id="submenu">
                         <li><Link to="/projects">Projects</Link></li>
                         {/* <li><Link to="/clientstories">Client Stories</Link></li> */}
                         {/* <li><Link to="/tipsandtricks">Tips and Tricks</Link></li> */}
@@ -61,7 +60,7 @@ const Menu = () => {
                         className={`opener ${active3 ? "active" : ""}`}
                         onClick={() => setActive3(!active3)}
                     >Personal Blog</span>
-                    <ul>
+                    <ul id="submenu">
                         <li><Link to="/blog">About</Link></li>
                         {/* <li><Link to="/briefentries">Brief entries</Link></li> */}
                         {/* <li><Link to="/longentries">Long entries</Link></li> */}
@@ -75,7 +74,7 @@ const Menu = () => {
                         className={`opener ${active6 ? "active" : ""}`}
                         onClick={() => setActive6(!active6)}
                     >Research</span>
-                    <ul>
+                    <ul id="submenu">
                         <li><Link to="/research">Nothing here yet</Link></li>
                     </ul>
                 </li>
@@ -84,7 +83,7 @@ const Menu = () => {
                         className={`opener ${active7 ? "active" : ""}`}
                         onClick={() => setActive7(!active7)}
                     >Reviews</span>
-                    <ul>
+                    <ul id="submenu">
                         <li><Link to="/books">Books</Link></li>
                         {/* <li><Link to="/movies">Movies</Link></li> */}
                         {/* <li><Link to="/anime">Anime</Link></li> */}
@@ -95,7 +94,7 @@ const Menu = () => {
                         className={`opener ${active4 ? "active" : ""}`}
                         onClick={() => setActive4(!active4)}
                     >Miscellaneous</span>
-                    <ul>
+                    <ul id="submenu">
                         <li><Link to="/homepage">I don't know yet :)</Link></li>
                     </ul>
                 </li>

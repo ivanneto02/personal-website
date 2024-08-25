@@ -1,0 +1,41 @@
+#banner_image_holder {
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    width: 20em;
+}
+
+#banner_image_holder_div {
+    width: 20em;   
+}
+
+#banner_image {
+    width: 100%;
+    height: auto;
+}
+
+#banner_image_content {
+    position: absolute;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 1em;
+    padding-bottom: 1em;
+    padding-top: 2em;
+    width: 100%;
+    bottom: 0em;
+}
+
+#banner_image_holder:hover {
+    max-height: 100%;
+    transform: scale(1.1);
+    height: auto;
+
+}
+
+#banner_content {
+    padding-left: 2em;
+}
+
+#banner {
+    max-height: 700px;
+}

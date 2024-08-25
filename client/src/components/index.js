@@ -1,11 +1,8 @@
 import AllTest from "./AllTest"
-import Banner from "./Banner"
 import Contact from "./Contact"
 import CoolStuff from "./CoolStuff"
 import Footer from "./Footer"
 import Header from "./Header"
-import MainContent from "./MainContent"
-import MajorFeatures from "./MajorFeatures"
 import MajorPosts from "./MajorPosts"
 import Menu from "./Menu"
 import MiniPosts from "./MiniPosts"
@@ -16,5 +13,5 @@ import SideBar from "./SideBar"
 import SideBarButton from "./SideBarButton"
 import PricingTag from "./PricingTag"
 
-export { AllTest, Banner, Contact, CoolStuff, Footer, Header, MainContent, MajorFeatures, MajorPosts,
+export { AllTest, Contact, CoolStuff, Footer, Header, MajorPosts,
 Menu, MiniPosts, RelevantArticles, Scripts, SearchBar, SideBar, SideBarButton, PricingTag }

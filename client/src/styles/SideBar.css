@@ -7,7 +7,7 @@
     -webkit-flex-shrink: 0;
     -ms-flex-shrink: 0;
     flex-shrink: 0;
-    background-color: #1c1c1c;
+    background-color: #121212;
     font-size: 0.9em;
     position: relative;
     width: 26em;
@@ -25,7 +25,7 @@
 }
 
 #sidebar > .inner > * {
-    border-bottom: solid 2px rgba(210, 215, 217, 0.75);
+    border-bottom: solid 2px rgb(77, 77, 77);
     margin: 0 0 3.5em 0;
     padding: 0 0 3.5em 0;
 }
@@ -41,7 +41,7 @@
 }
 
 #sidebar > .inner > .alt {
-    background-color: #1c1c1c;
+    background-color: #121212;
     border-bottom: 0;
     margin: -2.22222em 0 4.44444em -2.22222em;
     padding: 2.22222em;
@@ -90,82 +90,4 @@
     text-indent: 0;
     top: 0;
     width: inherit;
-}
-
-@media screen and (max-width: 1680px) {
-    #sidebar {
-        width: 24em;
-    }
-    #sidebar > .inner {
-        padding: 1.66667em 1.66667em 1.33333em 1.66667em ;
-        width: 24em;
-    }
-    #sidebar > .inner > .alt {
-        margin: -1.66667em 0 3.33333em -1.66667em;
-        padding: 1.66667em;
-        width: calc(100% + 3.33333em);
-    }
-    #sidebar .toggle {
-        height: 6.25em;
-        left: 24em;
-        line-height: 6.25em;
-        text-indent: 5em;
-        width: 5em;
-    }
-    #sidebar .toggle:before {
-        font-size: 1.5rem;
-    }
-}
-
-@media screen and (max-width: 1280px) {
-    #sidebar {
-        box-shadow: 0 0 5em 0 rgba(0, 0, 0, 0.175);
-        height: 100%;
-        left: 0;
-        position: fixed;
-        top: 0;
-        z-index: 10000;
-    }
-    #sidebar.inactive {
-        box-shadow: none;
-    }
-    #sidebar > .inner {
-        -webkit-overflow-scrolling: touch;
-        height: 100%;
-        left: 0;
-        overflow-x: hidden;
-        overflow-y: auto;
-        position: absolute;
-        top: 0;
-    }
-    #sidebar > .inner:after {
-        content: '';
-        display: block;
-        height: 4em;
-        width: 100%;
-    }
-    #sidebar .toggle {
-        text-indent: 6em;
-        width: 6em;
-    }
-    body.is-preload #sidebar {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 736px) {
-    #sidebar .toggle {
-        text-indent: 7.25em;
-        width: 7.25em;
-    }
-    #sidebar .toggle:after {
-        background: rgba(222, 225, 226, 0.75);
-        border-radius: 0.375em;
-        content: '';
-        height: 3.5em;
-        left: 1em;
-        position: absolute;
-        top: 1em;
-        width: 5em;
-    }
 }
