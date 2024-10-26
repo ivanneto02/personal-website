@@ -18,7 +18,7 @@ class Development extends Component {
 
                         <p>
                             If you're interested in receiving development services from me, **please reach out to me by
-                            email (<b>ivan.a.neto@email.ucr.edu</b>) to discuss pricing and particular needs. You can also reach out to me through the <a href="/booking"><b>booking page</b></a>.
+                            email (<b>ivan.a.neto@hotmail.com</b>) to discuss pricing and particular needs. You can also reach out to me through the <a href="/booking"><b>booking page</b></a>.
                         </p>
 
                     </section>

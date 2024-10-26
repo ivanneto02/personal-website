@@ -15,7 +15,7 @@ class Tutoring extends Component {
 
                         <p>
                             If you're interested in receiving tutoring from me (yay!), **please reach out to me by
-                            email (<b>ivan.a.neto@email.ucr.edu</b>) to discuss pricing and particular needs.
+                            email (<b>ivan.a.neto@hotmail.com</b>) to discuss pricing and particular needs.
                         </p>
 
                     </section>
