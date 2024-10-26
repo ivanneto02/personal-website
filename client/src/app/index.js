@@ -5,7 +5,11 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 // import components
 import SideBar from "../components/SideBar"
 
-import "./../assets/css/main.css";
+import "./../styles/main.css";
+// import "./../styles/responsive.css";
+// import "./../styles/links.css";
+// import "./../styles/freetext.css";
+// import "./../styles/row.css";
 
 // import the pages
 import {

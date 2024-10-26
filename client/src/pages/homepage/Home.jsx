@@ -6,6 +6,7 @@ import RelevantArticles from "../../components/RelevantArticles"
 import { Link } from "react-router-dom";
 
 import "../../styles/Home.css"
+import "../../styles/card.css"
 
 class Home extends Component {
     render() {
@@ -27,7 +28,7 @@ class Home extends Component {
                                 </header>
                             </div>
                         {/* </div> */}
-                        <div className="content" id="banner_content">
+                        <div className="content card" id="banner_content">
                             <h2>Introduction</h2>
                             <p>
                                 Welcome to my personal website! Among other things, I enjoy web development as a side hobby.
