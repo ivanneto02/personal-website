@@ -11,7 +11,7 @@ class Home extends Component {
     render() {
         return (
             <div id="main">
-                <div className="inner">
+                {/* <div className="inner"> */}
                     <Header />
                     
                     {/* Contains the introductory information of the Homepage.
@@ -116,7 +116,7 @@ class Home extends Component {
                     {/* This section shows the articles recommended by my article recommendation system*/}
                     <RelevantArticles />
 
-                </div>
+                {/* </div> */}
             </div>
         );
     }

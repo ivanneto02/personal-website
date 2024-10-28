@@ -1,3 +1,21 @@
 #wrapper {
     display: flex;
 }
+
+.wrapper {
+    background-color: #141414;
+}
+  
+/* Wrapper */
+#wrapper {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    background-color: inherit;
+    -moz-flex-direction: row-reverse;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    min-height: 100vh;
+}
