@@ -1,0 +1,72 @@
+
+/* Emphasis 1:
+
+This is the highest emphasis. It will highlight
+titles of already emphasized elements. Should not
+be used unless we are sure there is no higher 
+emphasis.
+
+*/
+.emphasis1.dark {
+    background-color: #050505;
+}
+
+.emphasis1.light {
+    background-color: aliceblue;
+}
+
+
+/* Emphasis 2:
+
+This is the second highest emphasis. It will
+highlight already emphasized elements. Can be used
+for things like titles, buttons, and other small
+elements that belong emphasized.
+
+*/
+.emphasis2.dark {
+    background-color: #050505;
+}
+
+.emphasis2.light {
+
+}
+
+/* Emphasis 3: ** NOT BACKGROUND
+
+This is the third highest emphasis. It will be used
+for things like one higher emphasis than the background
+of an already emphasized elements. ** DO NOT USE FOR
+BACKGROUND, THAT IS EMPHASIS4 **
+
+*/
+.emphasis3.dark {
+    background-color: #080808;
+}
+
+.emphasis3.light {
+
+}
+
+/* Emphasis 4: ** BACKGROUND
+
+This is the weakest emphasis. It will be used for
+card-like elements that need to be distinguished from
+the body background, which is the weakest background.
+
+*/
+.emphasis4.dark {
+    background-color: #0D0D0D;
+}
+
+.emphasis4.light {
+
+}
+
+.emphasis5.dark {
+    background-color: #141414;
+}
+
+.emphasis5.light {
+    
+}

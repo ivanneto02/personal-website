@@ -1,5 +1,10 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
+
+@import url(scrollbar.css);
+@import url(card.css);
+@import url(emphasis.css);
+
 /*
 	Editorial by HTML5 UP
 	html5up.net | @ajlkn
@@ -22,6 +27,11 @@ section, summary, time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline; }
+
+.content {
+  padding-top: 1em;
+  overflow-y: auto;
+}
 
 .highlight {
   color:rgb(162, 0, 255);
@@ -79,8 +89,10 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #000000; }
-  body.is-preload *, body.is-preload *:before, body.is-preload *:after, body.is-resizing *, body.is-resizing *:before, body.is-resizing *:after {
+  background: #141414;
+}
+
+body.is-preload *, body.is-preload *:before, body.is-preload *:after, body.is-resizing *, body.is-resizing *:before, body.is-resizing *:after {
 }
 
 /* Type */
@@ -978,7 +990,7 @@ button,
 
 /* Banner */
 #banner {
-  padding: 6em 0 4em 0 ;
+  padding: 3em 0 4em 0 ;
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;

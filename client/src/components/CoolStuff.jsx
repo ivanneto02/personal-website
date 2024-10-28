@@ -11,7 +11,7 @@ class CoolStuff extends Component {
                 </header>
                 <MiniPosts />
                 <ul className="actions">
-                    <li><a href="/" className="button">More</a></li>
+                    <li><a href="/" className="button" target="_blank">More</a></li>
                 </ul>
             </section>
         );

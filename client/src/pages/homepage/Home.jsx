@@ -6,7 +6,6 @@ import RelevantArticles from "../../components/RelevantArticles"
 import { Link } from "react-router-dom";
 
 import "../../styles/Home.css"
-import "../../styles/card.css"
 
 class Home extends Component {
     render() {
@@ -19,7 +18,6 @@ class Home extends Component {
                     It shows what I want to accomplish and what my website is
                     about. */}
                     <section id="banner">
-                        {/* <div className="content"> */}
                             <div id="banner_image_holder">
                                 <img id="banner_image" src="images/pfp.jpg" alt=""/>
                                 <header id="banner_image_content">
@@ -27,10 +25,9 @@ class Home extends Component {
                                     <p>Alumni of University of California, Riverside</p>
                                 </header>
                             </div>
-                        {/* </div> */}
-                        <div className="content card" id="banner_content">
+                        <div className="content emphasis4 dark" id="banner_content">
                             <h2>Introduction</h2>
-                            <p>
+                            <p className="card emphasis5 dark">
                                 Welcome to my personal website! Among other things, I enjoy web development as a side hobby.
                                 I sought out to build this website for one main reason: I really wanted more
                                 experience with Full-Stack Development. Computer Science is fun, but I really like to test the 
@@ -38,12 +35,12 @@ class Home extends Component {
                                 Full-Stack process.
                             </p>
                             <h2> My Vision </h2>
-                            <p>
+                            <p className="card emphasis5 dark">
                                 This website will be limited to my personal enjoyment and hobbies, as well as some articles and
                                 reviews that I plan to organize in here. I mostly want this to be a personal archive of all of the
                                 things I enjoy doing in a day-to-day.
                             </p>
-                            <p>
+                            <p className="card emphasis5 dark">
                                 Additionally, I want to showcase personal and professional projects I partake in. These projects are
                                 significant to what I want to do professionally, and include anything from web development to Machine
                                 Learning projects.
