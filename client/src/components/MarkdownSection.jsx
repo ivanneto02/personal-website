@@ -16,7 +16,7 @@ class MarkdownSection extends Component {
 
     render() {
         return (
-            <section>
+            <section className="wholeMarkdownSection">
                 <header className="content">
                     <Markdown>
                         {this.state.content}

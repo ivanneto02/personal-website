@@ -13,6 +13,7 @@ import SideBar from "./SideBar"
 import SideBarButton from "./SideBarButton"
 import PricingTag from "./PricingTag"
 import MarkdownSection from "./MarkdownSection"
+import HalfContainer from "./HalfContainer"
 
 export { AllTest, Contact, CoolStuff, Footer, Header, MajorPosts,
-Menu, MiniPosts, RelevantArticles, Scripts, SearchBar, SideBar, SideBarButton, PricingTag, MarkdownSection }
+Menu, MiniPosts, RelevantArticles, Scripts, SearchBar, SideBar, SideBarButton, PricingTag, MarkdownSection, HalfContainer }

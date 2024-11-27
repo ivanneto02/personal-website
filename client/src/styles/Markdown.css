@@ -1,0 +1,19 @@
+.halfContainer {
+    display: flex;
+    flex-direction: row;
+    min-height: 5em;
+}
+
+.wholeMarkdownSection {
+    width: 100%;
+}
+
+.halfMarkdownSection {
+    width: 50%;
+    /* background-color: ; */
+    margin-left: 1em;
+}
+
+.reactMarkDown {
+
+}
