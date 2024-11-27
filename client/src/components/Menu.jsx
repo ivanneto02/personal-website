@@ -27,7 +27,7 @@ const Menu = () => {
                     <ul id="submenu">
                         <li><Link to="/tutoring">Tutoring</Link></li>
                         <li><Link to="/development">Development</Link></li>
-                        <li><Link to="/booking">Book me</Link></li>
+                        {/* <li><Link to="/booking">Book me</Link></li> */}
                     </ul>
                 </li>
                 <li>

@@ -12,6 +12,7 @@ import SearchBar from "./SearchBar"
 import SideBar from "./SideBar"
 import SideBarButton from "./SideBarButton"
 import PricingTag from "./PricingTag"
+import MarkdownSection from "./MarkdownSection"
 
 export { AllTest, Contact, CoolStuff, Footer, Header, MajorPosts,
-Menu, MiniPosts, RelevantArticles, Scripts, SearchBar, SideBar, SideBarButton, PricingTag }
+Menu, MiniPosts, RelevantArticles, Scripts, SearchBar, SideBar, SideBarButton, PricingTag, MarkdownSection }

@@ -5,42 +5,20 @@ import { PricingTag } from "../../components";
 
 import "../../styles/Pricing.css";
 
+import { MarkdownSection } from "../../components";
+
+import raw1 from "./Development1.md";
+import raw2 from "./Development2.md";
+
 class Development extends Component {
     render() {
         return (
             <div id="main">
                     <Header />
 
-                    <section>
-
-                        <h1>Development</h1>
-
-                        <p>
-                            If you're interested in receiving development services from me, **please reach out to me by
-                            email (<b>ivan.a.neto@hotmail.com</b>) to discuss pricing and particular needs. You can also reach out to me through the <a href="/booking"><b>booking page</b></a>.
-                        </p>
-
-                    </section>
+                    <MarkdownSection raw={raw1}/>
 
                     <section>
-
-                        <h2>Contractual Development</h2>
-
-                        <p>
-                            If you want me to develop something for you - website, game, or any such product - we will make a contract based on your needs and the skill
-                            required to create the product. We will promise deliverables within a <b>preset deadline</b> in order to fit your needs.
-                        </p>
-
-                        <p>
-                            I typically require <b>plenty of communication</b> (via email, phone call, or text) to ensure that your specifications and needs are completely
-                            met and you can gain a real benefit from the product.
-                        </p>
-
-                    </section>
-
-                    <section>
-
-                        <h2>Website Products</h2>
 
                         <div className="posts">
                             <article>
@@ -150,23 +128,7 @@ class Development extends Component {
 
                     </section>
 
-                    <section>
-
-                        <h2>Other Products</h2>
-
-                        <p>
-                            Pricing for miscellaneous products varies depending on:
-                        </p>
-
-                        <ul>
-                            <li>Complexity</li>
-                            <li>Scope (what will it be used for?)</li>
-                            <li>Expertise Required</li>
-                            <li>Your Budget</li>
-                            <li>Maintenance Requirements</li>
-                        </ul>
-
-                    </section>
+                    <MarkdownSection raw={raw2}/>
 
             </div>
         );
