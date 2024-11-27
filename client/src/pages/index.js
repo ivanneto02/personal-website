@@ -4,6 +4,7 @@ import { NothingHere } from "./miscellaneous/index";
 import { BriefEntries, LongEntries, Pets, ThoughtsIdeas, Travel } from "./personal_blog/index";
 import { Home } from "./homepage/index";
 import { Tutoring, Development } from "./services";
+import { MarkdownTest  } from "./markdown_test";
 
 // Export all components from all modules
 export {
@@ -11,5 +12,6 @@ export {
     Hypixel, Manacube, ModsClients, PluginsServers,
     NothingHere,
     BriefEntries, LongEntries, Pets, ThoughtsIdeas, Travel,
-    Home, Visuals, Tutoring, Development
+    Home, Visuals, Tutoring, Development,
+    MarkdownTest
 };

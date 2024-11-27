@@ -9,7 +9,6 @@ class Development extends Component {
     render() {
         return (
             <div id="main">
-                <div className="inner">
                     <Header />
 
                     <section>
@@ -169,7 +168,6 @@ class Development extends Component {
 
                     </section>
 
-                </div>
             </div>
         );
     }

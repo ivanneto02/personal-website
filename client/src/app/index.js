@@ -6,17 +6,13 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import SideBar from "../components/SideBar"
 
 import "./../styles/main.css";
-// import "./../styles/responsive.css";
-// import "./../styles/links.css";
-// import "./../styles/freetext.css";
-// import "./../styles/row.css";
 
 // import the pages
 import {
     Home, Hypixel, Manacube, ModsClients, PluginsServers,
     ClientStories, MonetaryAnalysis, Projects, TipsAndTricks,
     BriefEntries, LongEntries, Pets,ThoughtsIdeas, Travel,
-    Visuals, Tutoring, Development
+    Visuals, Tutoring, Development, MarkdownTest
 } from "../pages/";
 
 // Old code keep just in case
@@ -27,6 +23,8 @@ class App extends Component {
                 <BrowserRouter>
                     <div id="wrapper">
                         <Routes>
+                            {/* Test markdown */}
+                            <Route path="/mdtest/" element={<MarkdownTest/>}/>
                     
                             {/* Home page */}
                             <Route path='/' element={<Home/>} />

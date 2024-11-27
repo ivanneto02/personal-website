@@ -1,5 +1,6 @@
 #header {
     display: flex;
+    padding: 0em 0 1em 0;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -7,8 +8,51 @@
     padding-left: 0%;
     padding-top: 1.5%;
     justify-content: flex-end;
+    overflow: visible;
 }
 
+#header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    border-bottom: solid 5px #452678;
+    left: -2%; /* Extend the header 2% of the viewport width to the left */
+    height: 100%; /* Match the height of #header */
+    width: 100%; /* Adjust this value as needed to control how far it extends */
+    background-color: inherit; /* Matches the header background */
+    z-index: -1; /* Ensures it sits behind the header content */
+}
+
+#header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    border-bottom: solid 5px #452678;
+    left: 2%; /* Extend the header 2% of the viewport width to the right */
+    height: 100%; /* Match the height of #header */
+    width: 100%; /* Adjust this value as needed to control how far it extends */
+    background-color: inherit; /* Matches the header background */
+    z-index: -1; /* Ensures it sits behind the header content */
+}
+
+#header > * {
+    -moz-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-bottom: 0;
+}
+
+#header .logo {
+    border-bottom: 0;
+    color: inherit;
+    font-family: "Roboto Slab", serif;
+    font-size: 1.125em;
+}
+#header .icons {
+    text-align: right;
+}
+  
 /* Icons */
 ul.icons {
     display: flex;

@@ -6,7 +6,7 @@ class Tutoring extends Component {
     render() {
         return (
             <div id="main">
-                <div className="inner">
+                {/* <div className="inner"> */}
                     <Header />
 
                     <section>
@@ -128,7 +128,7 @@ class Tutoring extends Component {
 
                     </section>
 
-                </div>
+                {/* </div> */}
             </div>
         );
     }

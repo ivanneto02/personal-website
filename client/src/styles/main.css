@@ -31,6 +31,7 @@ section, summary, time, mark, audio, video {
 
 .content {
   padding-top: 1em;
+  padding-left: 1em;
   overflow-y: auto;
 }
 
@@ -106,7 +107,8 @@ body, input, select, textarea {
   font-family: "Open Sans", sans-serif;
   font-size: 13pt;
   font-weight: 400;
-  line-height: 1.65; }
+  line-height: 1.65;
+}
 
 a {
     -moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
@@ -951,35 +953,6 @@ button,
   width: 100%;
   padding: 0 6em 0.1em 6em ;
 }
-
-/* Header */
-#header {
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  border-bottom: solid 5px #452678;
-  padding: 6em 0 1em 0;
-  position: relative;
-}
-#header > * {
-    -moz-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    margin-bottom: 0;
-}
-#header .logo {
-    border-bottom: 0;
-    color: inherit;
-    font-family: "Roboto Slab", serif;
-    font-size: 1.125em;
-}
-#header .icons {
-    text-align: right;
-}
-
-
 
 /* Banner */
 #banner {
