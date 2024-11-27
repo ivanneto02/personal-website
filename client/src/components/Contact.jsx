@@ -13,6 +13,7 @@ class Contact extends Component {
                     <li className="icon solid fa-home"><a href="https://www.google.com/maps/place/Riverside,+CA/" target="_blank" rel="noreferrer">Riverside, California, United States</a></li>
                     <li className="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/ivan-neto/" target="_blank" rel="noreferrer">Linkedin</a><br /></li>
                     <li className="icon fa-file"><a href="https://docs.google.com/document/d/1WJInUWfr5vqFRe2XMcU9oozOaHX8jTv-4adBut4mvHQ/edit?usp=sharing" target="_blank" rel="noreferrer">Resume</a><br /></li>
+                    <li className="icon solid fa-code"><a href="https://github.com/ivanneto02" target="_blank" rel="noreferrer">Github</a><br /></li>
                 </ul>
             </section>
         );
