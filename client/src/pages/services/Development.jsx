@@ -21,41 +21,43 @@ class Development extends Component {
                     <section>
 
                         <div className="posts">
-                            <article>
-                                <div className="content">
+                            <article className="card">
+                                <div className="pricing content emphasis4 dark">
                                     <h3>Static Personal Website</h3>
                                     <p>
                                         We develop a <b>static</b> website to display your personal information as you need.
                                     </p>
 
-                                    <PricingTag oneTimePayment={"600.00"} monthlyPayment={"10.00"}/>
-                                    
+                                    <PricingTag oneTimePayment={"399.99"} monthlyPayment={"3.00"}/>
                                 </div>
                             </article>
-                            <article>
-                                <div className="content">
+
+                            <article className="card">
+                                <div className="pricing content emphasis4 dark">
                                     <h3>Static Professional Website</h3>
                                     <p>
                                         We develop a <b>static</b> website to display your professional information as you need.
                                     </p>
 
-                                    <PricingTag oneTimePayment={"800.00"} monthlyPayment={"10.00"}/>
+                                    <PricingTag oneTimePayment={"399.99"} monthlyPayment={"3.00"}/>
 
                                 </div>
                             </article>
-                            <article>
-                                <div className="content">
+
+                            <article className="card">
+                                <div className="pricing content emphasis4 dark">
                                     <h3>Static Other Website</h3>
                                     <p>
                                         We develop a <b>static</b> website to display your wanted content as you need.
                                     </p>
                                     
-                                    <PricingTag oneTimePayment={"650.00-1200.00"} monthlyPayment={"10.00"}/>
+                                    <PricingTag oneTimePayment={"399.99"} monthlyPayment={"3.00"}/>
                                     
                                 </div>
                             </article>
-                            <article>
-                                <div className="content">
+
+                            <article className="card">
+                                <div className="pricing content emphasis4 dark">
                                     <h3>Full-Stack Personal Website</h3>
 
                                     <p>
@@ -64,12 +66,13 @@ class Development extends Component {
                                         as needed for your personal use.
                                     </p>
 
-                                    <PricingTag oneTimePayment={"800.00"} monthlyPayment={"25.00"}/>
+                                    <PricingTag oneTimePayment={"449.99"} monthlyPayment={"5.00"}/>
 
                                 </div>
                             </article>
-                            <article>
-                                <div className="content">
+
+                            <article className="card">
+                                <div className="pricing content emphasis4 dark">
                                     <h3>Full-Stack Professional Website</h3>
 
                                     <p>
@@ -78,12 +81,13 @@ class Development extends Component {
                                         as needed for your business.
                                     </p>
 
-                                    <PricingTag oneTimePayment={"1000.00"} monthlyPayment={"25.00"}/>
+                                    <PricingTag oneTimePayment={"449.99"} monthlyPayment={"5.00"}/>
 
                                 </div>
                             </article>
-                            <article>
-                                <div className="content">
+
+                            <article className="card">
+                                <div className="pricing content emphasis4 dark">
                                     <h3>Full-Stack Other Website</h3>
 
                                     <p>
@@ -92,7 +96,7 @@ class Development extends Component {
                                         your budget.
                                     </p>
 
-                                    <PricingTag oneTimePayment={"1000.00-2000.00"} monthlyPayment={"25.00"}/>
+                                    <PricingTag oneTimePayment={"449.99"} monthlyPayment={"10.00"}/>
 
                                 </div>
                             </article>

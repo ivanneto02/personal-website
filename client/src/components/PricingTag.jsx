@@ -8,16 +8,16 @@ class PricingTag extends Component {
         const { oneTimePayment, monthlyPayment } = this.props;
 
         return (
-            <div className="pricingtag">
+            <div className="pricingtag emphasis1 dark">
 
                 <h3> Pricing </h3>
 
                 <ul class="pricinglist">
                     <li>One-Time Payment</li>
-                    <li><span className="icon solid fa-dollar-sign"></span> <b class="pricing">{oneTimePayment}</b></li>
+                    <li className="pricelinebig"><span className="icon solid fa-dollar-sign"></span> <b>{oneTimePayment}</b></li>
 
                     <li>Maintenance</li>
-                    <li><span className="icon solid fa-dollar-sign"></span> <b class="pricing">{monthlyPayment}/mo</b></li>
+                    <li className="pricelinesmall"><span className="icon solid fa-dollar-sign"></span> <b>{monthlyPayment}/mo</b></li>
                 </ul>
             </div>
         )
