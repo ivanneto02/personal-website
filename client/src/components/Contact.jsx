@@ -7,7 +7,7 @@ class Contact extends Component {
                 <header className="major">
                     <h2>Contact Me</h2>
                 </header>
-                <p>I check my email on a daily basis, almost every hour! Please do not hesistate to contact me if you have any questions or propositions, as I respond very quickly and would love to hear from you!</p>
+                {/* <p>I check my email on a daily basis, almost every hour! Please do not hesistate to contact me if you have any questions or propositions, as I respond very quickly and would love to hear from you!</p> */}
                 <ul className="contact">
                     <li className="icon solid fa-envelope"><a href="mailto:ivan.a.neto@hotmail.com" target="_blank" rel="noreferrer">ivan.a.neto@hotmail.com</a></li>
                     <li className="icon solid fa-home"><a href="https://www.google.com/maps/place/Riverside,+CA/" target="_blank" rel="noreferrer">Riverside, California, United States</a></li>

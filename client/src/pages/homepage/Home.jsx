@@ -22,7 +22,7 @@ class Home extends Component {
                                 <img id="banner_image" src="images/pfp.jpg" alt=""/>
                                 <header id="banner_image_content">
                                     <h2>Ivan Neto</h2>
-                                    <p>Alumni of University of California, Riverside</p>
+                                    <p>University of California, Riverside - Alumni</p>
                                 </header>
                             </div>
                         <div className="content emphasis4 dark" id="banner_content">

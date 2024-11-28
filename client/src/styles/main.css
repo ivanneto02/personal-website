@@ -5,6 +5,8 @@
 @import url(card.css);
 @import url(emphasis.css);
 @import url(wrapper.css);
+@import url(responsive.css);
+@import url(Banner.css);
 
 /*
 	Editorial by HTML5 UP
@@ -929,35 +931,6 @@ button,
 .posts article .image img {
     display: block;
     width: 100%;
-}
-
-/* Main */
-#main {
-  -moz-flex-grow: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
-  flex-grow: 1;
-  -moz-flex-shrink: 1;
-  -webkit-flex-shrink: 1;
-  -ms-flex-shrink: 1;
-  flex-shrink: 1;
-  width: 100%;
-  padding: 0 6em 0.1em 6em ;
-}
-
-/* Banner */
-#banner {
-  padding: 3em 0 4em 0 ;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-}
-
-#banner .content {
-    flex-grow: 1;
-    flex-shrink: 1;
-    width: 50%;
 }
 
 /* Footer */

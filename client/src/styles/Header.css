@@ -1,14 +1,44 @@
 #header {
     display: flex;
-    padding: 0em 0 1em 0;
+    padding: 1em 0 1em 0;
     position: sticky;
     top: 0;
     z-index: 999;
     background-color: inherit;
     padding-left: 0%;
-    padding-top: 1.5%;
     justify-content: flex-end;
     overflow: visible;
+}
+
+@media screen and (max-width: 500px) {
+    #header {
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+        padding-top: 0;
+    }
+
+    #header::after {
+        visibility: hidden;
+    }
+      
+    #header .logo {
+        font-size: 1.25em;
+        margin: 0;
+    }
+    #header .icons {
+        border-bottom: solid 1px white;
+        position: relative;
+        top: 0;
+    }
+
+    .avatarHolder {
+        align-self: start;
+        padding-top: 1em;
+        padding-left: 0;
+        margin-left: 0;
+        width: 50%;
+    }
 }
 
 #header::before {

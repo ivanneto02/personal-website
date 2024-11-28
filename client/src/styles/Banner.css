@@ -1,0 +1,20 @@
+/* Banner */
+#banner {
+    padding: 3em 0 4em 0 ;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+}
+
+#banner .content {
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 50%;
+}
+
+@media screen and (max-width: 738px) {
+    #banner {
+        visibility: hidden;
+    }
+}
