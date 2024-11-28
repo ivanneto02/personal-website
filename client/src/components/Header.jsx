@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 
-import Avatar from "./Avatar";
+// import Avatar from "./Avatar";
 
 import "../styles/Header.css";
 
