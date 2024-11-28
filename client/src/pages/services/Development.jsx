@@ -4,6 +4,7 @@ import Header from "../../components/Header";
 import { PricingTag } from "../../components";
 
 import "../../styles/Pricing.css";
+import "../../styles/main.css";
 
 import { MarkdownSection } from "../../components";
 

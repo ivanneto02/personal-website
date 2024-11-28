@@ -48,6 +48,7 @@ section, summary, time, mark, audio, video {
     align-items: center;
     margin: 0.5em;
   }
+
 }
 
 .highlight {
@@ -166,7 +167,14 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 4em;
   margin: 0 0 0.5em 0;
-  line-height: 1.3; }
+  line-height: 1.3;
+}
+
+@media screen and (max-width: 738px) {
+  h1 {
+    font-size: 3em;
+  }
+}
 
 h2 {
   font-size: 1.75em; }
@@ -861,6 +869,21 @@ button,
 .posts article .image img {
     display: block;
     width: 100%;
+}
+
+@media screen and (max-width: 738px) {
+  .posts {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 1em 0em;
+    width: 100%;
+  }
+
+  .posts article {
+    width: 100%;
+    margin: 0em;
+    padding: 0em;
+  }
 }
 
 /* Footer */

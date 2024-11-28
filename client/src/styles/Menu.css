@@ -2,7 +2,7 @@
     color: #646464;
     font-weight: 600;
     font-size: 1.3em;
-    letter-spacing: 0.10em;
+    letter-spacing: 0.05em;
     list-style: none;
     margin-bottom: 0;
     padding: 0;
@@ -111,3 +111,9 @@
     padding-top: 0;
 }
   
+@media screen and (max-width: 738px) {
+    #menu .major {
+        padding: 0em;
+        margin: 0em;
+    }
+}
