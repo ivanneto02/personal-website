@@ -1,0 +1,29 @@
+@media screen and (min-width: 739px) {
+    header.major > :last_child {
+        margin: 0 0 2em 0;
+        padding: 0 0.75em 0.5em 0;
+    }
+
+    .sideBarMobile {
+        display: none;
+        visibility: hidden;
+        margin: 0;
+        width: 0;
+    }
+}
+
+@media screen and (max-width: 738px) {
+    .sideBarMobile {
+        display: inline-block;
+        visibility: visible;
+        position: relative;
+        width: 100%;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    header.major h2 {
+        padding: 0em 0em 0em 0em;
+        margin: 1em 0em 0.5em 0em;
+    }
+}

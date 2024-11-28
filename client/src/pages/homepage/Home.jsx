@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 // import components
 import Header from "../../components/Header"
-import RelevantArticles from "../../components/RelevantArticles"
+// import RelevantArticles from "../../components/RelevantArticles"
 import { Link } from "react-router-dom";
 
 import "../../styles/Home.css"
@@ -114,7 +114,7 @@ class Home extends Component {
                     </section>
 
                     {/* This section shows the articles recommended by my article recommendation system*/}
-                    <RelevantArticles />
+                    {/* <RelevantArticles /> */}
 
                 {/* </div> */}
             </div>

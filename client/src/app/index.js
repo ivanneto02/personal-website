@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 // import components
-import SideBar from "../components/SideBar"
+import SideBar from "../components/SideBar";
 
 import "./../styles/main.css";
 
@@ -22,6 +22,7 @@ class App extends Component {
             <div className="wrapper">
                 <BrowserRouter>
                     <div id="wrapper">
+
                         <Routes>
                             {/* Test markdown */}
                             <Route path="/mdtest/" element={<MarkdownTest/>}/>
@@ -57,7 +58,7 @@ class App extends Component {
                             <Route path="*" element={<Home/>} />
 
                         </Routes>
-                        <SideBar />
+                        <SideBar/>
                     </div>
                     
                 </BrowserRouter>

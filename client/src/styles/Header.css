@@ -10,7 +10,7 @@
     overflow: visible;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 738px) {
     #header {
         display: flex;
         flex-direction: column;
@@ -19,13 +19,14 @@
     }
 
     #header::after {
-        visibility: hidden;
+        visibility: visible;
     }
       
     #header .logo {
         font-size: 1.25em;
         margin: 0;
     }
+    
     #header .icons {
         border-bottom: solid 1px white;
         position: relative;
