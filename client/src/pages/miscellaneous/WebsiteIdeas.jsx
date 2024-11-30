@@ -8,8 +8,8 @@ class WebsiteIdeas extends Component {
     render() {
         return (
             <div id="main">
-                    <Header />
-                    <MarkdownSection MDXContent={<MDXContent/>}/>
+                <Header />
+                <MarkdownSection MDXContent={MDXContent}/>
             </div>
         );
     }

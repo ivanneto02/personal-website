@@ -10,7 +10,7 @@ class MarkdownTest extends Component {
         return (
             <div id="main">
                 <Header />
-                <MarkdownSection MDXContent={<MDXContent/>}/>
+                <MarkdownSection MDXContent={MDXContent}/>
             </div>
         );
     }

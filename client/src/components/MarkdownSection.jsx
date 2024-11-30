@@ -10,7 +10,7 @@ class MarkdownSection extends Component {
         return (
             <section className="wholeMarkdownSection">
                 <header className="content">
-                    {this.props.MDXContent}
+                    {<this.props.MDXContent/>}
                 </header>
             </section>
         );

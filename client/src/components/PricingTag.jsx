@@ -12,7 +12,7 @@ class PricingTag extends Component {
 
                 <h3> Pricing </h3>
 
-                <ul class="pricinglist">
+                <ul className="pricinglist">
                     <li>One-Time Payment</li>
                     <li className="pricelinebig"><span className="icon solid fa-dollar-sign"></span> <b>{oneTimePayment}</b></li>
 
