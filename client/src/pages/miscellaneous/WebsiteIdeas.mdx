@@ -1,0 +1,65 @@
+# Website Ideas
+
+This secret part of the website is meant as my own chamber of ideas about what can go on this website!
+
+## Idea 1 (11/29/2024)
+
+Improving the markdown. Current markdown support is OK but there are a couple of things missing:
+
+1. Coding language highlighting - there is none yet :(
+2. A way to improve the markdown layout. Currently each page has its own markdown file(s) which it loads and displays, depending on the layout. There is a mix between HTML and markdown. I would like to keep it all markdown but I understand the limitations of markdown, it's not always possible and sometimes good to mix between HTMl and markdown.
+3. Better styling. But this applies to the whole website... I currently have inconsistent styles and would want to improve this to be consistent across the whole website. Lots of work to do this but it will come. Working on it :)
+4. Make markdown easier to use. This idea applies to every markdown setup I currently have. Let me explain why this is important... What I do currently is when I need a special feature to be displayed on the website in a markdown page, I **MUST** break up the markdown into different files, then I have to load them up in individual pieces as a `<MarkdownSection>` component. Finally, I then have to put the special feature in between the two `<MarkdownSection>` components. This is tedious, and the opposite of what I want for markdown compatibility. Wouldn't it be great if we could specify the special feature already within the `exampleMarkdownFile.md` file? Well, that's what I want :).
+
+```cpp
+#include <iostream>
+
+int main() {
+    std::cout << "I did it :D" << std::endl;
+    return 0;
+}
+```
+
+## Idea 2 (11/29/2024)
+
+Improving mobile responsiveness. Current responsiveness on mobile is passable (less than OK in my eyes), but there is two big problems:
+
+1. Lack of testing in different mobile environments, and lack of formal responsiveness testing at all.
+2. Inconsistent responsiveness for font size. The font sizes do not change, meaning that if a title exceeds the expected page size, the page simply expands. This is not good because it makes the page movement bad since it moves left and right at the same time :[
+
+## Idea 3 (11/29/2024)
+
+Emoji support. Now, hear me out... OK, but emojis are pretty fun and can convey emotions better than just text. I guess images also do that, but emojis are cooler...
+
+## Idea 4 (11/29/2024)
+
+Drop-down support. Writing this idea page also leads me to want a better way to store ideas, or long lists where each bullet point has something in common.
+I think drop-down would be great for this because that way I could organize my ideas into different days. I could then display each day that I make an idea,
+and have a drop-down menu to display each idea's title. Then, each title could be clicked to display the idea itself on a box on the side. Of course on mobile it 
+would look different, but you get my point.
+
+## Idea 5 (11/29/2024)
+
+Automatic scroll-down with an index at the top. I know this is easy but it is a convenient feature nonetheless!
+
+## Idea 6 (11/29/2024)
+
+Better image responsiveness. The current responsiveness for text is OK, but images are awful on this website as of 11/29/2024. Basically, I want images to automatically resize
+and stay within the confines of my as it is displayed. That is not currently happening and it hinders my content creation without having to specify the sizes
+of the images. It makes my writing a lot slower when I have to worry about that. So, I want better responsiveness so I can be lazy and just write!
+
+## Idea 7 (11/29/2024)
+
+A kind of blog-type support. I want the following:
+
+1. Users can login with Google Accounts only (for security and accountability, etc).
+2. Users can leave comments on blogs where I place a comment box
+3. Users can like and share my website
+4. Users can make their own posts with an editor
+    - Dangerous for security, but I would have to find a secure solution
+
+## Idea 8 (11/29/2024)
+
+Improve the banner. Let's be honest, it's not just good as of today. I have to improve it:
+
+1. Make it prettier, better the content, maybe different image or no image at all

@@ -2,11 +2,9 @@ import React, { Component } from "react";
 import Header from "../../components/Header";
 import MarkdownSection from "../../components/MarkdownSection";
 
-import MDXContent from "./Tutoring.mdx";
+import MDXContent from "./WebsiteIdeas.mdx";
 
-import "../../styles/Markdown.css";
-
-class Tutoring extends Component {
+class WebsiteIdeas extends Component {
     render() {
         return (
             <div id="main">
@@ -17,4 +15,4 @@ class Tutoring extends Component {
     }
 }
 
-export default Tutoring;
+export default WebsiteIdeas;

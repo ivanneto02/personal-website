@@ -1,3 +1,5 @@
+
+
 # Markdown: Syntax
 
 *   [Overview](#overview)
@@ -20,11 +22,19 @@
     *   [Backslash Escapes](#backslash)
     *   [Automatic Links](#autolink)
 
-
 **Note:** This document is itself written using Markdown; you
 can [see the source for it by adding '.text' to the URL](/projects/markdown/syntax.text).
 
 ----
+
+```python
+def myFunction(helloWorld):
+    print(helloWorld)
+    ...
+    break
+    if (helloWorld):
+        print("hihi\n\n")
+```
 
 ## Overview
 
@@ -224,8 +234,6 @@ to be indented *twice* -- 8 spaces or two tabs:
 
 *   A list item with a code block:
 
-        <code goes here>
-
 ### Code Blocks
 
 Pre-formatted code blocks are used for writing about programming or
@@ -255,7 +263,7 @@ easy to include example HTML source code using Markdown -- just paste
 it and indent it, and Markdown will handle the hassle of encoding the
 ampersands and angle brackets. For example, this:
 
-    <div class="footer">
+    <div className="footer">
         &copy; 2004 Foo Corporation
     </div>
 
