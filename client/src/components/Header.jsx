@@ -1,7 +1,5 @@
 import React, { Component } from "react"
 
-import Avatar from "./Avatar";
-
 import "../styles/Header.css";
 
 import SideBarMobile from "./SideBarMobile";

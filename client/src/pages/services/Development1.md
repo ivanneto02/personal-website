@@ -32,9 +32,7 @@ They must be followed strictly to ensure accountability and correct expectations
 
 #### Maintenance Option
 
-The option to maintain your product month-to-month. Websites often break, causing your products to be unseen. This option ensures that you are satisfied with the development work by fixing any issues given a small fee (typically less than $6 per month). 
-
-
+The option to maintain your product month-to-month. Websites often break, causing your products to be unseen. This option ensures that you are satisfied with the development work by fixing any issues given a small fee (typically less than $6 per month).
 
 If you want me to develop something for you - website, game, or any such product - we will make a contract based on your needs and the skill required to create the product.
 

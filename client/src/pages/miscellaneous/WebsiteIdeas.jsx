@@ -2,19 +2,17 @@ import React, { Component } from "react";
 import Header from "../../components/Header";
 import MarkdownSection from "../../components/MarkdownSection";
 
-import raw from "./test.md";
+import raw from "./WebsiteIdeas.md";
 
-import Test from "./Test";
-
-class MarkdownTest extends Component {
+class WebsiteIdeas extends Component {
     render() {
         return (
             <div id="main">
-                <Header />
-                <MarkdownSection/>
+                    <Header />
+                    <MarkdownSection raw={raw}/>
             </div>
         );
     }
 }
 
-export default MarkdownTest;
+export default WebsiteIdeas;

@@ -1,28 +1,17 @@
-import React, { Component } from "react";
+import React, { lazy, Component, Suspense } from 'react';
 
-import Markdown from "react-markdown";
+const MDXContent = lazy(() => importMDX('../pages/markdown_test/Test2.mdx'));
+
+import { MDXProvider } from "@mdx-js/react";
+
+import { importMDX } from "mdx.macro";
 
 class MarkdownSection extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            content: "# Loading..."
-        }
-    }
-
-    componentDidMount() {
-        fetch(this.props.raw).then( (res) => res.text() ).then( (txt) => { this.setState({content: txt})} )
-    }
-
     render() {
         return (
-            <section className="wholeMarkdownSection">
-                <header className="content">
-                    <Markdown>
-                        {this.state.content}
-                    </Markdown>
-                </header>
-            </section>
+            <MDXProvider>
+                <MDXContent/>
+            </MDXProvider>
         );
     }
 }

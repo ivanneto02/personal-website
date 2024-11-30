@@ -12,7 +12,7 @@ import {
     Home, Hypixel, Manacube, ModsClients, PluginsServers,
     ClientStories, MonetaryAnalysis, Projects, TipsAndTricks,
     BriefEntries, LongEntries, Pets,ThoughtsIdeas, Travel,
-    Visuals, Tutoring, Development, MarkdownTest
+    Visuals, Tutoring, Development, MarkdownTest, WebsiteIdeas
 } from "../pages/";
 
 // Old code keep just in case
@@ -24,9 +24,6 @@ class App extends Component {
                     <div id="wrapper">
 
                         <Routes>
-                            {/* Test markdown */}
-                            <Route path="/mdtest/" element={<MarkdownTest/>}/>
-                    
                             {/* Home page */}
                             <Route path='/' element={<Home/>} />
 
@@ -56,6 +53,10 @@ class App extends Component {
 
                             {/* Universal Route - anything other than given Routes */}
                             <Route path="*" element={<Home/>} />
+
+                            {/* Test markdown */}
+                            <Route path="/mdtest/" element={<MarkdownTest/>}/>
+                            <Route path="/websiteideas" element={<WebsiteIdeas/>}/>
 
                         </Routes>
                         <SideBar/>
