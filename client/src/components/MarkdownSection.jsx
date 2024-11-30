@@ -1,17 +1,18 @@
-import React, { lazy, Component, Suspense } from 'react';
+import React, { Component } from "react";
 
-const MDXContent = lazy(() => importMDX('../pages/markdown_test/Test2.mdx'));
-
-import { MDXProvider } from "@mdx-js/react";
-
-import { importMDX } from "mdx.macro";
-
+/*
+Holds the setup for making MDX content available to the pages, without needing to specify
+that each markdown section is of "wholeMarkdownSection" class. It helps because I don't want to
+specify to include a new section every time within each page. I may find a simpler setup later on.
+*/
 class MarkdownSection extends Component {
     render() {
         return (
-            <MDXProvider>
-                <MDXContent/>
-            </MDXProvider>
+            <section className="wholeMarkdownSection">
+                <header className="content">
+                    {this.props.MDXContent}
+                </header>
+            </section>
         );
     }
 }

@@ -11,5 +11,8 @@
 .halfMarkdownSection {
     width: 50%;
     /* background-color: ; */
+}
+
+.halfMarkdownSection + .halfMarkdownSection {
     margin-left: 1em;
 }

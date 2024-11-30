@@ -2,14 +2,14 @@ import React, { Component } from "react";
 import Header from "../../components/Header";
 import MarkdownSection from "../../components/MarkdownSection";
 
-import raw from "./WebsiteIdeas.md";
+import MDXContent from "./WebsiteIdeas.mdx";
 
 class WebsiteIdeas extends Component {
     render() {
         return (
             <div id="main">
                     <Header />
-                    <MarkdownSection raw={raw}/>
+                    <MarkdownSection MDXContent={<MDXContent/>}/>
             </div>
         );
     }
