@@ -34,6 +34,7 @@ const App = () => {
         <div className="wrapper">
             <div id="wrapper">
                 <BrowserRouter>
+                    <HighLightOnRouteChange/>
                     <Routes>
                         {/* Home page */}
                         <Route path='/' element={<Home/>} />
