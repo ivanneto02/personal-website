@@ -1,7 +1,54 @@
-.dropDownSection {
-    
+div.dropDownSectionContent {
+    visibility: hidden;
+    max-height: 0;
+    width: 0%;
+    height: 0%;
 }
 
-.dropDownSection .active {
-    
+.dropDownSectionHeader {
+    padding: 0.3em 0.3em 0.3em 1em;
+    border: solid 1px rgb(42, 42, 42);
+}
+
+.dropDownSection span {
+    display: inline-block;
+    margin-right: 1em;
+    vertical-align: middle;
+}
+
+.dropDownSectionHeader h2 {
+    display: inline-block;
+    justify-self: left;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.dropDownSectionHeader i {
+    text-align: right;
+    display: inline-block;
+    font-size: 1em;
+    color: rgb(42, 42, 42);
+    vertical-align: middle;
+    width: 50%;
+}
+
+div.dropDownSectionContent.active {
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    padding: 1em 3em 3em 3em;
+}
+
+.dropDownSection {
+    width: 100%;
+    height: 100%;
+    max-height: 3em;
+}
+
+.dropDownSection.active {
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    max-height: none;
 }
