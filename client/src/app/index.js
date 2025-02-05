@@ -14,7 +14,8 @@ import {
     Home, Hypixel, Manacube, ModsClients, PluginsServers,
     ClientStories, MonetaryAnalysis, Projects, TipsAndTricks,
     BriefEntries, LongEntries, Pets,ThoughtsIdeas, Travel,
-    Visuals, Tutoring, Development, MarkdownTest, WebsiteIdeas
+    Visuals, Tutoring, Development, MarkdownTest, WebsiteIdeas,
+    Server, Survival
 } from "../pages/";
 
 const HighLightOnRouteChange = () => {
@@ -49,6 +50,8 @@ const App = () => {
                         <Route path="/modsclients" element={<ModsClients/>} />
                         <Route path="/plugins" element={<PluginsServers/>} />
                         <Route path="/visuals" element={<Visuals/>} />
+                        <Route path="/survival" element={<Survival/>} />
+                        <Route path="/server" element={<Server/>} />
 
                         {/* Freelance Routes */}
                         <Route path="/projects" element={<Projects/>} />

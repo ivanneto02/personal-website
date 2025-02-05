@@ -36,8 +36,8 @@ const Menu = () => {
                         onClick={() => setActive1(!active1)}
                     >Minecraft</span>
                     <ul id="submenu">
-                        <li><Link to="/survival/">Survival</Link></li>
-                        <li><Link to="/server/">My server (coming soon)</Link></li>
+                        <li><Link to="/survival/">Personal Survival</Link></li>
+                        <li><Link to="/server/">Survival Multiplayer</Link></li>
                         <li><Link to="/manacube">Manacube</Link></li>
                         <li><Link to="/hypixel">Hypixel</Link></li>
                         {/* <li><Link to="/modsclients">Mods/Clients</Link></li>

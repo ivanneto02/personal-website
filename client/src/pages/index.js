@@ -6,6 +6,7 @@ import { Home } from "./homepage/index";
 import { Tutoring, Development } from "./services";
 import { MarkdownTest  } from "./markdown_test";
 import { WebsiteIdeas } from "./miscellaneous";
+import { Survival, Server } from "./minecraft/index";
 
 // Export all components from all modules
 export {
@@ -14,5 +15,5 @@ export {
     NothingHere,
     BriefEntries, LongEntries, Pets, ThoughtsIdeas, Travel,
     Home, Visuals, Tutoring, Development,
-    MarkdownTest, WebsiteIdeas
+    MarkdownTest, WebsiteIdeas, Server, Survival
 };
