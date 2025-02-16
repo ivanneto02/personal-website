@@ -17,7 +17,9 @@ import HalfContainer from "./HalfContainer"
 import SideBarMobile from "./SideBarMobile"
 import DropDownSection from "./DropDownSection"
 
-export { AllTest, Contact, CoolStuff, Footer, Header, MajorPosts,
-Menu, MiniPosts, RelevantArticles, Scripts, SearchBar, SideBar,
-SideBarButton, PricingTag, MarkdownSection, HalfContainer, SideBarMobile,
-DropDownSection }
+export {
+        AllTest, Contact, CoolStuff, Footer, Header, MajorPosts,
+        Menu, MiniPosts, RelevantArticles, Scripts, SearchBar, SideBar,
+        SideBarButton, PricingTag, MarkdownSection, HalfContainer, SideBarMobile,
+        DropDownSection
+}

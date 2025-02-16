@@ -18,3 +18,7 @@
 .halfMarkdownSection + .halfMarkdownSection {
     margin-left: 1em;
 }
+
+.articleImage {
+    width: 100%;
+}

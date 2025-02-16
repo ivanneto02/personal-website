@@ -6,15 +6,15 @@ that each markdown section is of "wholeMarkdownSection" class. It helps because 
 specify to include a new section every time within each page. I may find a simpler setup later on.
 */
 class MarkdownSection extends Component {
-    render() {
-        return (
-            <section className="wholeMarkdownSection">
-                <header className="content">
-                    {<this.props.MDXContent/>}
-                </header>
-            </section>
-        );
-    }
+        render() {
+                return (
+                        <section className="wholeMarkdownSection">
+                                <header className="content">
+                                        {<this.props.MDXContent />}
+                                </header>
+                        </section>
+                );
+        }
 }
 
 export default MarkdownSection;

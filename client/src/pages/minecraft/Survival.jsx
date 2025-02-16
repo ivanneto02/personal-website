@@ -4,16 +4,15 @@ import MarkdownSection from "../../components/MarkdownSection";
 
 import MDXContent from "./Survival.mdx";
 
-class WebsiteIdeas extends Component {
+class Survival extends Component {
     render() {
         return (
             <div id="main">
                 <Header />
-                <MarkdownSection MDXContent={MDXContent}/>
+                <MarkdownSection MDXContent={MDXContent} />
             </div>
         );
     }
 }
 
-export default WebsiteIdeas;
-
+export default Survival;
