@@ -105,8 +105,40 @@ video {
   vertical-align: baseline;
 }
 
-ul a {
+.content ul a {
   text-decoration: underline;
+}
+
+.content ul li {
+  list-style-type: "";
+}
+
+.content ul li:hover {
+  transition: 0.1s;
+  list-style-type: "➡️";
+  padding-inline-start: 1em;
+}
+
+.content ul li {
+  list-style-type: "";
+}
+
+.content ul li:hover {
+  transition: 0.2s;
+  list-style-type: "➡️";
+  padding-inline-start: 1em;
+  background-color: #1c1c1c;
+}
+
+
+.content ol li {
+  list-style-type: "";
+}
+
+.content ol li:hover {
+  transition: 0.1s;
+  list-style-type: "➡️";
+  padding-inline-start: 1em;
 }
 
 ol a {
