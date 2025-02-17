@@ -6,7 +6,7 @@ import "../styles/Menu.css";
 const Menu = () => {
         const [active1, setActive1] = useState(false);
         const [active2, setActive2] = useState(false);
-        const [active3, setActive3] = useState(false);
+        // const [active3, setActive3] = useState(false);
         const [active4, setActive4] = useState(false);
         const [active5, setActive5] = useState(true);
         const [active6, setActive6] = useState(false);
@@ -57,20 +57,20 @@ const Menu = () => {
                                                 {/* <li><Link to="/monetaryanalysis">Monetary Analysis</Link></li> */}
                                         </ul>
                                 </li>
-                                <li>
+                                {/* <li>
                                         <span
                                                 className={`opener ${active3 ? "active" : ""}`}
                                                 onClick={() => setActive3(!active3)}
                                         >Personal Blog</span>
                                         <ul id="submenu">
                                                 <li><Link to="/blog">Coming soon</Link></li>
-                                                {/* <li><Link to="/briefentries">Brief entries</Link></li> */}
-                                                {/* <li><Link to="/longentries">Long entries</Link></li> */}
-                                                {/* <li><Link to="/thoughtsideas">Thoughts/Ideas</Link></li> */}
-                                                {/* <li><Link to="/travel">Travel</Link></li> */}
-                                                {/* <li><Link to="/pets">Pets</Link></li> */}
+                                                <li><Link to="/briefentries">Brief entries</Link></li>
+                                                <li><Link to="/longentries">Long entries</Link></li>
+                                                <li><Link to="/thoughtsideas">Thoughts/Ideas</Link></li>
+                                                <li><Link to="/travel">Travel</Link></li>
+                                                <li><Link to="/pets">Pets</Link></li>
                                         </ul>
-                                </li>
+                                </li >*/}
                                 <li>
                                         <span
                                                 className={`opener ${active6 ? "active" : ""}`}
@@ -102,8 +102,8 @@ const Menu = () => {
                                                 <li><Link to="/homepage">Coming soon</Link></li>
                                         </ul>
                                 </li>
-                        </ul>
-                </nav>
+                        </ul >
+                </nav >
         );
 }
 
