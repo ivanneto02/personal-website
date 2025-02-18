@@ -105,6 +105,11 @@ video {
   vertical-align: baseline;
 }
 
+.content a {
+  text-decoration: underline;
+  color: #8666bd;
+}
+
 .content ul a {
   text-decoration: underline;
 }
