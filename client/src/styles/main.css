@@ -136,6 +136,15 @@ video {
   background-color: #1c1c1c;
 }
 
+.content a.card {
+  text-decoration: none;
+  transition: 0.1s;
+}
+
+.content a.card:hover {
+  transition: 0.1s;
+  opacity: 70%;
+}
 
 .content ol li {
   list-style-type: "";
