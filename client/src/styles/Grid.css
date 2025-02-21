@@ -1,0 +1,17 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.griditem {
+    width: 100%;
+    text-align: center;
+    background-color: red;
+}
+
+@media (max-width: 992px) {
+    .grid {
+        grid-template-columns: auto;
+    }
+}
