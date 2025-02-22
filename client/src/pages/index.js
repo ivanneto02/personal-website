@@ -7,6 +7,7 @@ import { Tutoring, Development } from "./services";
 import { MarkdownTest } from "./markdown_test";
 import { WebsiteIdeas } from "./miscellaneous";
 import { Survival, SurvivalMultiplayer, SurvivalMultiplayerValley, SurvivalMultiplayerCherry } from "./minecraft/index";
+import { cs120b } from "./classes/index";
 
 // Export all components from all modules
 export {
@@ -15,5 +16,6 @@ export {
         NothingHere,
         BriefEntries, LongEntries, Pets, ThoughtsIdeas, Travel,
         Home, Visuals, Tutoring, Development,
-        MarkdownTest, WebsiteIdeas, Survival, SurvivalMultiplayer, SurvivalMultiplayerCherry, SurvivalMultiplayerValley
+        MarkdownTest, WebsiteIdeas, Survival, SurvivalMultiplayer, SurvivalMultiplayerCherry, SurvivalMultiplayerValley,
+        cs120b
 };

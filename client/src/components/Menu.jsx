@@ -57,6 +57,15 @@ const Menu = () => {
                                                 {/* <li><Link to="/monetaryanalysis">Monetary Analysis</Link></li> */}
                                         </ul>
                                 </li>
+                                <li>
+                                        <span
+                                                className={`opener ${active7 ? "active" : ""}`}
+                                                onClick={() => setActive7(!active7)}>
+                                                Videos</span>
+                                        <ul id="submenu">
+                                                <li><Link to="/cs120b">CS120B</Link></li>
+                                        </ul>
+                                </li>
                                 {/* <li>
                                         <span
                                                 className={`opener ${active3 ? "active" : ""}`}
