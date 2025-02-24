@@ -15,7 +15,7 @@ import {
         ClientStories, MonetaryAnalysis, Projects, TipsAndTricks,
         BriefEntries, LongEntries, Pets, ThoughtsIdeas, Travel,
         Visuals, Tutoring, Development, MarkdownTest, WebsiteIdeas,
-        Survival, SurvivalMultiplayer, SurvivalMultiplayerCherry, SurvivalMultiplayerValley,
+        Survival, SurvivalMultiplayer, Cherry, Valley,
         Cs120b
 } from "../pages/";
 
@@ -53,8 +53,9 @@ const App = () => {
                                                 <Route path="/visuals" element={<Visuals />} />
                                                 <Route path="/survival" element={<Survival />} />
                                                 <Route path="/server" element={<SurvivalMultiplayer />} />
-                                                <Route path="/server/valley" element={<SurvivalMultiplayerValley />} />
-                                                <Route path="/server/cherry" element={<SurvivalMultiplayerCherry />} />
+                                                <Route path="/server/valley" element={<Valley />} />
+                                                <Route path="/server/cherry" element={<Cherry />} />
+                                                { /* <Route path="/server/cherry/ironfarm" element={<CherryIronFarm />} /> */}
 
                                                 {/* Freelance Routes */}
                                                 <Route path="/projects" element={<Projects />} />

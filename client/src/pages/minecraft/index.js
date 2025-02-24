@@ -5,8 +5,8 @@ import PluginsServers from "./PluginsServers";
 import Visuals from "./Visuals";
 import Server from "./Server";
 import Survival from "./Survival";
-import SurvivalMultiplayer from "./SurvivalMultiplayer";
-import SurvivalMultiplayerCherry from "./SurvivalMultiplayerCherry";
-import SurvivalMultiplayerValley from "./SurvivalMultiplayerValley";
+import { SurvivalMultiplayer } from "./SurvivalMultiplayer";
+import { Cherry } from "./SurvivalMultiplayer";
+import { Valley } from "./SurvivalMultiplayer";
 
-export { Hypixel, Manacube, ModsClients, PluginsServers, Visuals, Survival, Server, SurvivalMultiplayer, SurvivalMultiplayerCherry, SurvivalMultiplayerValley };
+export { Hypixel, Manacube, ModsClients, PluginsServers, Visuals, Survival, Server, SurvivalMultiplayer, Cherry, Valley };
