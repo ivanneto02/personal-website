@@ -11,6 +11,7 @@ const Menu = () => {
         const [active5, setActive5] = useState(true);
         const [active6, setActive6] = useState(false);
         const [active7, setActive7] = useState(false);
+        const [active8, setActive8] = useState(false);
 
         return (
                 <nav id="menu">
@@ -59,8 +60,8 @@ const Menu = () => {
                                 </li>
                                 <li>
                                         <span
-                                                className={`opener ${active7 ? "active" : ""}`}
-                                                onClick={() => setActive7(!active7)}>
+                                                className={`opener ${active8 ? "active" : ""}`}
+                                                onClick={() => setActive8(!active8)}>
                                                 Videos</span>
                                         <ul id="submenu">
                                                 <li><Link to="/cs120b">CS120B</Link></li>
