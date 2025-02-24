@@ -16,7 +16,7 @@ import {
         BriefEntries, LongEntries, Pets, ThoughtsIdeas, Travel,
         Visuals, Tutoring, Development, MarkdownTest, WebsiteIdeas,
         Survival, SurvivalMultiplayer, SurvivalMultiplayerCherry, SurvivalMultiplayerValley,
-        cs120b
+        Cs120b
 } from "../pages/";
 
 const HighLightOnRouteChange = () => {
@@ -63,7 +63,7 @@ const App = () => {
                                                 <Route path="/monetaryanalysis" element={<MonetaryAnalysis />} />
 
                                                 {/* classes Routes */}
-                                                <Route path="/cs120b" element={<cs120b />} />
+                                                <Route path="/cs120b" element={<Cs120b />} />
 
                                                 {/* Personal Blog Routes */}
                                                 <Route path="/briefentries" element={<BriefEntries />} />

@@ -4,7 +4,7 @@ import MarkdownSection from "../../components/MarkdownSection";
 
 import MDXContent from "./cs120b.mdx";
 
-class cs120b extends Component {
+class Cs120b extends Component {
         render() {
                 return (
                         <div id="main">
@@ -15,4 +15,4 @@ class cs120b extends Component {
         }
 }
 
-export default cs120b;
+export default Cs120b;
