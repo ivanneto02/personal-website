@@ -29,7 +29,7 @@ function VideoLoader() {
         return (
                 <div className="grid">
                         {data.map((item) => (
-                                <a href={"https://youtu.be/" + item.id} target="_blank" rel="noreferrer" className="griditem emphasis4 card dark">
+                                <a key={item.id} href={"https://youtu.be/" + item.id} target="_blank" rel="noreferrer" className="griditem emphasis4 card dark">
                                         <h3>{item.name}</h3>
                                         <p>Posted: {item.date}</p>
                                         <img alt={item.name} className="articleImage" src={"http://img.youtube.com/vi/" + item.id + "/0.jpg"}></img>
@@ -38,6 +38,6 @@ function VideoLoader() {
                         ))}
                 </div>
         );
-} 
+}
 
 export default VideoLoader;
