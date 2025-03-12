@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import "../styles/SideBarButton.css";
+import "@styles/SideBarButton.css";
 
 const Button = styled.a`
     left: ${props => props.clicked ? "0em" : "24em"};
@@ -30,14 +30,14 @@ const Button = styled.a`
 // }
 
 const SideBarButton = props => {
-    return (
-        <Button
-            onClick={props.onClick}
-            clicked={props.clicked}
-            id="toggle_button"
-        >
-        </Button>
-    );
+        return (
+                <Button
+                        onClick={props.onClick}
+                        clicked={props.clicked}
+                        id="toggle_button"
+                >
+                </Button>
+        );
 }
 
 

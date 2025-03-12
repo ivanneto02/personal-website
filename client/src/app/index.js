@@ -3,21 +3,13 @@ import React, { useEffect } from "react";
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 
 // import components
-import SideBar from "../components/SideBar";
+import SideBar from "@components/SideBar";
 
 import "highlight.js/styles/github-dark.css";
 
 import hljs from "highlight.js";
 
-// import the pages
-import {
-        Home, Hypixel, Manacube, ModsClients, PluginsServers,
-        ClientStories, MonetaryAnalysis, Projects, TipsAndTricks,
-        BriefEntries, LongEntries, Pets, ThoughtsIdeas, Travel,
-        Visuals, Tutoring, Development, MarkdownTest, WebsiteIdeas,
-        Survival, SurvivalMultiplayer, Cherry, Valley,
-        Cs120b
-} from "../pages/";
+import * as Components from "../pages";
 
 const HighLightOnRouteChange = () => {
 
@@ -39,46 +31,46 @@ const App = () => {
                                         <HighLightOnRouteChange />
                                         <Routes>
                                                 {/* Home page */}
-                                                <Route path='/' element={<Home />} />
+                                                <Route path='/' element={<Components.Home />} />
 
                                                 {/* Services Routes */}
-                                                <Route path="/tutoring" element={<Tutoring />} />
-                                                <Route path="/development" element={<Development />} />
+                                                <Route path="/tutoring" element={<Components.Tutoring />} />
+                                                <Route path="/development" element={<Components.Development />} />
 
                                                 {/* Minecraft Routes */}
-                                                <Route path="/hypixel" element={<Hypixel />} />
-                                                <Route path="/manacube" element={<Manacube />} />
-                                                <Route path="/modsclients" element={<ModsClients />} />
-                                                <Route path="/plugins" element={<PluginsServers />} />
-                                                <Route path="/visuals" element={<Visuals />} />
-                                                <Route path="/survival" element={<Survival />} />
-                                                <Route path="/server" element={<SurvivalMultiplayer />} />
-                                                <Route path="/server/valley" element={<Valley />} />
-                                                <Route path="/server/cherry" element={<Cherry />} />
-                                                { /* <Route path="/server/cherry/ironfarm" element={<CherryIronFarm />} /> */}
+                                                <Route path="/hypixel" element={<Components.Hypixel />} />
+                                                <Route path="/manacube" element={<Components.Manacube />} />
+                                                <Route path="/modsclients" element={<Components.ModsClients />} />
+                                                <Route path="/plugins" element={<Components.PluginsServers />} />
+                                                <Route path="/visuals" element={<Components.Visuals />} />
+                                                <Route path="/survival" element={<Components.Survival />} />
+                                                <Route path="/server" element={<Components.SurvivalMultiplayer />} />
+                                                <Route path="/server/valley" element={<Components.Valley />} />
+                                                <Route path="/server/cherry" element={<Components.Cherry />} />
+                                                <Route path="/server/cherry/ironfarm" element={<Components.CherryIronFarm />} />
 
                                                 {/* Freelance Routes */}
-                                                <Route path="/projects" element={<Projects />} />
-                                                <Route path="/clientstories" element={<ClientStories />} />
-                                                <Route path="/tipsandtricks" element={<TipsAndTricks />} />
-                                                <Route path="/monetaryanalysis" element={<MonetaryAnalysis />} />
+                                                <Route path="/projects" element={<Components.Projects />} />
+                                                <Route path="/clientstories" element={<Components.ClientStories />} />
+                                                <Route path="/tipsandtricks" element={<Components.TipsAndTricks />} />
+                                                <Route path="/monetaryanalysis" element={<Components.MonetaryAnalysis />} />
 
                                                 {/* classes Routes */}
-                                                <Route path="/cs120b" element={<Cs120b />} />
+                                                <Route path="/cs120b" element={<Components.Cs120b />} />
 
                                                 {/* Personal Blog Routes */}
-                                                <Route path="/briefentries" element={<BriefEntries />} />
-                                                <Route path="/longentries" element={<LongEntries />} />
-                                                <Route path="/thoughtsideas" element={<ThoughtsIdeas />} />
-                                                <Route path="/travel" element={<Travel />} />
-                                                <Route path="/pets" element={<Pets />} />
+                                                <Route path="/briefentries" element={<Components.BriefEntries />} />
+                                                <Route path="/longentries" element={<Components.LongEntries />} />
+                                                <Route path="/thoughtsideas" element={<Components.ThoughtsIdeas />} />
+                                                <Route path="/travel" element={<Components.Travel />} />
+                                                <Route path="/pets" element={<Components.Pets />} />
 
                                                 {/* Universal Route - anything other than given Routes */}
-                                                <Route path="*" element={<Home />} />
+                                                <Route path="*" element={<Components.Home />} />
 
                                                 {/* Test markdown */}
-                                                <Route path="/mdtest/" element={<MarkdownTest />} />
-                                                <Route path="/websiteideas" element={<WebsiteIdeas />} />
+                                                <Route path="/mdtest/" element={<Components.MarkdownTest />} />
+                                                <Route path="/websiteideas" element={<Components.WebsiteIdeas />} />
 
                                         </Routes>
                                         <SideBar />

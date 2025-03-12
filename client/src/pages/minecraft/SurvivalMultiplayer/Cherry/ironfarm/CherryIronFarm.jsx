@@ -1,15 +1,10 @@
 import React, { Component } from "react";
-
 import Header from "@components/Header";
+import MarkdownSection from "@components/MarkdownSection";
 
-import "@styles/Pricing.css";
-import "@styles/main.css";
+import MDXContent from "./CherryIronFarm.mdx";
 
-import { MarkdownSection } from "@components";
-
-import MDXContent from "./Development.mdx";
-
-class Development extends Component {
+class CherryIronFarm extends Component {
     render() {
         return (
             <div id="main">
@@ -20,4 +15,4 @@ class Development extends Component {
     }
 }
 
-export default Development;
+export default CherryIronFarm;
