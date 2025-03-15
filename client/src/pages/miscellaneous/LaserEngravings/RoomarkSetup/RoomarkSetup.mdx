@@ -1,0 +1,144 @@
+# Roomark Laser Engraving Machine
+
+## Contents
+
+- [Setup](#setup)
+	- [Step 1](#setup-step1)
+	- [Step 2](#setup-step2)
+	- [Step 3](#setup-step3)
+- [Problems](#problems)
+- [Engraving Accuracy Test](#engraving-accuracy-test)
+- [First Engraving](#engraving-results)
+- [Conclusion](#conclusion)
+---
+
+
+<a name="setup"></a>
+## Setup
+
+In theory, setting up the Roomark Laser Engraving Machine should be a straightforward process. The setup itself took about 10 minutes, but getting around the SC7A20 chipo which detects acceleration and tilt angle values.
+
+For common questions regarding LaserGRBL setup, check out the <a href="https://lasergrbl.com/faq/" target="_blank" rel="noreferrer">LaserGRBL FAQ</a>.
+
+<a name="setup-step1"></a>
+### Step 1. Connect Roomark Laser Engraving Machine to rated power supply
+
+The power supply for this engraving machine must be at least 12V 5A.
+
+<div className="halfgrid">
+	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
+		### Power Supply
+		<img className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/power_supply.jpg" alt="" width="70%"></img>
+	</div>
+</div>
+
+<a name="setup-step2"></a>
+### Step 2. Connect Roomark Laser Engraving Machine to USB port on computer/laptop
+
+<div className="halfgrid">
+	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
+		### Side of the engraver
+		<img className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/plug2.jpg" alt="" width="70%"></img>
+	</div>
+	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
+		### Specs
+		<img className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/plug3.jpg" alt="" width="70%"></img>
+	</div>
+</div>
+
+If you are using a laptop, ensure it is plugged in and charging.
+
+<a name="setup-step3"></a>
+### Step 3. Download LaserGRBL and Install WCH341 Drivers
+
+<div className="halfgrid">
+	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
+		### Driver Install
+
+		- #### Tools > CH340 Drivers
+
+		<img className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/ch340_drivers.jpg" alt="" width="70%"></img>
+	</div>
+	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
+		### Driver Install
+
+		- #### Tools > CH340 Drivers
+
+		<img className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/ch340_drivers2.jpg" alt="" width="70%"></img>
+	</div>
+</div>
+
+
+<a name="setup-step4"></a>
+### Step 4. Configure GRBL for Roomark
+
+
+<div className="halfgrid">
+	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
+		### Find Configuration
+		<img className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/grbl_config2.jpg" alt="" width="70%"></img>
+	</div>
+	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
+		### Configuration
+		- #### Defines GRBL configuration used by Roomark Engraving Machine
+		<img className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/grbl_config1.jpg" alt="" width="70%"></img>
+		- #### Ensure that $53 is set to 55 or more, in multiples or 5. 
+		<img className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/grbl_config3.jpg" alt="" width="70%"></img>
+
+		- Note: Initially, I had trouble getting the engraver to work due to tilt angle and shock and movement detection. This sensor activated almost every time the engraver moved. After troubleshooting, I set the $53 value to 55, and the engraver began working. This is an essential step, and engraving will not work without it.
+	</div>
+</div>
+
+<a name="engraving-accuracy-test"></a>
+## Engraving Accuracy Test
+
+LaserGRBL provides an .svg file that can be used to test the accuracy of the engraver. This is very useful because it can give some insight into the machine's calibration.
+
+<div className="halfgrid">
+	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
+		### Generating Test
+		<img className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/generate_test1.jpg" alt="" width="70%"></img>
+	</div>
+	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
+		### Configuration
+		<img className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/generate_test2.jpg" alt="" width="70%"></img>
+	</div>
+</div>
+
+
+<a name="engraving-results"></a>
+## Engraving Results
+
+<div className="halfgrid">
+	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
+		### First Test Engraving
+		<img className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/design_engraved3.jpg" alt="" width="70%"></img>
+	</div>
+	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
+		### Website Logo!
+		<img className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/design_engraved.jpg" alt="" width="70%"></img>
+	</div>
+	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
+		### First Test Engraving
+		<video className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/laser_closeup1.mp4" alt="" width="70%" controls></video>
+	</div>
+	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
+		### First Test Engraving
+		<video className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/design_on_computer.mp4" alt="" width="70%" controls></video>
+	</div>
+	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
+		### First Test Engraving
+		<video className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/laser_closeup4.mp4" alt="" width="70%" controls></video>
+	</div>
+	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
+		### First Test Engraving
+		<video className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/machine_view1.mp4" alt="" width="70%" controls></video>
+	</div>
+</div>
+
+<a name="conclusion"></a>
+## Conclusion
+
+Overall, it was a very fun experience, though frustrating at times due to Roomark's lack of documentation on their product! The setup took several hours because I did not know how to fix the tilt angle and shock and movement detection triggers.
+
+I will continue experimenting with Roomark's Laser Engraving Machine to create cool art pieces, and perhaps even find new uses for laser engraving.

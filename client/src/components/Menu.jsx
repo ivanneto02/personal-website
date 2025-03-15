@@ -109,11 +109,12 @@ const Menu = () => {
                                         <ul id="submenu">
                                                 <li><Link to="/websiteideas">Website Ideas</Link></li>
                                                 <li><Link to="/mdtest">Markdown Test</Link></li>
+                                                <li><Link to="/laser-engravings">Laser Engraving</Link></li>
                                                 <li><Link to="/homepage">Coming soon</Link></li>
                                         </ul>
                                 </li>
                         </ul >
-                </nav >
+                </nav>
         );
 }
 

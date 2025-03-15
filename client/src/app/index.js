@@ -68,9 +68,11 @@ const App = () => {
                                                 {/* Universal Route - anything other than given Routes */}
                                                 <Route path="*" element={<Components.Home />} />
 
-                                                {/* Test markdown */}
+                                                {/* Miscellaneous Routes */}
                                                 <Route path="/mdtest/" element={<Components.MarkdownTest />} />
                                                 <Route path="/websiteideas" element={<Components.WebsiteIdeas />} />
+                                                <Route path="/laser-engravings" element={<Components.LaserEngravings />} />
+                                                <Route path="/laser-engravings/roomark" element={<Components.RoomarkSetup />} />
 
                                         </Routes>
                                         <SideBar />
