@@ -3,12 +3,13 @@
 ## Contents
 
 - [Setup](#setup)
-	- [Step 1](#setup-step1)
-	- [Step 2](#setup-step2)
-	- [Step 3](#setup-step3)
+	- [Step 1 - Connect Machine to Power Supply](#setup-step1)
+	- [Step 2 - Connect Machine to Computer](#setup-step2)
+	- [Step 3 - Download CH340 Drivers](#setup-step3)
+	- [Step 4 - Configure GRBL in LaserGRBL](#setup-step4)
 - [Problems](#problems)
 - [Engraving Accuracy Test](#engraving-accuracy-test)
-- [First Engraving](#engraving-results)
+- [Engraving Results](#engraving-results)
 - [Conclusion](#conclusion)
 ---
 
@@ -49,7 +50,7 @@ The power supply for this engraving machine must be at least 12V 5A.
 If you are using a laptop, ensure it is plugged in and charging.
 
 <a name="setup-step3"></a>
-### Step 3. Download LaserGRBL and Install WCH341 Drivers
+### Step 3. Download LaserGRBL and Install CH340 Drivers
 
 <div className="halfgrid">
 	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
@@ -89,6 +90,13 @@ If you are using a laptop, ensure it is plugged in and charging.
 	</div>
 </div>
 
+<a name="problems"></a>
+## Problems
+
+I ran into an issue where the machine was stopping due to tilt angle and shock and movement errors being thrown. For hours I troubleshot both LaserGRBL and the machine, with no success. On a whim, I modified setting $53 in LaserGRBL, which is proprietary to Roomark's Laser Engraver. The value must be a multiple of 5, and 55 or more. It relates to its detection of tilt angle.
+
+For more common issues, visit the <a href="https://lasergrbl.com/faq/" target="_blank" rel="noreferrer">LaserGRBL FAQ</a>.
+
 <a name="engraving-accuracy-test"></a>
 ## Engraving Accuracy Test
 
@@ -119,19 +127,19 @@ LaserGRBL provides an .svg file that can be used to test the accuracy of the eng
 		<img className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/design_engraved.jpg" alt="" width="70%"></img>
 	</div>
 	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
-		### First Test Engraving
+		### Engraving Closeup
 		<video className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/laser_closeup1.mp4" alt="" width="70%" controls></video>
 	</div>
 	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
-		### First Test Engraving
+		### LaserGRBL View While Engraving
 		<video className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/design_on_computer.mp4" alt="" width="70%" controls></video>
 	</div>
 	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
-		### First Test Engraving
+		### Engraving Website Logo
 		<video className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/laser_closeup4.mp4" alt="" width="70%" controls></video>
 	</div>
 	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
-		### First Test Engraving
+		### Engraving Test File
 		<video className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/machine_view1.mp4" alt="" width="70%" controls></video>
 	</div>
 </div>
