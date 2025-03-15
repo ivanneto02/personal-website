@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 
+client/public/images/
+
 node_modules/
 
 # testing
