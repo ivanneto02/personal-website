@@ -53,8 +53,8 @@ class Home extends Component {
                                         <header className="major">
                                                 <h2>This Website</h2>
                                         </header>
-                                        <div className="features">
-                                                <article>
+                                        <div className="features halfgrid">
+                                                <article className="halfgriditem">
                                                         <span className="icon solid fa-gamepad"></span>
                                                         <div className="content">
                                                                 <h3>Minecraft adventures</h3>
@@ -63,7 +63,7 @@ class Home extends Component {
                                                                         Sometimes I will play MunchyMC for some PVP action, though that is very limited.</p>
                                                         </div>
                                                 </article>
-                                                <article>
+                                                <article className="halfgriditem">
                                                         <span className="icon solid fa-rocket"></span>
                                                         <div className="content">
                                                                 <h3>Freelance work</h3>

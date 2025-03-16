@@ -1,115 +1,126 @@
 #header {
-    display: flex;
-    padding: 1em 0 1em 0;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    background-color: inherit;
-    padding-left: 0%;
-    justify-content: flex-end;
-    overflow: visible;
+	display: flex;
+	padding: 1em 0 1em 0;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+	background-color: inherit;
+	padding-left: 0%;
+	justify-content: flex-end;
+	overflow: hidden;
 }
 
 @media screen and (max-width: 738px) {
-    #header {
-        display: flex;
-        flex-direction: column;
-        position: sticky;
-        padding-top: 0;
-    }
+	#header {
+		display: flex;
+		flex-direction: column;
+		position: sticky;
+		padding-top: 0;
+	}
 
-    #header::after {
-        visibility: visible;
-    }
-      
-    #header .logo {
-        font-size: 1.25em;
-        margin: 0;
-    }
-    
-    #header .icons {
-        border-bottom: solid 1px white;
-        position: relative;
-        top: 0;
-    }
+	#header::after {
+		visibility: visible;
+	}
 
-    .avatarHolder {
-        align-self: start;
-        padding-top: 1em;
-        padding-left: 0;
-        margin-left: 0;
-        width: 50%;
-    }
+	#header .logo {
+		font-size: 1.25em;
+		margin: 0;
+	}
+
+	#header .icons {
+		border-bottom: solid 1px white;
+		position: relative;
+		top: 0;
+	}
+
+	.avatarHolder {
+		align-self: start;
+		padding-top: 1em;
+		padding-left: 0;
+		margin-left: 0;
+		width: 50%;
+	}
 }
 
 #header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    border-bottom: solid 5px #452678;
-    left: -2%; /* Extend the header 2% of the viewport width to the left */
-    height: 100%; /* Match the height of #header */
-    width: 100%; /* Adjust this value as needed to control how far it extends */
-    background-color: inherit; /* Matches the header background */
-    z-index: -1; /* Ensures it sits behind the header content */
+	content: '';
+	position: absolute;
+	top: 0;
+	border-bottom: solid 5px #452678;
+	left: -2%;
+	/* Extend the header 2% of the viewport width to the left */
+	height: 100%;
+	/* Match the height of #header */
+	width: 100%;
+	/* Adjust this value as needed to control how far it extends */
+	background-color: inherit;
+	/* Matches the header background */
+	z-index: -1;
+	/* Ensures it sits behind the header content */
 }
 
 #header::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    border-bottom: solid 5px #452678;
-    left: 2%; /* Extend the header 2% of the viewport width to the right */
-    height: 100%; /* Match the height of #header */
-    width: 100%; /* Adjust this value as needed to control how far it extends */
-    background-color: inherit; /* Matches the header background */
-    z-index: -1; /* Ensures it sits behind the header content */
+	content: '';
+	position: absolute;
+	top: 0;
+	border-bottom: solid 5px #452678;
+	left: 2%;
+	/* Extend the header 2% of the viewport width to the right */
+	height: 100%;
+	/* Match the height of #header */
+	width: 100%;
+	/* Adjust this value as needed to control how far it extends */
+	background-color: inherit;
+	/* Matches the header background */
+	z-index: -1;
+	/* Ensures it sits behind the header content */
 }
 
-#header > * {
-    -moz-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    margin-bottom: 0;
+#header>* {
+	-moz-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	margin-bottom: 0;
 }
 
 #header .logo {
-    border-bottom: 0;
-    color: inherit;
-    font-family: "Roboto Slab", serif;
-    font-size: 1.125em;
+	border-bottom: 0;
+	color: inherit;
+	font-family: "Roboto Slab", serif;
+	font-size: 1.125em;
 }
+
 #header .icons {
-    text-align: right;
+	text-align: right;
 }
-  
+
 /* Icons */
 ul.icons {
-    display: flex;
-    list-style: none;
-    cursor: default;
-    align-items: center;
-    padding-left: 0;
+	display: flex;
+	list-style: none;
+	cursor: default;
+	align-items: center;
+	padding-left: 0;
 }
 
 ul.icons li a {
-    width: 100%;
-    align-items: center;
+	width: 100%;
+	align-items: center;
 }
 
 ul.icons li {
-    padding: 0 2em 0 0;
+	padding: 0 2em 0 0;
 }
 
 ul.icons li:last-child {
-    padding-right: 0;
+	padding-right: 0;
 }
 
 ul.icons li .icon {
-    color: inherit;
+	color: inherit;
 }
 
 ul.icons li .icon:before {
-    font-size: 1.25em;
+	font-size: 1.25em;
 }
