@@ -7,7 +7,7 @@
 	background-color: inherit;
 	padding-left: 0%;
 	justify-content: flex-end;
-	overflow: hidden;
+	overflow: visible;
 }
 
 @media screen and (max-width: 738px) {
@@ -47,7 +47,7 @@
 	position: absolute;
 	top: 0;
 	border-bottom: solid 5px #452678;
-	left: -2%;
+	left: -2.5%;
 	/* Extend the header 2% of the viewport width to the left */
 	height: 100%;
 	/* Match the height of #header */
