@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { getImageUrl } from "@utils/images";
 
 // import components
 import Header from "@components/Header"
@@ -19,7 +20,7 @@ class Home extends Component {
                     about. */}
                                 <section id="banner">
                                         <div id="banner_image_holder">
-                                                <img id="banner_image" src="https://d3otrhxcw2ss5z.cloudfront.net/pfp.jpg" alt="" />
+                                                <img id="banner_image" src={getImageUrl("pfp.jpg")} alt="" />
                                                 <header id="banner_image_content">
                                                         <h2>Ivan Neto</h2>
                                                         <p>University of California, Riverside - Alumni</p>

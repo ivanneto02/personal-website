@@ -1,3 +1,5 @@
+import { getImageUrl } from "@utils/images"
+
 # Roomark Laser Engraving Machine
 
 ## Contents
@@ -29,7 +31,7 @@ The power supply for this engraving machine must be at least 12V 5A.
 <div className="halfgrid">
 	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
 		### Power Supply
-		<img className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/power_supply.jpg" alt="" width="70%"></img>
+		<img className="articleImage" src={getImageUrl("miscellaneous/laser_engraving/power_supply.jpg")} alt="" width="70%"></img>
 	</div>
 </div>
 
@@ -39,11 +41,11 @@ The power supply for this engraving machine must be at least 12V 5A.
 <div className="halfgrid">
 	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
 		### Side of the engraver
-		<img className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/plug2.jpg" alt="" width="70%"></img>
+		<img className="articleImage" src={getImageUrl("miscellaneous/laser_engraving/plug2.jpg")} alt="" width="70%"></img>
 	</div>
 	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
 		### Specs
-		<img className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/plug3.jpg" alt="" width="70%"></img>
+		<img className="articleImage" src={getImageUrl("miscellaneous/laser_engraving/plug3.jpg")} alt="" width="70%"></img>
 	</div>
 </div>
 
@@ -58,14 +60,14 @@ If you are using a laptop, ensure it is plugged in and charging.
 
 		- #### Tools > CH340 Drivers
 
-		<img className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/ch340_drivers.jpg" alt="" width="70%"></img>
+		<img className="articleImage" src={getImageUrl("miscellaneous/laser_engraving/ch340_drivers.jpg")} alt="" width="70%"></img>
 	</div>
 	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
 		### Driver Install
 
 		- #### Tools > CH340 Drivers
 
-		<img className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/ch340_drivers2.jpg" alt="" width="70%"></img>
+		<img className="articleImage" src={getImageUrl("miscellaneous/laser_engraving/ch340_drivers2.jpg")} alt="" width="70%"></img>
 	</div>
 </div>
 
@@ -77,14 +79,14 @@ If you are using a laptop, ensure it is plugged in and charging.
 <div className="halfgrid">
 	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
 		### Find Configuration
-		<img className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/grbl_config2.jpg" alt="" width="70%"></img>
+		<img className="articleImage" src={getImageUrl("miscellaneous/laser_engraving/grbl_config2.jpg")} alt="" width="70%"></img>
 	</div>
 	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
 		### Configuration
 		- #### Defines GRBL configuration used by Roomark Engraving Machine
-		<img className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/grbl_config1.jpg" alt="" width="70%"></img>
+		<img className="articleImage" src={getImageUrl("miscellaneous/laser_engraving/grbl_config1.jpg")} alt="" width="70%"></img>
 		- #### Ensure that $53 is set to 55 or more, in multiples or 5. 
-		<img className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/grbl_config3.jpg" alt="" width="70%"></img>
+		<img className="articleImage" src={getImageUrl("miscellaneous/laser_engraving/grbl_config3.jpg")} alt="" width="70%"></img>
 
 		- Note: Initially, I had trouble getting the engraver to work due to tilt angle and shock and movement detection. This sensor activated almost every time the engraver moved. After troubleshooting, I set the $53 value to 55, and the engraver began working. This is an essential step, and engraving will not work without it.
 	</div>
@@ -105,11 +107,11 @@ LaserGRBL provides an .svg file that can be used to test the accuracy of the eng
 <div className="halfgrid">
 	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
 		### Generating Test
-		<img className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/generate_test1.jpg" alt="" width="70%"></img>
+		<img className="articleImage" src={getImageUrl("miscellaneous/laser_engraving/generate_test1.jpg")} alt="" width="70%"></img>
 	</div>
 	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
 		### Configuration
-		<img className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/generate_test2.jpg" alt="" width="70%"></img>
+		<img className="articleImage" src={getImageUrl("miscellaneous/laser_engraving/generate_test2.jpg")} alt="" width="70%"></img>
 	</div>
 </div>
 
@@ -120,27 +122,27 @@ LaserGRBL provides an .svg file that can be used to test the accuracy of the eng
 <div className="halfgrid">
 	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
 		### First Test Engraving
-		<img className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/design_engraved3.jpg" alt="" width="70%"></img>
+		<img className="articleImage" src={getImageUrl("miscellaneous/laser_engraving/design_engraved3.jpg")} alt="" width="70%"></img>
 	</div>
 	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
 		### Website Logo!
-		<img className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/design_engraved.jpg" alt="" width="70%"></img>
+		<img className="articleImage" src={getImageUrl("miscellaneous/laser_engraving/design_engraved.jpg")} alt="" width="70%"></img>
 	</div>
 	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
 		### Engraving Closeup
-		<video className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/laser_closeup1.mp4" alt="" width="70%" controls></video>
+		<video className="articleImage" src={getImageUrl("miscellaneous/laser_engraving/laser_closeup1.mp4")} alt="" width="70%" controls></video>
 	</div>
 	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
 		### LaserGRBL View While Engraving
-		<video className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/design_on_computer.mp4" alt="" width="70%" controls></video>
+		<video className="articleImage" src={getImageUrl("miscellaneous/laser_engraving/design_on_computer.mp4")} alt="" width="70%" controls></video>
 	</div>
 	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
 		### Engraving Website Logo
-		<video className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/laser_closeup4.mp4" alt="" width="70%" controls></video>
+		<video className="articleImage" src={getImageUrl("miscellaneous/laser_engraving/laser_closeup4.mp4")} alt="" width="70%" controls></video>
 	</div>
 	<div href="/server/valley" className="halfgriditem emphasis4 dark card">
 		### Engraving Test File
-		<video className="articleImage" src="https://d3otrhxcw2ss5z.cloudfront.net/miscellaneous/laser_engraving/machine_view1.mp4" alt="" width="70%" controls></video>
+		<video className="articleImage" src={getImageUrl("miscellaneous/laser_engraving/machine_view1.mp4")} alt="" width="70%" controls></video>
 	</div>
 </div>
 
