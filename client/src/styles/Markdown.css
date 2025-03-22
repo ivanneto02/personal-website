@@ -1,24 +1,28 @@
 .halfContainer {
-    display: flex;
-    flex-direction: row;
-    min-height: 5em;
+	display: flex;
+	flex-direction: row;
+	min-height: 5em;
 }
 
 .wholeMarkdownSection {
-    /* text-align: justify;
+	/* text-align: justify;
     text-justify: inter-word; */
-    width: 100%;
+	width: 100%;
 }
 
 .halfMarkdownSection {
-    width: 50%;
-    /* background-color: ; */
+	width: 50%;
+	/* background-color: ; */
 }
 
-.halfMarkdownSection + .halfMarkdownSection {
-    margin-left: 1em;
+.halfMarkdownSection+.halfMarkdownSection {
+	margin-left: 1em;
 }
 
 .articleImage {
-    width: 100%;
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+	flex-grow: 0;
 }

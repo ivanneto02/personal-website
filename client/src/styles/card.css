@@ -1,17 +1,20 @@
 .card {
-    /* background-color: #0A0A0A; */
-    border-radius: 8px;
-    padding: 1em;
-    margin-bottom: 1em;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease-in-out;
+	/* background-color: #0A0A0A; */
+	display: flex;
+	flex-direction: column;
+	border-radius: 8px;
+	margin-bottom: 1em;
+	padding: 1em;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	transition: transform 0.2s ease-in-out;
+	overflow: hidden;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+	transform: translateY(-5px);
 }
 
 .card-content {
-    color: #ffffff;
-    line-height: 1.5;
+	color: #ffffff;
+	line-height: 1.5;
 }
