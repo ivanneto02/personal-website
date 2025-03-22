@@ -48,6 +48,7 @@ const App = () => {
                                                 <Route path="/server/valley" element={<Components.Valley />} />
                                                 <Route path="/server/cherry" element={<Components.Cherry />} />
                                                 <Route path="/server/cherry/ironfarm" element={<Components.CherryIronFarm />} />
+                                                <Route path="/server/cherry/witherskeletonfarm/" element={<Components.WitherSkeletonFarm />} />
 
                                                 {/* Freelance Routes */}
                                                 <Route path="/projects" element={<Components.Projects />} />
