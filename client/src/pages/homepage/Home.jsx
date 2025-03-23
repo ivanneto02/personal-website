@@ -20,7 +20,7 @@ class Home extends Component {
                     about. */}
                                 <section id="banner">
                                         <div id="banner_image_holder">
-                                                <img id="banner_image" src={getImageUrl("pfp.jpg")} alt="" />
+                                                <img id="banner_image" src={getImageUrl("pfp2.jpg")} alt="" />
                                                 <header id="banner_image_content">
                                                         <h2>Ivan Neto</h2>
                                                         <p>University of California, Riverside - Alumni</p>
