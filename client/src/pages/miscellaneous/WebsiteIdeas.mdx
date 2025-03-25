@@ -1,10 +1,13 @@
 import { getImageUrl } from "@utils/images"
+import { DropDownSection } from "@components";
 
-# Website Ideas
+# Website Ideas 🚀
 
 This secret part of the website is meant as my own chamber of ideas about what can go on this website! Note, a <s>strikethrough</s> means the idea has been mostly implemented to a significant extent. It is probably not perfect, just at a state I am happy with.
 
 ## <s>Idea 1 (11/29/2024)</s>
+
+<DropDownSection title={"Hidden idea - Markdown Support"}>
 
 Improving the markdown. Current markdown support is OK but there are a couple of things missing:
 
@@ -22,33 +25,43 @@ int main() {
 }
 ```
 
+</DropDownSection>
+
 ## <s>Idea 2 (11/29/2024)</s>
+
+<DropDownSection title={"Hidden idea - Mobile Responsiveness"}>
 
 Improving mobile responsiveness. Current responsiveness on mobile is passable (less than OK in my eyes), but there is two big problems:
 
 1. Lack of testing in different mobile environments, and lack of formal responsiveness testing at all.
 2. Inconsistent responsiveness for font size. The font sizes do not change, meaning that if a title exceeds the expected page size, the page simply expands. This is not good because it makes the page movement bad since it moves left and right at the same time :[
+</DropDownSection>
 
 ## <s> Idea 3 (11/29/2024)</s>
 
+<DropDownSection title={"Hidden idea - Emojis"}>
 Emoji support. Now, hear me out... OK, but emojis are pretty fun and can convey emotions better than just text. I guess images also do that, but emojis are cooler...
+</DropDownSection>
 
 ## <s>Idea 4 (11/29/2024)</s>
-
+<DropDownSection title={"Hidden idea - Drop-down"}>
 Drop-down support. Writing this idea page also leads me to want a better way to store ideas, or long lists where each bullet point has something in common.
 I think drop-down would be great for this because that way I could organize my ideas into different days. I could then display each day that I make an idea,
 and have a drop-down menu to display each idea's title. Then, each title could be clicked to display the idea itself on a box on the side. Of course on mobile it 
 would look different, but you get my point.
+</DropDownSection>
 
 ## <s>Idea 5 (11/29/2024)</s>
-
+<DropDownSection title={"Hidden idea - Contents Section"}>
 Automatic scroll-down with an index at the top. I know this is easy but it is a convenient feature nonetheless!
+</DropDownSection>
 
 ## <s>Idea 6 (11/29/2024)</s>
-
+<DropDownSection title={"Hidden idea - Image Responsiveness"}>
 Better image responsiveness. The current responsiveness for text is OK, but images are awful on this website as of 11/29/2024. Basically, I want images to automatically resize
 and stay within the confines of my as it is displayed. That is not currently happening and it hinders my content creation without having to specify the sizes
 of the images. It makes my writing a lot slower when I have to worry about that. So, I want better responsiveness so I can be lazy and just write!
+</DropDownSection>
 
 ## Idea 7 (11/29/2024)
 
@@ -61,20 +74,33 @@ A kind of blog-type support. I want the following:
     - Dangerous for security, but I would have to find a secure solution
 
 ## Idea 8 (11/29/2024)
-
+<DropDownSection title={"Hidden idea"}>
 Improve the banner. Let's be honest, it's not just good as of today. I have to improve it:
 
-1. Make it prettier, better the content, maybe different image or no image at all
+1. Make it prettier, better the content, maybe different image or no image at all (done as of 03/25/2025).
+</DropDownSection>
 
-## Idea 9 (2/25/2025)
+Banner currently looks okay, but it is missing something. I think it either needs automatic scrolling, or needs a redesign.
 
+I am thinking a redesign could include:
+
+1. Auto scrolling background images
+2. Text overlay on background images
+3. Animations on the overlay and background images
+
+## <s>Idea 9 (2/25/2025)</s>
+
+<DropDownSection title={"Hidden idea - AWS S3 Image Storage"}>
 Make the addition of image content easier. Currently, images are locally stored in the React project. This causes new clones of the repo to be slow and clunky since we are cloning dozens of images.
 
 Instead, I will create an **S3** bucket to store the images, then use **AWS SDK** to interact with it within an upload page in React.
+</DropDownSection>
 
-## Idea 10 (2/25/2025)
+## <s>Idea 10 (2/25/2025)</s>
 
+<DropDownSection title={"Hidden idea - AWS CDK for Infrastructure"}>
 Actually use the `backend/` directory for the infrastructure! Setup **AWS CDK** and use it to define some infrastructure to store images and any other type of content.
+</DropDownSection>
 
 ## Idea 11 (2/25/2025)
 
@@ -85,7 +111,4 @@ Instead, I want to create an upload page to store the ideas in either plain text
 The only problem I foresee is modifying ideas to make them look better. Ideally, I would add a small preview to see what the idea would look like. Otherwise, I can add a small "modification" page to modify the ideas.
 
 Overall, this idea will allow me to more quickly develop ideas, and modify them if there are any spelling mistakes or other miscellaneous issues.
-
-
-
 
