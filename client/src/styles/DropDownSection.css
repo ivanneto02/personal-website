@@ -1,9 +1,9 @@
 .dropDownSectionContent {
 	visibility: visible;
 	overflow: hidden;
-	max-height: 0;
+	max-height: 0%;
 	padding: 0;
-	height: 0.0%;
+	height: 100%;
 	border-radius: 1em;
 	border-left: solid 1px rgb(42, 42, 42);
 	transition: max-height 0.4s ease,
@@ -37,7 +37,7 @@
 .dropDownSection {
 	margin-bottom: 1em;
 	width: 100%;
-	height: 100%;
+	height: auto;
 }
 
 .dropDownSection span {
@@ -79,8 +79,8 @@
 .dropDownSection.active {
 	visibility: visible;
 	width: 100%;
-	height: 100%;
-	max-height: none;
+	height: auto;
+	max-height: 1000px;
 }
 
 .dropDownSectionContent p {
