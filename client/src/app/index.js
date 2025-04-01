@@ -76,7 +76,7 @@ const App = () => {
                                                 <Route path="/websiteideas" element={<Components.WebsiteIdeas />} />
                                                 <Route path="/laser-engravings" element={<Components.LaserEngravings />} />
                                                 <Route path="/laser-engravings/roomark" element={<Components.RoomarkSetup />} />
-
+                                                <Route path="/laser-engravings/roomark-jigsaw-puzzle" element={<Components.RoomarkJigsawPuzzle />} />
                                         </Routes>
                                         <SideBar />
                                 </BrowserRouter>
