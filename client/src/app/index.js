@@ -50,7 +50,9 @@ const App = () => {
                                                 <Route path="/server/cherry/ironfarm" element={<Components.CherryIronFarm />} />
                                                 <Route path="/server/cherry/witherskeletonfarm/" element={<Components.WitherSkeletonFarm />} />
                                                 <Route path="/server/cherry/pinkhouse" element={<Components.PinkHouse />} />
-                                                <Route path="/server/cherry/netherhighway" element={<Components.NetherHighway />} />				
+                                                <Route path="/server/cherry/netherhighway" element={<Components.NetherHighway />} />
+                                                <Route path="/server/cherry/pumpkinfarm" element={<Components.CherryPumpkinFarm />} />
+                                                <Route path="/server/cherry/treefarm" element={<Components.CherryTreeFarm />} />
 
                                                 {/* Freelance Routes */}
                                                 <Route path="/projects" element={<Components.Projects />} />
@@ -80,7 +82,7 @@ const App = () => {
                                         </Routes>
                                         <SideBar />
                                 </BrowserRouter>
-                        </div>
+                        </div >
                 </div>
         )
 }
