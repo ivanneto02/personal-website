@@ -53,6 +53,15 @@ const App = () => {
                                                 <Route path="/server/cherry/netherhighway" element={<Components.NetherHighway />} />
                                                 <Route path="/server/cherry/pumpkinfarm" element={<Components.CherryPumpkinFarm />} />
                                                 <Route path="/server/cherry/treefarm" element={<Components.CherryTreeFarm />} />
+                                                <Route path="/server/cherry/potatofarm" element={<Components.CherryPotatoFarm />} />
+                                                <Route path="/server/cherry/traders" element={<Components.CherryTraders />} />
+                                                <Route path="/server/cherry/autofurnace" element={<Components.CherryAutoFurnace />} />
+                                                <Route path="/server/cherry/villagerbreeder" element={<Components.CherryVillagerBreeder />} />
+                                                <Route path="/server/cherry/woolfarm" element={<Components.CherryWoolFarm />} />
+                                                <Route path="/server/cherry/greatwall" element={<Components.CherryGreatWall />} />
+                                                <Route path="/server/cherry/stable" element={<Components.CherryStable />} />
+                                                <Route path="/server/cherry/treegarden" element={<Components.CherryTreeGarden />} />
+                                                <Route path="/server/cherry/blazefarm" element={<Components.CherryBlazeFarm />} />
 
                                                 {/* Freelance Routes */}
                                                 <Route path="/projects" element={<Components.Projects />} />
