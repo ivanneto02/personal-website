@@ -15,5 +15,6 @@ export * from "./greatwall";
 export * from "./stable";
 export * from "./treegarden";
 export * from "./blazefarm";
+export * from "./drownedfarm";
 
 export { Cherry };
