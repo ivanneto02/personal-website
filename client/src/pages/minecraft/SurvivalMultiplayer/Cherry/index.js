@@ -22,5 +22,6 @@ export * from "./skeletonfarm";
 export * from "./slimefarm";
 export * from "./zombiefarm";
 export * from "./bamboofarm";
+export * from "./armorhall";
 
 export { Cherry };
