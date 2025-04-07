@@ -17,5 +17,6 @@ export * from "./treegarden";
 export * from "./blazefarm";
 export * from "./drownedfarm";
 export * from "./creeperfarm";
+export * from "./endermanfarm";
 
 export { Cherry };
