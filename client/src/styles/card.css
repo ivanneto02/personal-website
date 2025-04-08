@@ -18,3 +18,21 @@
 	color: #ffffff;
 	line-height: 1.5;
 }
+
+.titledate {
+	display: flex;
+	gap: 1em;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.titledate h3 {
+	margin: 0;
+	padding: 0;
+}
+
+.titledate p {
+	margin: 0;
+	padding: 0;
+}
