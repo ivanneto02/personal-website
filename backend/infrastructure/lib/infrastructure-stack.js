@@ -5,6 +5,7 @@ const iam = require('aws-cdk-lib/aws-iam');
 const origins = require('aws-cdk-lib/aws-cloudfront-origins')
 const s3 = require('aws-cdk-lib/aws-s3');
 const cloudfront = require('aws-cdk-lib/aws-cloudfront');
+const apigateway = require('aws-cdk-lib/aws-apigateway');
 const lambda = require('aws-cdk-lib/aws-lambda');
 
 /* Contains the stack to make my images be displayed on
@@ -30,6 +31,12 @@ class WebsiteImagesStack extends Stack {
                         removalPolicy: RemovalPolicy.RETAIN,
                 });
 
+                imagesBucket.addCorsRule({
+                        allowedOrigins: ["*"],
+                        allowedMethods: [s3.HttpMethods.GET],
+                        allowedHeaders: ["*"],
+                });
+
                 // CloudFront will cache these images and distribute them appropriate. Since
                 // this service comes with AWS Shield Standard included, it should prevent DDoS attacks
                 // on layers 3 and 4.
@@ -39,6 +46,7 @@ class WebsiteImagesStack extends Stack {
                                 viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
                                 allowedMethods: cloudfront.AllowedMethods.ALLOW_ALL,
                                 cachePolicy: cloudfront.CachePolicy.CACHING_OPTIMIZED,
+                                responseHeadersPolicy: cloudfront.ResponseHeadersPolicy.CORS_ALLOW_ALL_ORIGINS,
                         }
                 });
 
@@ -46,6 +54,22 @@ class WebsiteImagesStack extends Stack {
                         value: cloudFrontDistribution.distributionDomainName,
                 });
 
+                // handles calls to the endpoint to list contents of an S3 directory
+                // The request uses the directory name to list out all the images, taking away the need to have
+                // a manifest.json file that needs to be updated when images get uploaded
+                const lambdaListS3DirectoryContents = new lambda.Function(this, "ListS3DirectoryContentsFunction", {
+                        code: lambda.Code.fromAsset("lib/functions/listS3DirectoryContentsFunction"),
+                        runtime: lambda.Runtime.NODEJS_LATEST,
+                        handler: 'index.handler',
+                });
+
+                imagesBucket.grantRead(lambdaListS3DirectoryContents);
+
+                // executes lambdaListS3DirectoryContents function.
+                const lambdaListS3DirectoryContentsEndpoint = new apigateway.LambdaRestApi(this, "ListS3DirectoryContentsEndpoint", {
+                        handler: lambdaListS3DirectoryContents,
+                        restApiName: "ListS3DirectoryContentsRestAPI",
+                });
         }
 }
 

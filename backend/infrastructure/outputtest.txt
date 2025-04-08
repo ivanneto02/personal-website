@@ -1,0 +1,323 @@
+Resources:
+  WebsiteImagesBucketC3B6307E:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: Private
+      CorsConfiguration:
+        CorsRules:
+          - AllowedHeaders:
+              - "*"
+            AllowedMethods:
+              - GET
+            AllowedOrigins:
+              - "*"
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+    UpdateReplacePolicy: Retain
+    DeletionPolicy: Retain
+    Metadata:
+      aws:cdk:path: WebsiteImagesStack/WebsiteImagesBucket/Resource
+  WebsiteImagesBucketPolicyD1F1D080:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket:
+        Ref: WebsiteImagesBucketC3B6307E
+      PolicyDocument:
+        Statement:
+          - Action: s3:GetObject
+            Condition:
+              StringEquals:
+                AWS:SourceArn:
+                  Fn::Join:
+                    - ""
+                    - - "arn:"
+                      - Ref: AWS::Partition
+                      - ":cloudfront::"
+                      - Ref: AWS::AccountId
+                      - :distribution/
+                      - Ref: WebsiteImagesCDN717FB07D
+            Effect: Allow
+            Principal:
+              Service: cloudfront.amazonaws.com
+            Resource:
+              Fn::Join:
+                - ""
+                - - Fn::GetAtt:
+                      - WebsiteImagesBucketC3B6307E
+                      - Arn
+                  - /*
+        Version: "2012-10-17"
+    Metadata:
+      aws:cdk:path: WebsiteImagesStack/WebsiteImagesBucket/Policy/Resource
+  WebsiteImagesCDNOrigin1S3OriginAccessControl7205DFFE:
+    Type: AWS::CloudFront::OriginAccessControl
+    Properties:
+      OriginAccessControlConfig:
+        Name: WebsiteImagesStackWebsiteImaOrigin1S3OriginAccessControl3480F3E7
+        OriginAccessControlOriginType: s3
+        SigningBehavior: always
+        SigningProtocol: sigv4
+    Metadata:
+      aws:cdk:path: WebsiteImagesStack/WebsiteImagesCDN/Origin1/S3OriginAccessControl/Resource
+  WebsiteImagesCDN717FB07D:
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      DistributionConfig:
+        DefaultCacheBehavior:
+          AllowedMethods:
+            - GET
+            - HEAD
+            - OPTIONS
+            - PUT
+            - PATCH
+            - POST
+            - DELETE
+          CachePolicyId: 658327ea-f89d-4fab-a63d-7e88639e58f6
+          Compress: true
+          ResponseHeadersPolicyId: 60669652-455b-4ae9-85a4-c4c02393f86c
+          TargetOriginId: WebsiteImagesStackWebsiteImagesCDNOrigin15ED9AC20
+          ViewerProtocolPolicy: redirect-to-https
+        Enabled: true
+        HttpVersion: http2
+        IPV6Enabled: true
+        Origins:
+          - DomainName:
+              Fn::GetAtt:
+                - WebsiteImagesBucketC3B6307E
+                - RegionalDomainName
+            Id: WebsiteImagesStackWebsiteImagesCDNOrigin15ED9AC20
+            OriginAccessControlId:
+              Fn::GetAtt:
+                - WebsiteImagesCDNOrigin1S3OriginAccessControl7205DFFE
+                - Id
+            S3OriginConfig:
+              OriginAccessIdentity: ""
+    Metadata:
+      aws:cdk:path: WebsiteImagesStack/WebsiteImagesCDN/Resource
+  ListS3DirectoryContentsFunctionServiceRoleFF33B37B:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Statement:
+          - Action: sts:AssumeRole
+            Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+        Version: "2012-10-17"
+      ManagedPolicyArns:
+        - Fn::Join:
+            - ""
+            - - "arn:"
+              - Ref: AWS::Partition
+              - :iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+    Metadata:
+      aws:cdk:path: WebsiteImagesStack/ListS3DirectoryContentsFunction/ServiceRole/Resource
+  ListS3DirectoryContentsFunctionDF133F83:
+    Type: AWS::Lambda::Function
+    Properties:
+      Code:
+        S3Bucket: cdk-hnb659fds-assets-779716671317-us-west-1
+        S3Key: 2f75aa693d31c9385991ed1c2aaa7b849e38fb9251b6d12a39a27a136ede3abb.zip
+      Handler: index.handler
+      Role:
+        Fn::GetAtt:
+          - ListS3DirectoryContentsFunctionServiceRoleFF33B37B
+          - Arn
+      Runtime: nodejs18.x
+    DependsOn:
+      - ListS3DirectoryContentsFunctionServiceRoleFF33B37B
+    Metadata:
+      aws:cdk:path: WebsiteImagesStack/ListS3DirectoryContentsFunction/Resource
+      aws:asset:path: asset.2f75aa693d31c9385991ed1c2aaa7b849e38fb9251b6d12a39a27a136ede3abb
+      aws:asset:is-bundled: false
+      aws:asset:property: Code
+  ListS3DirectoryContentsEndpointF852BD8A:
+    Type: AWS::ApiGateway::RestApi
+    Properties:
+      Name: ListS3DirectoryContentsRestAPI
+    Metadata:
+      aws:cdk:path: WebsiteImagesStack/ListS3DirectoryContentsEndpoint/Resource
+  ListS3DirectoryContentsEndpointDeployment63AE6CA5634e04d69c5054bf28dc6829f75a3fa4:
+    Type: AWS::ApiGateway::Deployment
+    Properties:
+      Description: Automatically created by the RestApi construct
+      RestApiId:
+        Ref: ListS3DirectoryContentsEndpointF852BD8A
+    DependsOn:
+      - ListS3DirectoryContentsEndpointproxyANY01FE1631
+      - ListS3DirectoryContentsEndpointproxy57DBC33D
+      - ListS3DirectoryContentsEndpointANYCD3D1183
+    Metadata:
+      aws:cdk:path: WebsiteImagesStack/ListS3DirectoryContentsEndpoint/Deployment/Resource
+  ListS3DirectoryContentsEndpointDeploymentStageprod9D8BAC6B:
+    Type: AWS::ApiGateway::Stage
+    Properties:
+      DeploymentId:
+        Ref: ListS3DirectoryContentsEndpointDeployment63AE6CA5634e04d69c5054bf28dc6829f75a3fa4
+      RestApiId:
+        Ref: ListS3DirectoryContentsEndpointF852BD8A
+      StageName: prod
+    Metadata:
+      aws:cdk:path: WebsiteImagesStack/ListS3DirectoryContentsEndpoint/DeploymentStage.prod/Resource
+  ListS3DirectoryContentsEndpointproxy57DBC33D:
+    Type: AWS::ApiGateway::Resource
+    Properties:
+      ParentId:
+        Fn::GetAtt:
+          - ListS3DirectoryContentsEndpointF852BD8A
+          - RootResourceId
+      PathPart: "{proxy+}"
+      RestApiId:
+        Ref: ListS3DirectoryContentsEndpointF852BD8A
+    Metadata:
+      aws:cdk:path: WebsiteImagesStack/ListS3DirectoryContentsEndpoint/Default/{proxy+}/Resource
+  ListS3DirectoryContentsEndpointproxyANYApiPermissionWebsiteImagesStackListS3DirectoryContentsEndpointF0FC8BC2ANYproxy14AA95F7:
+    Type: AWS::Lambda::Permission
+    Properties:
+      Action: lambda:InvokeFunction
+      FunctionName:
+        Fn::GetAtt:
+          - ListS3DirectoryContentsFunctionDF133F83
+          - Arn
+      Principal: apigateway.amazonaws.com
+      SourceArn:
+        Fn::Join:
+          - ""
+          - - "arn:aws:execute-api:us-west-1:779716671317:"
+            - Ref: ListS3DirectoryContentsEndpointF852BD8A
+            - /
+            - Ref: ListS3DirectoryContentsEndpointDeploymentStageprod9D8BAC6B
+            - /*/*
+    Metadata:
+      aws:cdk:path: WebsiteImagesStack/ListS3DirectoryContentsEndpoint/Default/{proxy+}/ANY/ApiPermission.WebsiteImagesStackListS3DirectoryContentsEndpointF0FC8BC2.ANY..{proxy+}
+  ListS3DirectoryContentsEndpointproxyANYApiPermissionTestWebsiteImagesStackListS3DirectoryContentsEndpointF0FC8BC2ANYproxy28A4E9CF:
+    Type: AWS::Lambda::Permission
+    Properties:
+      Action: lambda:InvokeFunction
+      FunctionName:
+        Fn::GetAtt:
+          - ListS3DirectoryContentsFunctionDF133F83
+          - Arn
+      Principal: apigateway.amazonaws.com
+      SourceArn:
+        Fn::Join:
+          - ""
+          - - "arn:aws:execute-api:us-west-1:779716671317:"
+            - Ref: ListS3DirectoryContentsEndpointF852BD8A
+            - /test-invoke-stage/*/*
+    Metadata:
+      aws:cdk:path: WebsiteImagesStack/ListS3DirectoryContentsEndpoint/Default/{proxy+}/ANY/ApiPermission.Test.WebsiteImagesStackListS3DirectoryContentsEndpointF0FC8BC2.ANY..{proxy+}
+  ListS3DirectoryContentsEndpointproxyANY01FE1631:
+    Type: AWS::ApiGateway::Method
+    Properties:
+      AuthorizationType: NONE
+      HttpMethod: ANY
+      Integration:
+        IntegrationHttpMethod: POST
+        Type: AWS_PROXY
+        Uri:
+          Fn::Join:
+            - ""
+            - - arn:aws:apigateway:us-west-1:lambda:path/2015-03-31/functions/
+              - Fn::GetAtt:
+                  - ListS3DirectoryContentsFunctionDF133F83
+                  - Arn
+              - /invocations
+      ResourceId:
+        Ref: ListS3DirectoryContentsEndpointproxy57DBC33D
+      RestApiId:
+        Ref: ListS3DirectoryContentsEndpointF852BD8A
+    Metadata:
+      aws:cdk:path: WebsiteImagesStack/ListS3DirectoryContentsEndpoint/Default/{proxy+}/ANY/Resource
+  ListS3DirectoryContentsEndpointANYApiPermissionWebsiteImagesStackListS3DirectoryContentsEndpointF0FC8BC2ANYDE719526:
+    Type: AWS::Lambda::Permission
+    Properties:
+      Action: lambda:InvokeFunction
+      FunctionName:
+        Fn::GetAtt:
+          - ListS3DirectoryContentsFunctionDF133F83
+          - Arn
+      Principal: apigateway.amazonaws.com
+      SourceArn:
+        Fn::Join:
+          - ""
+          - - "arn:aws:execute-api:us-west-1:779716671317:"
+            - Ref: ListS3DirectoryContentsEndpointF852BD8A
+            - /
+            - Ref: ListS3DirectoryContentsEndpointDeploymentStageprod9D8BAC6B
+            - /*/
+    Metadata:
+      aws:cdk:path: WebsiteImagesStack/ListS3DirectoryContentsEndpoint/Default/ANY/ApiPermission.WebsiteImagesStackListS3DirectoryContentsEndpointF0FC8BC2.ANY..
+  ListS3DirectoryContentsEndpointANYApiPermissionTestWebsiteImagesStackListS3DirectoryContentsEndpointF0FC8BC2ANY3CC7EC10:
+    Type: AWS::Lambda::Permission
+    Properties:
+      Action: lambda:InvokeFunction
+      FunctionName:
+        Fn::GetAtt:
+          - ListS3DirectoryContentsFunctionDF133F83
+          - Arn
+      Principal: apigateway.amazonaws.com
+      SourceArn:
+        Fn::Join:
+          - ""
+          - - "arn:aws:execute-api:us-west-1:779716671317:"
+            - Ref: ListS3DirectoryContentsEndpointF852BD8A
+            - /test-invoke-stage/*/
+    Metadata:
+      aws:cdk:path: WebsiteImagesStack/ListS3DirectoryContentsEndpoint/Default/ANY/ApiPermission.Test.WebsiteImagesStackListS3DirectoryContentsEndpointF0FC8BC2.ANY..
+  ListS3DirectoryContentsEndpointANYCD3D1183:
+    Type: AWS::ApiGateway::Method
+    Properties:
+      AuthorizationType: NONE
+      HttpMethod: ANY
+      Integration:
+        IntegrationHttpMethod: POST
+        Type: AWS_PROXY
+        Uri:
+          Fn::Join:
+            - ""
+            - - arn:aws:apigateway:us-west-1:lambda:path/2015-03-31/functions/
+              - Fn::GetAtt:
+                  - ListS3DirectoryContentsFunctionDF133F83
+                  - Arn
+              - /invocations
+      ResourceId:
+        Fn::GetAtt:
+          - ListS3DirectoryContentsEndpointF852BD8A
+          - RootResourceId
+      RestApiId:
+        Ref: ListS3DirectoryContentsEndpointF852BD8A
+    Metadata:
+      aws:cdk:path: WebsiteImagesStack/ListS3DirectoryContentsEndpoint/Default/ANY/Resource
+  CDKMetadata:
+    Type: AWS::CDK::Metadata
+    Properties:
+      Analytics: v2:deflate64:H4sIAAAAAAAA/6VUXW/aMBT9Lc3jZLIxXqq+Ad1HpW5FtG8IVRf7Ai6OHdkODEX577Ovk5BunaZpT4nv5znH9/pjPr4e5+MrOLkRF4eRkpu8fvTADyyYnms3yetZxQ/oV3VWVhsl+RJBTDlH57KbLSiHLNsoww8L8nae7F3GMqDD3GhvjQq2hZVH8Bg8FgtzBLUwIeUcPBY9SJ01rM5AiLmxblkpzG5CV1DKnFA8WLmTuq+cjN/Q740IxlX25dNTtu4dXwNItCm6WTdrNt/qxIOlT+ocym/o2AZewpK/DZ6Bw9W6YVyZSmxt4JPXt9J5KzeVl0aHMgK3UCk/wz0cpbHZTZ0ZQtwCPko8oV1Y4w03Q95CWuR+5M1o733p3uBG+Rz4Hru0eni8Ewl8FNWVRjtsyV+i33R0eU2g/ThJ8k6HF7YKXlLkDV80DxVomIJiIyCvP1eat5pwI7CFbyvtZdGd9qCFQjsQvcuK/wu0hXSOqkoo8nppFMZBcK4qUMyIUmml5rIEFWCZULybC4qJCVOq10lTgIYdCmIu0dFgDW3nqdWvhiWWaJibPIeK6F0+jR8GpdyFAT7BOa/vifASnZ+W8jIBd9rjzkLf/DVbuqSY8B1aNeLI/yUiAUpWdoulMucCtaeejltZDpoFhH2ZuFKXcNe3Cxv2ZO7NTnJQcQpWdWD9r3YCdanOwqOxQ4LUmQbgyckCBVNZjrRONFxhH36cO3N8YcBif5d/FLR1pAV5IPYXcoMSLfYUF9+I0LIXk1qy5FvRipClu7Owi10eGeRvKMwvjf+zAuFKCU1DW1f5svK9aEkwGsOoptS7humwYPmLe38cX+fjSf7h6sVJOWp3LV+m70+TxHNt4wUAAA==
+    Metadata:
+      aws:cdk:path: WebsiteImagesStack/CDKMetadata/Default
+Outputs:
+  WebsiteImagesCDNURL:
+    Value:
+      Fn::GetAtt:
+        - WebsiteImagesCDN717FB07D
+        - DomainName
+  ListS3DirectoryContentsEndpoint0F050772:
+    Value:
+      Fn::Join:
+        - ""
+        - - https://
+          - Ref: ListS3DirectoryContentsEndpointF852BD8A
+          - .execute-api.us-west-1.
+          - Ref: AWS::URLSuffix
+          - /
+          - Ref: ListS3DirectoryContentsEndpointDeploymentStageprod9D8BAC6B
+          - /
+Parameters:
+  BootstrapVersion:
+    Type: AWS::SSM::Parameter::Value<String>
+    Default: /cdk-bootstrap/hnb659fds/version
+    Description: Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
+
