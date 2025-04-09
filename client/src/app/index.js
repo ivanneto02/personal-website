@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 
 // import components
 import SideBar from "@components/SideBar";
-import GenericImagePageComponent from "@components/GenericImagePageComponent";
+
 import { BlankPage, GenericMDXPageComponent } from "@components";
 
 import { getManifestUrl } from "@utils/manifests";
@@ -128,7 +128,7 @@ const App = () => {
                         {/* Set the routes for /server/valley based on fetch from S3 */}
                         {
                             valleyRoutes.map((item) => (
-                                <Route key={item.key} path={`/server/valley/${item.route}`} element={<GenericImagePageComponent title={item.title} pageBaseUrl={item.url} page={item.page} />} />
+                                <Route key={item.key} path={`/server/valley/${item.route}`} element={<GenericMDXPageComponent filepath={`minecraft/SurvivalMultiplayer/Valley/${item.page}`} filename={item.filename} title={item.title} pageBaseUrl={item.url} page={item.page} />} />
                             ))
                         }
 
