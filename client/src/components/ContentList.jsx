@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { getManifestUrl } from "@utils/manifests.js";
 import { getImageUrl } from "@utils/images";
+import { fisherYatesShuffle } from "@utils/fisherYatesShuffle";
 
 const ContentList = (props) => {
     const [pageInfo, setPageInfo] = useState([]);
@@ -14,13 +15,17 @@ const ContentList = (props) => {
                     throw new Error(`Status: ${res.status}, (${getManifestUrl(props.url)})`);
                 }
 
-                setPageInfo(await res.json());
+                const jsonData = await res.json();
+                const shuffled = fisherYatesShuffle(jsonData);
+
+                setPageInfo(shuffled);
             }
             catch (error) {
                 console.error("Adding data error:", error);
                 setPageInfo([]);
             }
         };
+
         writePageInfo();
     }, [props.url]);
 
@@ -31,7 +36,7 @@ const ContentList = (props) => {
                     return (
                         <a key={item.id} href={props.route + "/" + item.route} className="emphasis4 dark card">
                             <div className="titledate">
-                                <h3>{item.page}</h3>
+                                <h3>{item.title}</h3>
                                 <p>{item.date}</p>
                             </div>
                             <img className="articleImage" alt="" src={getImageUrl(item.url + "/" + item.page + "/" + item.thumbnail)}></img>

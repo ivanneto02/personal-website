@@ -19,6 +19,7 @@ import DropDownSection from "./DropDownSection"
 import ContentList from "./ContentList"
 import GenericImagePageComponent from "./GenericImagePageComponent";
 import BlankPage from "./BlankPage";
+import GenericMDXPageComponent from "./GenericMDXPageComponent"
 
 export {
     AllTest, Contact, CoolStuff, Footer, Header, MajorPosts,
@@ -28,4 +29,5 @@ export {
     ContentList,
     GenericImagePageComponent,
     BlankPage,
+    GenericMDXPageComponent,
 }

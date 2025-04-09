@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 // import components
 import SideBar from "@components/SideBar";
 import GenericImagePageComponent from "@components/GenericImagePageComponent";
-import { BlankPage } from "@components";
+import { BlankPage, GenericMDXPageComponent } from "@components";
 
 import { getManifestUrl } from "@utils/manifests";
 
@@ -29,6 +29,7 @@ const HighLightOnRouteChange = () => {
 const App = () => {
 
     const [valleyRoutes, setValleyRoutes] = useState([]);
+    const [cherryRoutes, setCherryRoutes] = useState([]);
 
     useEffect(() => {
 
@@ -47,7 +48,23 @@ const App = () => {
             }
         };
 
+        const writeCherryRoutes = async () => {
+            try {
+                const res = await fetch(getManifestUrl("minecraftserver/cherry"));
+
+                if (!res.ok) {
+                    throw new Error("Failed to fetch cherry manifest.json");
+                }
+
+                setCherryRoutes(await res.json());
+
+            } catch (error) {
+                console.log(error);
+            }
+        };
+
         writeValleyRoutes();
+        writeCherryRoutes();
     }, []);
 
     return (
@@ -74,6 +91,8 @@ const App = () => {
                         <Route path="/server" element={<Components.SurvivalMultiplayer />} />
                         <Route path="/server/valley" element={<Components.Valley />} />
                         <Route path="/server/cherry" element={<Components.Cherry />} />
+
+                        {/*
                         <Route path="/server/cherry/ironfarm" element={<Components.CherryIronFarm />} />
                         <Route path="/server/cherry/witherskeletonfarm/" element={<Components.WitherSkeletonFarm />} />
                         <Route path="/server/cherry/pinkhouse" element={<Components.PinkHouse />} />
@@ -97,6 +116,14 @@ const App = () => {
                         <Route path="/server/cherry/zombiefarm" element={<Components.CherryZombieFarm />} />
                         <Route path="/server/cherry/bamboofarm" element={<Components.CherryBambooFarm />} />
                         <Route path="/server/cherry/armorhall" element={<Components.CherryArmorHall />} />
+						*/}
+
+                        {/* Set the routes for /server/cherry based on fetch from S3 */}
+                        {
+                            cherryRoutes.map((item) => (
+                                <Route key={item.key} path={`/server/cherry/${item.route}`} element={<GenericMDXPageComponent filepath={`minecraft/SurvivalMultiplayer/Cherry/${item.page}`} filename={item.filename} title={item.title} pageBaseUrl={item.url} page={item.page} />} />
+                            ))
+                        }
 
                         {/* Set the routes for /server/valley based on fetch from S3 */}
                         {
