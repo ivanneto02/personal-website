@@ -1,3 +1,3 @@
-import WitherSkeletonFarm from "./WitherSkeletonFarm.jsx";
+import CherryWitherSkeletonFarm from "./CherryWitherSkeletonFarm.jsx";
 
-export { WitherSkeletonFarm }
+export { CherryWitherSkeletonFarm }

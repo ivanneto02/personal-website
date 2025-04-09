@@ -1,3 +1,3 @@
-import PinkHouse from "./PinkHouse.jsx";
+import CherryPinkHouse from "./CherryPinkHouse.jsx";
 
-export { PinkHouse };
+export { CherryPinkHouse };

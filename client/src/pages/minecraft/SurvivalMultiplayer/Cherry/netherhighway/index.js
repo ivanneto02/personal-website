@@ -1,3 +1,3 @@
-import NetherHighway from "./NetherHighway.jsx";
+import CherryNetherHighway from "./CherryNetherHighway.jsx";
 
-export { NetherHighway };
+export { CherryNetherHighway };

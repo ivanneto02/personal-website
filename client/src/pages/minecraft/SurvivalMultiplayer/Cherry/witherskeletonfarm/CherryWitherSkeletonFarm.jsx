@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import Header from "@components/Header";
 import MarkdownSection from "@components/MarkdownSection";
 
-import MDXContent from "./CherryStable.mdx";
+import MDXContent from "./CherryWitherSkeletonFarm.mdx";
 
-class CherryStable extends Component {
+class CherryWitherSkeletonFarm extends Component {
     render() {
         return (
             <div id="main">
@@ -15,4 +15,4 @@ class CherryStable extends Component {
     }
 }
 
-export default CherryStable;
+export default CherryWitherSkeletonFarm;
