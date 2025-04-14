@@ -36,3 +36,24 @@
 	margin: 0;
 	padding: 0;
 }
+
+.bottomtitledate {
+	display: flex;
+	margin-top: 1em;
+	gap: 1em;
+	align-items: center;
+}
+
+.bottomtitledate h3 {
+	margin: 0;
+	padding: 0;
+}
+
+.bottomtitledate p {
+	margin: 0;
+	padding: 0;
+}
+
+.card .source {
+	margin: 0;
+}
