@@ -10,9 +10,6 @@ class CoolStuff extends Component {
                     <h2>Cool Stuff</h2>
                 </header>
                 <MiniPosts />
-                <ul className="actions">
-                    <li><a href="/" className="button" target="_blank">More</a></li>
-                </ul>
             </section>
         );
     }
