@@ -74,7 +74,25 @@ const RelevantArticles = () => {
                     .then(res => res.trim())
                     .then(res => loadCS120B(res));
 
-                const jsonData = [...resCherry, ...resValley, ...resCS120B];
+                const jsonData = [
+                    ...resCherry,
+                    ...resValley,
+                    ...resCS120B,
+                    {
+                        name: "Roomark Laser Engraver Setup",
+                        img_src: getImageUrl("miscellaneous/laser_engraving/grbl_config1.jpg"),
+                        route: "/laser-engravings/roomark",
+                        source: "Miscellaneous > Laser Engravings",
+                        date: "03/15/2025",
+                    },
+                    {
+                        name: "Laser Engraver Jigsaw Puzzle",
+                        img_src: getImageUrl("miscellaneous/laser_engraving/jigsawpuzzle/puzzle_outline3.jpg"),
+                        route: "/laser-engravings/roomark",
+                        source: "Miscellaneous > Laser Engravings",
+                        date: "03/15/2025",
+                    },
+                ];
 
                 console.log("Shuffling for 9 posts")
                 const shuffled = fisherYatesShuffle(jsonData);

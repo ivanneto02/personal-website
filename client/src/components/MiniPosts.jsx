@@ -82,7 +82,25 @@ const MiniPosts = () => {
                     .then(res => res.trim())
                     .then(res => loadCS120B(res));
 
-                const jsonData = [...resCherry, ...resValley, ...resCS120B];
+                const jsonData = [
+                    ...resCherry,
+                    ...resValley,
+                    ...resCS120B,
+                    {
+                        name: "Roomark Laser Engraver Setup",
+                        img_src: getImageUrl("miscellaneous/laser_engraving/design_engraved3.png"),
+                        route: "/laser-engravings/roomark",
+                        source: "Miscellaneous > Laser Engravings",
+                        date: "03/15/2025",
+                    },
+                    {
+                        name: "Laser Engraver Jigsaw Puzzle",
+                        img_src: getImageUrl("miscellaneous/laser_engraving/design_engraved3.png"),
+                        route: "/laser-engravings/roomark",
+                        source: "Miscellaneous > Laser Engravings",
+                        date: "03/15/2025",
+                    },
+                ];
 
                 const indexes = Array.from({ length: jsonData.length }, (_, idx) => idx);
 
