@@ -88,17 +88,17 @@ const MiniPosts = () => {
                     ...resCS120B,
                     {
                         name: "Roomark Laser Engraver Setup",
-                        img_src: getImageUrl("miscellaneous/laser_engraving/design_engraved3.png"),
+                        img_src: getImageUrl("miscellaneous/laser_engraving/grbl_config1.jpg"),
                         route: "/laser-engravings/roomark",
                         source: "Miscellaneous > Laser Engravings",
                         date: "03/15/2025",
                     },
                     {
                         name: "Laser Engraver Jigsaw Puzzle",
-                        img_src: getImageUrl("miscellaneous/laser_engraving/design_engraved3.png"),
-                        route: "/laser-engravings/roomark",
+                        img_src: getImageUrl("miscellaneous/laser_engraving/jigsawpuzzle/puzzle_outline3.jpg"),
+                        route: "/laser-engravings/roomark-jigsaw-puzzle",
                         source: "Miscellaneous > Laser Engravings",
-                        date: "03/15/2025",
+                        date: "04/01/2025",
                     },
                 ];
 
