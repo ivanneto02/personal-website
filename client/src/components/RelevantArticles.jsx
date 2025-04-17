@@ -22,6 +22,7 @@ const RelevantArticles = () => {
                     route: `/server/cherry/${item.route}`,
                     source: "Minecraft > SMP > Cherry",
                     date: item.date,
+                    target: "_self",
                 }
             ));
             return rows;
@@ -36,6 +37,7 @@ const RelevantArticles = () => {
                     route: `/server/valley/${item.route}`,
                     source: "Minecraft > SMP > Valley",
                     date: item.date,
+                    target: "_self",
                 }
             ));
         }
@@ -51,6 +53,7 @@ const RelevantArticles = () => {
                     route: `https://youtu.be/${items[1]}`,
                     source: "Videos > CS120B",
                     date: items[2],
+                    target: "_blank",
                 });
             });
             return rows;
@@ -84,6 +87,7 @@ const RelevantArticles = () => {
                         route: "/laser-engravings/roomark",
                         source: "Miscellaneous > Laser Engravings",
                         date: "03/15/2025",
+                        target: "_self",
                     },
                     {
                         name: "Laser Engraver Jigsaw Puzzle",
@@ -91,6 +95,7 @@ const RelevantArticles = () => {
                         route: "/laser-engravings/roomark",
                         source: "Miscellaneous > Laser Engravings",
                         date: "03/15/2025",
+                        target: "_self",
                     },
                 ];
 
@@ -116,7 +121,7 @@ const RelevantArticles = () => {
             <div className="grid">
                 {
                     articles.map((item, index) => (
-                        <a className="card" key={index} href={item.route} target="_blank" rel="noreferrer">
+                        <a className="card" key={index} href={item.route} target={item.target} rel="noreferrer">
                             <img className="articleImage" src={item.img_src} alt="" />
                             <div className="bottomtitledate">
                                 <h3>{item.name}</h3>
