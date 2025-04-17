@@ -94,12 +94,8 @@ const RelevantArticles = () => {
                         img_src: getImageUrl("miscellaneous/laser_engraving/jigsawpuzzle/puzzle_outline3.jpg"),
                         route: "/laser-engravings/roomark-jigsaw-puzzle",
                         source: "Miscellaneous > Laser Engravings",
-<<<<<<< HEAD
-                        date: "04/01/2025",
-=======
                         date: "03/15/2025",
                         target: "_self",
->>>>>>> dev
                     },
                 ];
 

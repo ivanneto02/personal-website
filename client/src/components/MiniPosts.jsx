@@ -100,16 +100,10 @@ const MiniPosts = () => {
                     {
                         name: "Laser Engraver Jigsaw Puzzle",
                         img_src: getImageUrl("miscellaneous/laser_engraving/jigsawpuzzle/puzzle_outline3.jpg"),
-<<<<<<< HEAD
-                        route: "/laser-engravings/roomark-jigsaw-puzzle",
-                        source: "Miscellaneous > Laser Engravings",
-                        date: "04/01/2025",
-=======
                         route: "/laser-engravings/roomark",
                         source: "Miscellaneous > Laser Engravings",
                         date: "03/15/2025",
                         target: "_self",
->>>>>>> dev
                     },
                 ];
 
