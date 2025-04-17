@@ -30,6 +30,7 @@ const MiniPosts = () => {
                     route: `/server/cherry/${item.route}`,
                     source: "Minecraft > SMP > Cherry",
                     date: item.date,
+                    target: "_self",
                 }
             ));
             return rows;
@@ -44,6 +45,7 @@ const MiniPosts = () => {
                     route: `/server/valley/${item.route}`,
                     source: "Minecraft > SMP > Valley",
                     date: item.date,
+                    target: "_self",
                 }
             ));
         }
@@ -59,6 +61,7 @@ const MiniPosts = () => {
                     route: `https://youtu.be/${items[1]}`,
                     source: "Videos > CS120B",
                     date: items[2],
+                    target: "_blank",
                 });
             });
             return rows;
@@ -92,13 +95,21 @@ const MiniPosts = () => {
                         route: "/laser-engravings/roomark",
                         source: "Miscellaneous > Laser Engravings",
                         date: "03/15/2025",
+                        target: "_self",
                     },
                     {
                         name: "Laser Engraver Jigsaw Puzzle",
                         img_src: getImageUrl("miscellaneous/laser_engraving/jigsawpuzzle/puzzle_outline3.jpg"),
+<<<<<<< HEAD
                         route: "/laser-engravings/roomark-jigsaw-puzzle",
                         source: "Miscellaneous > Laser Engravings",
                         date: "04/01/2025",
+=======
+                        route: "/laser-engravings/roomark",
+                        source: "Miscellaneous > Laser Engravings",
+                        date: "03/15/2025",
+                        target: "_self",
+>>>>>>> dev
                     },
                 ];
 
@@ -124,7 +135,7 @@ const MiniPosts = () => {
                 {
                     threePosts.map((item, index) => (
                         <article key={index}>
-                            <a href={item.route} className="image" target="_blank" rel="noreferrer"><img src={item.img_src} alt="" /></a>
+                            <a href={item.route} className="image" target={item.target} rel="noreferrer"><img src={item.img_src} alt="" /></a>
                             <p>{item.source} {" > "} {item.name}</p>
                         </article>
                     ))
