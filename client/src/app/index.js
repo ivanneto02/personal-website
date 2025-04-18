@@ -92,32 +92,6 @@ const App = () => {
                         <Route path="/server/valley" element={<Components.Valley />} />
                         <Route path="/server/cherry" element={<Components.Cherry />} />
 
-                        {/*
-                        <Route path="/server/cherry/ironfarm" element={<Components.CherryIronFarm />} />
-                        <Route path="/server/cherry/witherskeletonfarm/" element={<Components.WitherSkeletonFarm />} />
-                        <Route path="/server/cherry/pinkhouse" element={<Components.PinkHouse />} />
-                        <Route path="/server/cherry/netherhighway" element={<Components.NetherHighway />} />
-                        <Route path="/server/cherry/pumpkinfarm" element={<Components.CherryPumpkinFarm />} />
-                        <Route path="/server/cherry/treefarm" element={<Components.CherryTreeFarm />} />
-                        <Route path="/server/cherry/potatofarm" element={<Components.CherryPotatoFarm />} />
-                        <Route path="/server/cherry/traders" element={<Components.CherryTraders />} />
-                        <Route path="/server/cherry/autofurnace" element={<Components.CherryAutoFurnace />} />
-                        <Route path="/server/cherry/villagerbreeder" element={<Components.CherryVillagerBreeder />} />
-                        <Route path="/server/cherry/woolfarm" element={<Components.CherryWoolFarm />} />
-                        <Route path="/server/cherry/greatwall" element={<Components.CherryGreatWall />} />
-                        <Route path="/server/cherry/stable" element={<Components.CherryStable />} />
-                        <Route path="/server/cherry/treegarden" element={<Components.CherryTreeGarden />} />
-                        <Route path="/server/cherry/blazefarm" element={<Components.CherryBlazeFarm />} />
-                        <Route path="/server/cherry/drownedfarm" element={<Components.CherryDrownedFarm />} />
-                        <Route path="/server/cherry/creeperfarm" element={<Components.CherryCreeperFarm />} />
-                        <Route path="/server/cherry/endermanfarm" element={<Components.CherryEndermanFarm />} />
-                        <Route path="/server/cherry/skeletonfarm" element={<Components.CherrySkeletonFarm />} />
-                        <Route path="/server/cherry/slimefarm" element={<Components.CherrySlimeFarm />} />
-                        <Route path="/server/cherry/zombiefarm" element={<Components.CherryZombieFarm />} />
-                        <Route path="/server/cherry/bamboofarm" element={<Components.CherryBambooFarm />} />
-                        <Route path="/server/cherry/armorhall" element={<Components.CherryArmorHall />} />
-						*/}
-
                         {/* Set the routes for /server/cherry based on fetch from S3 */}
                         {
                             cherryRoutes.map((item) => (
@@ -157,6 +131,9 @@ const App = () => {
                         <Route path="/laser-engravings" element={<Components.LaserEngravings />} />
                         <Route path="/laser-engravings/roomark" element={<Components.RoomarkSetup />} />
                         <Route path="/laser-engravings/roomark-jigsaw-puzzle" element={<Components.RoomarkJigsawPuzzle />} />
+
+                        {/* Search Routes */}
+                        <Route path="/results/" element={<Components.Results />} />
                     </Routes>
                     <SideBar />
                 </BrowserRouter>

@@ -1,0 +1,15 @@
+.searchResult {
+	display: flex;
+	gap: 1em;
+}
+
+.searchResult .titledate {
+	display: flex;
+	flex-flow: column;
+	align-items: start;
+}
+
+.searchResultImage {
+	width: 60%;
+	height: auto;
+}

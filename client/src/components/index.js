@@ -20,6 +20,8 @@ import ContentList from "./ContentList"
 import GenericImagePageComponent from "./GenericImagePageComponent";
 import BlankPage from "./BlankPage";
 import GenericMDXPageComponent from "./GenericMDXPageComponent"
+import SearchResults from "./SearchResults";
+import ResultsNotFound from "./ResultNotFound";
 
 export {
     AllTest, Contact, CoolStuff, Footer, Header, MajorPosts,
@@ -30,4 +32,6 @@ export {
     GenericImagePageComponent,
     BlankPage,
     GenericMDXPageComponent,
+    SearchResults,
+    ResultsNotFound,
 }
