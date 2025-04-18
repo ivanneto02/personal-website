@@ -3,7 +3,7 @@ import Header from "@components/Header";
 
 import MDXContent from "./test.mdx";
 
-import MarkdownSection from "@components/MarkdownSection";
+import { MarkdownSection, RelevantArticles } from "@components";
 
 class MarkdownTest extends Component {
     render() {
@@ -11,6 +11,7 @@ class MarkdownTest extends Component {
             <div id="main">
                 <Header />
                 <MarkdownSection MDXContent={MDXContent} />
+                <RelevantArticles />
             </div>
         );
     }

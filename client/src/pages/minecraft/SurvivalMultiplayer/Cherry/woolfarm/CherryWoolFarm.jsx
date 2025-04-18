@@ -1,18 +1,19 @@
 import React, { Component } from "react";
 import Header from "@components/Header";
-import MarkdownSection from "@components/MarkdownSection";
+import { MarkdownSection, RelevantArticles } from "@components";
 
 import MDXContent from "./CherryWoolFarm.mdx";
 
 class CherryWoolFarm extends Component {
-        render() {
-                return (
-                        <div id="main">
-                                <Header />
-                                <MarkdownSection MDXContent={MDXContent} />
-                        </div>
-                );
-        }
+    render() {
+        return (
+            <div id="main">
+                <Header />
+                <MarkdownSection MDXContent={MDXContent} />
+                <RelevantArticles />
+            </div>
+        );
+    }
 }
 
 export default CherryWoolFarm;

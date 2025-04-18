@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Header from "@components/Header";
-import MarkdownSection from "@components/MarkdownSection";
+import { MarkdownSection, RelevantArticles } from "@components";
 
 import MDXContent from "./ValleyVillagerTraders.mdx";
 
@@ -10,11 +10,10 @@ class ValleyVillagerTraders extends Component {
             <div id="main">
                 <Header />
                 <MarkdownSection MDXContent={MDXContent} />
+                <RelevantArticles />
             </div>
         );
     }
 }
 
 export default ValleyVillagerTraders;
-
-

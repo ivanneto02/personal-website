@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import Header from "@components/Header";
 import { MarkdownSection, RelevantArticles } from "@components";
 
-import MDXContent from "./ValleySpiderFarm.mdx";
+import MDXContent from "./Results.mdx";
 
-class ValleySpiderFarm extends Component {
+class Results extends Component {
 	render() {
 		return (
 			<div id="main">
@@ -16,6 +16,5 @@ class ValleySpiderFarm extends Component {
 	}
 }
 
-export default ValleySpiderFarm;
-
+export default Results;
 
