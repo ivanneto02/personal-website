@@ -115,7 +115,8 @@ const RelevantArticles = () => {
 
     return (
         <section>
-            <header className="major">
+            <header className="relevantArticles major">
+                <hr />
                 <h2>Articles</h2>
             </header>
             <div className="grid">
