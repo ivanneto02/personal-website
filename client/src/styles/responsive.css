@@ -21,6 +21,16 @@
 		margin: 1em 6em 1em 1em;
 	}
 
+	#main section {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	#main .content section {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
 	#toggle_button {
 		visibility: hidden;
 		width: 0;
@@ -1562,7 +1572,7 @@
 
 @media screen and (min-width: 900px) {
 	#main {
-		padding: 0 6em 0.1em 6em;
+		padding: 0 0em 0.1em 0em;
 	}
 }
 

@@ -1,3 +1,7 @@
 #main {
-    background: gray;
+	background: gray;
+}
+
+.content {
+	margin-left: 6em;
 }

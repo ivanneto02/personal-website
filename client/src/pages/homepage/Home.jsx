@@ -23,10 +23,10 @@ class Home extends Component {
                     <section id="banner">
                         <div id="banner_image_holder">
                             <img id="banner_image" src={getImageUrl("pfp2.jpg")} alt="" />
-                            <header id="banner_image_content">
+                            <div id="banner_image_content">
                                 <h2>Ivan Neto</h2>
                                 <p>University of California, Riverside - Alumni</p>
-                            </header>
+                            </div>
                         </div>
                         <div className="content emphasis4 dark" id="banner_content">
                             <h2>Introduction 👀</h2>
@@ -68,7 +68,7 @@ class Home extends Component {
                             <h2>This Website</h2>
                         </header>
                         <div className="features halfgrid">
-                            <article className="halfgriditem">
+                            <article>
                                 <span className="icon solid fa-gamepad"></span>
                                 <div className="content">
                                     <h3>Minecraft adventures</h3>
@@ -77,7 +77,7 @@ class Home extends Component {
                                         Sometimes I will play MunchyMC for some PVP action, though that is very limited.</p>
                                 </div>
                             </article>
-                            <article className="halfgriditem">
+                            <article>
                                 <span className="icon solid fa-rocket"></span>
                                 <div className="content">
                                     <h3>Freelance work</h3>

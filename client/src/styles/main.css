@@ -171,8 +171,20 @@ ol a {
 
 .content {
 	padding-top: 1em;
-	padding-left: 1em;
-	padding-right: 1em;
+}
+
+.content section {
+	margin-left: 6em;
+	margin-right: 6em;
+}
+
+#main .content section {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#main section {
+	padding: 0 6em 0 6em;
 }
 
 #banner .content {

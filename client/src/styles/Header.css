@@ -1,6 +1,8 @@
 #header {
 	display: flex;
-	padding: 1em 0 1em 0;
+	padding: 1em 0em 1em 0em;
+	margin-left: 6em;
+	margin-right: 6em;
 	position: sticky;
 	top: 0;
 	z-index: 100;
@@ -16,6 +18,9 @@
 		flex-direction: column;
 		position: sticky;
 		padding-top: 0;
+		margin-left: 0;
+		margin-right: 0;
+		overflow: hidden;
 	}
 
 	#header::after {

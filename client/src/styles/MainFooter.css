@@ -1,9 +1,10 @@
 .mainFooter {
 	border-top: 1px solid white;
 	margin-top: 5em;
-	margin-left: -3em;
-	margin-right: -3em;
+	margin-left: 0;
+	margin-right: 0;
 	padding: 3em;
+	background-color: #0f0f0f;
 }
 
 .footerGrid {

@@ -37,6 +37,7 @@
 .halfgriditem {
 	width: 100%;
 	text-align: left;
+	padding: 1em;
 	margin-bottom: 1em;
 }
 

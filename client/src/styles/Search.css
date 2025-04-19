@@ -13,3 +13,10 @@
 	width: 60%;
 	height: auto;
 }
+
+@media screen and (max-width: 900px) {
+	#main section#search {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
