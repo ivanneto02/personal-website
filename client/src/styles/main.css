@@ -172,11 +172,17 @@ ol a {
 	padding-top: 1em;
 	padding-left: 1em;
 	padding-right: 1em;
+}
+
+#banner .content {
 	overflow-y: auto;
+	max-height: none;
 }
 
 #main {
 	background-color: inherit;
+	overflow-y: auto;
+	max-height: 100vh;
 }
 
 @media screen and (max-width: 900px) {
