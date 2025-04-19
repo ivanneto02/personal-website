@@ -1,3 +1,9 @@
+@media screen and (max-width: 900px) {
+	#main::-webkit-scrollbar {
+		display: none;
+	}
+}
+
 /* Body and text */
 @media screen and (max-width: 900px) {
 	#sidebar {
