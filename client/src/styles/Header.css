@@ -1,3 +1,25 @@
+.headerLinks {
+	display: flex;
+	flex-flow: row;
+	gap: 2em;
+}
+
+.headerLink {
+	font-size: auto;
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	gap: 0.4em;
+}
+
+@media screen and (max-width: 738px) {
+	.headerLinks {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 0;
+	}
+}
+
 #header {
 	display: flex;
 	padding: 1em 0em 1em 0em;

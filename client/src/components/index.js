@@ -23,7 +23,8 @@ import GenericMDXPageComponent from "./GenericMDXPageComponent"
 import SearchResults from "./SearchResults";
 import ResultsNotFound from "./ResultNotFound";
 import MainFooter from "./MainFooter";
-import FooterLink from "./FooterLink"
+import FooterLink from "./FooterLink";
+import HeaderLink from "./HeaderLink";
 
 export {
     AllTest, Contact, CoolStuff, Footer, Header, MajorPosts,
@@ -38,4 +39,5 @@ export {
     ResultsNotFound,
     MainFooter,
     FooterLink,
+    HeaderLink,
 }
