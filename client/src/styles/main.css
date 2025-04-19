@@ -184,7 +184,14 @@ ol a {
 }
 
 #main section {
-	padding: 0 6em 0 6em;
+	padding: 3em 6em 0em 6em;
+}
+
+@media screen and (max-width: 900px) {
+
+	#main section {
+		padding: 0 1em 0 1em;
+	}
 }
 
 #banner .content {
@@ -383,7 +390,7 @@ h1 {
 
 @media screen and (max-width: 738px) {
 	h1 {
-		font-size: 3em;
+		font-size: 2em;
 	}
 }
 

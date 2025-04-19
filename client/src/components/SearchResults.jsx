@@ -138,28 +138,26 @@ const SearchResults = () => {
     }, [articles, searchParams]);
 
     return (
-        <section>
-            <div className="halfgrid">
-                {
-                    articles.length > 0 ? (
-                        results.map((item, index) => (
-                            <a className="card" key={index} href={item.route} target={item.target} rel="noreferrer">
-                                <div className="searchResult">
-                                    <div className="searchResultImage">
-                                        <img className="articleImage" src={item.img_src} alt="" />
-                                    </div>
-                                    <div className="titledate">
-                                        <h3>{item.name}</h3>
-                                        <p>{item.date}</p>
-                                        <p>{item.source}</p>
-                                    </div>
+        <div className="halfgrid">
+            {
+                articles.length > 0 ? (
+                    results.map((item, index) => (
+                        <a className="card" key={index} href={item.route} target={item.target} rel="noreferrer">
+                            <div className="searchResult">
+                                <div className="searchResultImage">
+                                    <img className="articleImage" src={item.img_src} alt="" />
                                 </div>
-                            </a>
-                        ))
-                    ) : <ResultsNotFound />
-                }
-            </div>
-        </section>
+                                <div className="titledate">
+                                    <h3>{item.name}</h3>
+                                    <p>{item.date}</p>
+                                    <p>{item.source}</p>
+                                </div>
+                            </div>
+                        </a>
+                    ))
+                ) : <ResultsNotFound />
+            }
+        </div>
     );
 }
 
