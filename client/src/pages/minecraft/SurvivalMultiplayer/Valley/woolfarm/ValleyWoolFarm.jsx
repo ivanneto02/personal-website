@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Header from "@components/Header";
-import { MarkdownSection, RelevantArticles } from "@components";
+import { MarkdownSection, RelevantArticles, MainFooter } from "@components";
 
 import MDXContent from "./ValleyWoolFarm.mdx";
 
@@ -11,6 +11,7 @@ class ValleyWoolFarm extends Component {
                 <Header />
                 <MarkdownSection MDXContent={MDXContent} />
                 <RelevantArticles />
+                <MainFooter />
             </div>
         );
     }

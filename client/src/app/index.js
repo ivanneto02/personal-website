@@ -137,7 +137,7 @@ const App = () => {
                     </Routes>
                     <SideBar />
                 </BrowserRouter>
-            </div >
+            </div>
         </div>
     )
 }

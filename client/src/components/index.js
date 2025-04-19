@@ -22,6 +22,8 @@ import BlankPage from "./BlankPage";
 import GenericMDXPageComponent from "./GenericMDXPageComponent"
 import SearchResults from "./SearchResults";
 import ResultsNotFound from "./ResultNotFound";
+import MainFooter from "./MainFooter";
+import FooterLink from "./FooterLink"
 
 export {
     AllTest, Contact, CoolStuff, Footer, Header, MajorPosts,
@@ -34,4 +36,6 @@ export {
     GenericMDXPageComponent,
     SearchResults,
     ResultsNotFound,
+    MainFooter,
+    FooterLink,
 }

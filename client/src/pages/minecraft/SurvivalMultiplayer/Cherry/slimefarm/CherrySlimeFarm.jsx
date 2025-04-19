@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Header from "@components/Header";
-import { MarkdownSection, RelevantArticles } from "@components";
+import { MarkdownSection, RelevantArticles, MainFooter } from "@components";
 
 import MDXContent from "./CherrySlimeFarm.mdx";
 
@@ -11,6 +11,7 @@ class CherrySlimeFarm extends Component {
                 <Header />
                 <MarkdownSection MDXContent={MDXContent} />
                 <RelevantArticles />
+                <MainFooter />
             </div>
         );
     }
