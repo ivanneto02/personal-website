@@ -14,11 +14,8 @@ const ContentList = (props) => {
                 if (!res.ok) {
                     throw new Error(`Status: ${res.status}, (${getManifestUrl(props.url)})`);
                 }
-
                 const jsonData = await res.json();
-                const shuffled = fisherYatesShuffle(jsonData);
-
-                setPageInfo(shuffled);
+                setPageInfo(props.ordered ? jsonData : fisherYatesShuffle(jsonData));
             }
             catch (error) {
                 console.error("Adding data error:", error);
@@ -27,10 +24,12 @@ const ContentList = (props) => {
         };
 
         writePageInfo();
-    }, [props.url]);
+    }, [props.url, props.ordered]);
+
+    const className = props.list ? "listgrid" : "grid";
 
     return (
-        <div className="grid">
+        <div className={className}>
             {
                 pageInfo.map((item) => {
                     return (
@@ -39,7 +38,10 @@ const ContentList = (props) => {
                                 <h3>{item.title}</h3>
                                 <p>{item.date}</p>
                             </div>
-                            <img className="articleImage" alt="" src={getImageUrl(item.url + "/" + item.page + "/" + item.thumbnail)}></img>
+                            {
+                                props.noimage ?
+                                    <></> :
+                                    <img className="articleImage" alt="" src={getImageUrl(item.url + "/" + item.page + "/" + item.thumbnail)}></img>}
                         </a>
                     );
                 })

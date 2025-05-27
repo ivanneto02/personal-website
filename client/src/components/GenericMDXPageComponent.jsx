@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from "react";
 
-import BlankPage from "./BlankPage.jsx";
+import LoadingPage from "./LoadingPage.jsx";
 
 const GenericMDXPageComponent = (props) => {
 
@@ -19,7 +19,7 @@ const GenericMDXPageComponent = (props) => {
     });
 
     return (
-        <Suspense fallback={<BlankPage />}>
+        <Suspense fallback={<LoadingPage />}>
             <MDXContent />
         </Suspense>
     );

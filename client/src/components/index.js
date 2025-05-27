@@ -12,13 +12,14 @@ import SearchBar from "./SearchBar"
 import SideBar from "./SideBar"
 import SideBarButton from "./SideBarButton"
 import PricingTag from "./PricingTag"
+import PageNotFound from "./PageNotFound";
 import MarkdownSection from "./MarkdownSection"
 import HalfContainer from "./HalfContainer"
 import SideBarMobile from "./SideBarMobile"
 import DropDownSection from "./DropDownSection"
 import ContentList from "./ContentList"
 import GenericImagePageComponent from "./GenericImagePageComponent";
-import BlankPage from "./BlankPage";
+import LoadingPage from "./LoadingPage";
 import GenericMDXPageComponent from "./GenericMDXPageComponent"
 import SearchResults from "./SearchResults";
 import ResultsNotFound from "./ResultNotFound";
@@ -32,10 +33,11 @@ export {
     DropDownSection,
     ContentList,
     GenericImagePageComponent,
-    BlankPage,
+    LoadingPage,
     GenericMDXPageComponent,
     SearchResults,
     ResultsNotFound,
     MainFooter,
     FooterLink,
+    PageNotFound,
 }
