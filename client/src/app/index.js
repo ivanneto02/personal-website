@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 // import components
 import SideBar from "@components/SideBar";
 
-import { BlankPage, GenericMDXPageComponent } from "@components";
+import { PageNotFound, GenericMDXPageComponent } from "@components";
 
 import { getManifestUrl } from "@utils/manifests";
 
@@ -13,7 +13,7 @@ import "highlight.js/styles/github-dark.css";
 
 import hljs from "highlight.js";
 
-import * as Components from "../pages";
+import * as Pages from "../pages";
 
 const HighLightOnRouteChange = () => {
 
@@ -30,6 +30,7 @@ const App = () => {
 
     const [valleyRoutes, setValleyRoutes] = useState([]);
     const [cherryRoutes, setCherryRoutes] = useState([]);
+    const [cybersecurityBanditRoutes, setCybersecurityBanditRoutes] = useState([]);
 
     useEffect(() => {
 
@@ -63,8 +64,24 @@ const App = () => {
             }
         };
 
+        const writeCybersecurityBanditRoutes = async () => {
+            try {
+                const res = await fetch(getManifestUrl("learning/cybersecurity/bandit"));
+
+                if (!res.ok) {
+                    throw new Error("Failed to fetch cybersecurity/bandit manifest.json");
+                }
+
+                setCybersecurityBanditRoutes(await res.json());
+
+            } catch (error) {
+                console.log(error);
+            }
+        };
+
         writeValleyRoutes();
         writeCherryRoutes();
+        writeCybersecurityBanditRoutes();
     }, []);
 
     return (
@@ -75,22 +92,22 @@ const App = () => {
 
                     <Routes>
                         {/* Home page */}
-                        <Route path='/' element={<Components.Home />} />
+                        <Route path='/' element={<Pages.Home />} />
 
-                        {/* Services Routes */}
-                        <Route path="/tutoring" element={<Components.Tutoring />} />
-                        <Route path="/development" element={<Components.Development />} />
+                        {/* Learning Routes */}
+                        <Route path="/tutoring" element={<Pages.Tutoring />} />
+                        <Route path="/cybersecurity" element={<Pages.Cybersecurity />} />
 
                         {/* Minecraft Routes */}
-                        <Route path="/hypixel" element={<Components.Hypixel />} />
-                        <Route path="/manacube" element={<Components.Manacube />} />
-                        <Route path="/modsclients" element={<Components.ModsClients />} />
-                        <Route path="/plugins" element={<Components.PluginsServers />} />
-                        <Route path="/visuals" element={<Components.Visuals />} />
-                        <Route path="/survival" element={<Components.Survival />} />
-                        <Route path="/server" element={<Components.SurvivalMultiplayer />} />
-                        <Route path="/server/valley" element={<Components.Valley />} />
-                        <Route path="/server/cherry" element={<Components.Cherry />} />
+                        <Route path="/hypixel" element={<Pages.Hypixel />} />
+                        <Route path="/manacube" element={<Pages.Manacube />} />
+                        <Route path="/modsclients" element={<Pages.ModsClients />} />
+                        <Route path="/plugins" element={<Pages.PluginsServers />} />
+                        <Route path="/visuals" element={<Pages.Visuals />} />
+                        <Route path="/survival" element={<Pages.Survival />} />
+                        <Route path="/server" element={<Pages.SurvivalMultiplayer />} />
+                        <Route path="/server/valley" element={<Pages.Valley />} />
+                        <Route path="/server/cherry" element={<Pages.Cherry />} />
 
                         {/* Set the routes for /server/cherry based on fetch from S3 */}
                         {
@@ -106,34 +123,44 @@ const App = () => {
                             ))
                         }
 
+                        {/* Route for /cybersecurity/bandit */}
+                        <Route path={"/cybersecurity/bandit"} element={<Pages.Bandit />} />
+
+                        {/* Set the routes for /cybersecurity/bandit/{level} based on fetch from S3 */}
+                        {
+                            cybersecurityBanditRoutes.map((item) => (
+                                <Route key={item.id} path={`/cybersecurity/bandit/${item.route}`} element={<GenericMDXPageComponent filepath={`learning/cybersecurity/bandit/${item.page}`} filename={item.filename} />} />
+                            ))
+                        }
+
                         {/* Freelance Routes */}
-                        <Route path="/projects" element={<Components.Projects />} />
-                        <Route path="/clientstories" element={<Components.ClientStories />} />
-                        <Route path="/tipsandtricks" element={<Components.TipsAndTricks />} />
-                        <Route path="/monetaryanalysis" element={<Components.MonetaryAnalysis />} />
+                        <Route path="/projects" element={<Pages.Projects />} />
+                        <Route path="/clientstories" element={<Pages.ClientStories />} />
+                        <Route path="/tipsandtricks" element={<Pages.TipsAndTricks />} />
+                        <Route path="/monetaryanalysis" element={<Pages.MonetaryAnalysis />} />
 
                         {/* classes Routes */}
-                        <Route path="/cs120b" element={<Components.Cs120b />} />
+                        <Route path="/cs120b" element={<Pages.Cs120b />} />
 
                         {/* Personal Blog Routes */}
-                        <Route path="/briefentries" element={<Components.BriefEntries />} />
-                        <Route path="/longentries" element={<Components.LongEntries />} />
-                        <Route path="/thoughtsideas" element={<Components.ThoughtsIdeas />} />
-                        <Route path="/travel" element={<Components.Travel />} />
-                        <Route path="/pets" element={<Components.Pets />} />
-
-                        {/* Universal Route - anything other than given Routes */}
-                        <Route path="*" element={<BlankPage />} />
+                        <Route path="/briefentries" element={<Pages.BriefEntries />} />
+                        <Route path="/longentries" element={<Pages.LongEntries />} />
+                        <Route path="/thoughtsideas" element={<Pages.ThoughtsIdeas />} />
+                        <Route path="/travel" element={<Pages.Travel />} />
+                        <Route path="/pets" element={<Pages.Pets />} />
 
                         {/* Miscellaneous Routes */}
-                        <Route path="/mdtest/" element={<Components.MarkdownTest />} />
-                        <Route path="/websiteideas" element={<Components.WebsiteIdeas />} />
-                        <Route path="/laser-engravings" element={<Components.LaserEngravings />} />
-                        <Route path="/laser-engravings/roomark" element={<Components.RoomarkSetup />} />
-                        <Route path="/laser-engravings/roomark-jigsaw-puzzle" element={<Components.RoomarkJigsawPuzzle />} />
+                        <Route path="/mdtest/" element={<Pages.MarkdownTest />} />
+                        <Route path="/websiteideas" element={<Pages.WebsiteIdeas />} />
+                        <Route path="/laser-engravings" element={<Pages.LaserEngravings />} />
+                        <Route path="/laser-engravings/roomark" element={<Pages.RoomarkSetup />} />
+                        <Route path="/laser-engravings/roomark-jigsaw-puzzle" element={<Pages.RoomarkJigsawPuzzle />} />
 
                         {/* Search Routes */}
-                        <Route path="/results/" element={<Components.Results />} />
+                        <Route path="/results/" element={<Pages.Results />} />
+
+                        {/* Wild route to catch anything else */}
+                        <Route path="*" element={<PageNotFound />} />
                     </Routes>
                     <SideBar />
                 </BrowserRouter>
