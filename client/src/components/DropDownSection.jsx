@@ -19,11 +19,6 @@ const DropDownSection = (props) => {
         overflow: active ? "auto" : "hidden",
     };
 
-    // const dropDownSectionStyling = {
-    //     height: "1000px",
-    //     overflow: "hidden",
-    // };
-
     return (
         <section className="dropDownSection">
             <div className={(active ? ("dropDownSectionHeader active") : ("dropDownSectionHeader")) + " emphasis4 dark"} onClick={handleHeaderClick}>
