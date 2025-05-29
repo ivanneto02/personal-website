@@ -1,0 +1,17 @@
+import { getImageUrl } from "@utils/images";
+
+# Bandit Level 3 -> 4
+
+The task for this level is to display the contents of a file named `-`, located in the home directory `~` for user `bandit1`.
+
+This file is special in that, because of the name `-`, one cannot simply run the command `cat -`.
+
+Instead, we must provide the correct path, starting with the current directory:
+
+## Solution
+
+`cat ./-`
+
+<div class="grid">
+	<img className="articleImage" src={getImageUrl("learning/cybersecurity/bandit/level1/term1.png")} alt="" ></img>
+</div>

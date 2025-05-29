@@ -1,0 +1,15 @@
+import { getImageUrl } from "@utils/images";
+
+# Bandit Level 1 -> 2
+
+The task for this level is to display the contents of a file named `spaces in this filename`, located in the home directory `~` for user `bandit2`.
+
+To display this file, we must use <a href="https://en.wikipedia.org/wiki/Escape_character" target="_blank" rel="noreferrer">escape characters</a>, specifically the `\ ` character. Notice the space after the `\`. This way, the terminal correctly interprets each space as a space, and not as another terminal argument.
+
+## Solution
+
+`cat ./spaces\ in\ this\ filename`
+
+<div class="grid">
+	<img className="articleImage" src={getImageUrl("learning/cybersecurity/bandit/level3/term1.png")} alt="" ></img>
+</div>

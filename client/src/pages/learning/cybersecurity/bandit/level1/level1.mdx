@@ -1,1 +1,16 @@
-# Test
+import { getImageUrl } from "@utils/images";
+
+# Bandit Level 0 -> 1
+
+The task in this level is to simply connect to `bandit.labs.overthewire.org`, with user `bandit0`, on port `2220`. The password is `bandit0`.
+
+To do this, we use the `ssh` command.
+
+## Solution
+
+`ssh -p 2220 bandit0@bandit.labs.overthewire.org`.
+
+<div class="grid">
+	<img className="articleImage" src={getImageUrl("learning/cybersecurity/bandit/level1/term1.png")} alt="" ></img>
+</div>
+
