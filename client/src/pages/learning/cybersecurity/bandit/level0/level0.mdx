@@ -1,20 +1,36 @@
 import { getImageUrl } from "@utils/images";
+import { DropDownSection } from "@components";
 
 # Bandit Level 0
 
-The task in this level is to simply connect to `bandit.labs.overthewire.org`, with user `bandit0`, on port `2220`. The password is `bandit0`.
+## Overview
+
+This is the beginning of the Bandit Wargame.
+
+The task in this level is to simply connect to `bandit.labs.overthewire.org`, with user `bandit0`, on port `2220`. The password is `bandit0`. Then, we display the contents of a file named `readme`.
 
 To do this, we use the `ssh` command.
 
 ## Solution
 
+<DropDownSection title="click for spoiler">
+
+### Step 1 - SSH into the server
+
 `ssh -p 2220 bandit0@bandit.labs.overthewire.org`.
 
 <div className="halfgrid">
-	<div className="halfgriditem emphasis4 dark card">
-		<img className="articleImage" src={getImageUrl("learning/cybersecurity/bandit/level0/term1.png")} alt="" ></img>
-	</div>
-	<div className="halfgriditem emphasis4 dark card">
-		<img className="articleImage" src={getImageUrl("learning/cybersecurity/bandit/level0/term2.png")} alt="" ></img>
-	</div>
+    <div className="halfgriditem emphasis4 dark card">
+        <img className="articleImage" src={getImageUrl("learning/cybersecurity/bandit/level0/term1.png")} alt="" ></img>
+    </div>
 </div>
+
+### Step 2 - Display `~/readme`
+
+<div className="halfgrid">
+    <div className="halfgriditem emphasis4 dark card">
+        <img className="articleImage" src={getImageUrl("learning/cybersecurity/bandit/level0/term2.png")} alt="" ></img>
+    </div>
+</div>
+
+</DropDownSection>

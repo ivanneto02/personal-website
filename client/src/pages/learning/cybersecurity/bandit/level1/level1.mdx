@@ -1,16 +1,22 @@
 import { getImageUrl } from "@utils/images";
+import { DropDownSection } from "@components";
 
 # Bandit Level 0 -> 1
 
-The task in this level is to simply connect to `bandit.labs.overthewire.org`, with user `bandit0`, on port `2220`. The password is `bandit0`.
+The task for this level is to display the contents of a file named `-`, located in the home directory `~` for user `bandit1`.
 
-To do this, we use the `ssh` command.
+This file is special in that, because of the name `-`, one cannot simply run the command `cat -`.
 
 ## Solution
 
-`ssh -p 2220 bandit0@bandit.labs.overthewire.org`.
+<DropDownSection title="click for spoiler">
 
-<div class="grid">
-	<img className="articleImage" src={getImageUrl("learning/cybersecurity/bandit/level1/term1.png")} alt="" ></img>
+Instead of `cat -`, we must provide the correct path, starting with the current directory:
+
+`cat ./-`
+
+<div class="halfgrid">
+	<img className="halfgriditem emphasis4 dark card" src={getImageUrl("learning/cybersecurity/bandit/level2/term1.png")} alt="" ></img>
 </div>
 
+</DropDownSection>
