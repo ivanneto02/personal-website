@@ -1,123 +1,125 @@
 .dropDownSectionContent {
-	visibility: visible;
-	overflow: hidden;
-	max-height: 0%;
-	padding: 0;
-	height: 100%;
-	border-radius: 1em;
-	border-left: solid 1px rgb(42, 42, 42);
-	transition: max-height 0.4s ease,
-		padding 0.4s ease,
-		border-radius 0.5s ease;
-	zoom: 0.9;
+    overflow: hidden;
+    max-height: 1000px;
+    padding: 1em;
+    border-radius: 1em;
+    border-left: solid 1px rgb(42, 42, 42);
+    transition: max-height 0.4s ease,
+        padding 0.4s ease,
+        border-radius 0.5s ease;
+    zoom: 0.9;
 }
 
 #main .content .dropDownSection {
-	margin-left: 0;
-	padding-left: 0;
-	margin-right: 0;
-	padding-right: 0;
+    margin-top: 0;
+    padding-top: 0;
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 0;
+    padding-right: 0;
 }
 
 .dropDownSection div.dropDownSectionHeader {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .dropDownSectionHeader {
-	display: inline-flex;
-	align-items: center;
-	padding: 0.3em 0.3em 0.3em 1em;
-	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-	border-radius: 1em;
-	margin-bottom: 0;
-	width: 100%;
-	height: auto;
-	transition: 0.5s;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.3em 0.3em 0.3em 1em;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+    margin-bottom: 0;
+    width: 100%;
+    height: auto;
+    transition: 0.5s;
 }
 
 .dropDownSectionHeader.active {
-	border-bottom-right-radius: 0;
-	border-bottom-left-radius: 0;
-	transition: 0.5s;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    transition: 0.5s;
 }
 
 .dropDownSection {
-	margin-bottom: 1em;
-	width: 100%;
-	height: auto;
+    margin-bottom: 1em;
+    width: 100%;
+    height: auto;
 }
 
 .dropDownSection span {
-	margin-right: 1em;
+    margin-right: 1em;
 }
 
 .dropDownSectionHeader h2 {
-	justify-self: left;
-	margin-right: 3em;
-	margin: 0;
+    justify-self: left;
+    margin-right: 3em;
+    margin: 0;
 }
 
 .dropDownSectionHeader i {
-	font-size: 1em;
-	margin-left: auto;
-	margin-right: 1em;
-	color: rgb(42, 42, 42);
+    font-size: 1em;
+    margin-left: auto;
+    margin-right: 1em;
+    color: rgb(42, 42, 42);
 }
 
+/* Deprecated, can remove */
 .dropDownSectionContent.active {
-	visibility: visible;
-	overflow: hidden;
-	font-size: 1em;
-	padding: 1em 1em 2em 1.5em;
-	border-top-left-radius: 0;
-	border-top-right-radius: 0;
-	height: 100%;
-	padding-top: 3em;
-	max-height: 1000px;
-	transition: max-height 0.4s ease,
-		padding 0.4s ease,
-		border-radius 0.5s ease,
-		border-left 0.5s ease;
-	border-left: solid 1px rgb(42, 42, 42);
-	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-	overflow-y: auto;
+    visibility: visible;
+    overflow: hidden;
+    font-size: 1em;
+    padding: 1em 1em 2em 1.5em;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    height: 100%;
+    padding-top: 3em;
+    max-height: 1000px;
+    transition: height 0.4s ease,
+        max-height 0.4s ease,
+        padding 0.4s ease,
+        border-radius 0.5s ease,
+        border-left 0.5s ease;
+    border-left: solid 1px rgb(42, 42, 42);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
 }
 
 .dropDownSection.active {
-	visibility: visible;
-	width: 100%;
-	height: auto;
-	max-height: 1000px;
+    visibility: visible;
+    width: 100%;
+    height: auto;
+    max-height: 1000px;
 }
 
 .dropDownSectionContent p {
-	word-break: break-all;
-	word-wrap: break-word;
+    word-break: break-all;
+    word-wrap: break-word;
 }
 
 .dropDownSectionContent.active p {
-	word-break: break-all;
-	word-wrap: break-word;
+    word-break: break-all;
+    word-wrap: break-word;
 }
 
 @media screen and (max-width: 738px) {
-	.dropDownSectionHeader h2 span {
-		overflow: visible;
-		display: inline-block;
-		justify-self: left;
-		margin: 0;
-		vertical-align: middle;
-		width: 100%;
-		font-size: 4vw;
-	}
+    .dropDownSectionHeader h2 span {
+        overflow: visible;
+        display: inline-block;
+        justify-self: left;
+        margin: 0;
+        vertical-align: middle;
+        width: 100%;
+        font-size: 4vw;
+    }
 
-	.dropDownSectionHeader i {
-		visibility: hidden;
-		height: 0;
-		width: 0;
-	}
+    .dropDownSectionHeader i {
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
 
-	.dropDownSectionContent.active {
-		padding: 1em 0.5em 1em 1em;
-	}
+    .dropDownSectionContent.active {
+        padding: 1em 0.5em 1em 1em;
+    }
 }

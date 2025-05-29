@@ -9,16 +9,31 @@ const DropDownSection = (props) => {
         setActive(!active);
     }
 
+    // Styled component due to functionality need
+    const dropDownContentStyling = {
+        height: active ? "100%" : "100%",
+        visibility: "visible",
+        padding: active ? "2em" : "0",
+        borderRadius: active ? "0em" : "1em",
+        maxHeight: active ? "1000px" : "0px",
+        overflow: active ? "auto" : "hidden",
+    };
+
+    // const dropDownSectionStyling = {
+    //     height: "1000px",
+    //     overflow: "hidden",
+    // };
+
     return (
-        <section className={ active ? ("dropDownSection active") : ("dropDownSection") }>
-            <div className={ (active ? ("dropDownSectionHeader active") : ("dropDownSectionHeader")) + " emphasis4 dark" } onClick={handleHeaderClick}>
-                <span className={active ? ("icon solid fa-minus") : ("icon solid fa-plus") }/>
+        <section className="dropDownSection">
+            <div className={(active ? ("dropDownSectionHeader active") : ("dropDownSectionHeader")) + " emphasis4 dark"} onClick={handleHeaderClick}>
+                <span className={active ? ("icon solid fa-minus") : ("icon solid fa-plus")} />
                 <h2>
                     <span>{props.title}</span>
                 </h2>
                 <i>{active ? ("click to hide") : ("click to expand")}</i>
             </div>
-            <div className={ (active ? ("dropDownSectionContent active") : ("dropDownSectionContent")) + " emphasis2 dark"}>
+            <div className="dropDownSectionContent emphasis3 dark" style={dropDownContentStyling}>
                 {props.children}
             </div>
         </section>
