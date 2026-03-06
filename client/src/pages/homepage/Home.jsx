@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Helmet } from "react-helmet-async";
 import { getImageUrl } from "@utils/images";
 
 // import components
@@ -13,6 +14,37 @@ class Home extends Component {
     render() {
         return (
             <div id="main">
+                <Helmet>
+                    <title>Ivan Neto | Software Engineer & CS Alumni - UC Riverside</title>
+                    <meta name="description" content="Ivan Neto's personal website. Software Engineer and UC Riverside Computer Science alumni. Explore projects, tutorials, cybersecurity writeups, and more." />
+                    <link rel="canonical" href="https://ivanneto.dev" />
+                    <script type="application/ld+json">{`
+                        {
+                            "@context": "https://schema.org",
+                            "@graph": [
+                                {
+                                    "@type": "Person",
+                                    "name": "Ivan Neto",
+                                    "url": "https://ivanneto.dev",
+                                    "jobTitle": "Software Engineer",
+                                    "alumniOf": {
+                                        "@type": "CollegeOrUniversity",
+                                        "name": "University of California, Riverside"
+                                    },
+                                    "sameAs": [
+                                        "https://github.com/ivanneto02",
+                                        "https://www.linkedin.com/in/ivan-neto-0a6a681b0/"
+                                    ]
+                                },
+                                {
+                                    "@type": "WebSite",
+                                    "name": "Ivan Neto",
+                                    "url": "https://ivanneto.dev"
+                                }
+                            ]
+                        }
+                    `}</script>
+                </Helmet>
                 {/* <div className="inner"> */}
                 <Header />
 
@@ -22,9 +54,9 @@ class Home extends Component {
 				    about. */}
                     <section id="banner">
                         <div id="banner_image_holder">
-                            <img id="banner_image" src={getImageUrl("pfp2.jpg")} alt="" />
+                            <img id="banner_image" src={getImageUrl("pfp2.jpg")} alt="Ivan Neto - Software Engineer" />
                             <div id="banner_image_content">
-                                <h2>Ivan Neto</h2>
+                                <h1>Ivan Neto</h1>
                                 <p>University of California, Riverside - Alumni</p>
                             </div>
                         </div>
