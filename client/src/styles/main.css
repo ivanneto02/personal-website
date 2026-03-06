@@ -207,8 +207,7 @@ ol a {
 }
 
 #banner .content {
-    overflow-y: auto;
-    max-height: none;
+    overflow-y: visible;
 }
 
 #main {

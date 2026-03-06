@@ -1,126 +1,41 @@
 /* Banner */
 #banner {
 	padding: 3em 0 4em 0;
-	display: -moz-flex;
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
-}
-
-#banner .content {
-	flex-grow: 1;
-	flex-shrink: 1;
-	width: 50%;
-}
-
-#banner_image_holder {
-	display: flex;
-	flex-flow: column;
-	transition: all 0.3s ease;
-	overflow: hidden;
-	position: relative;
-	width: clamp(15em, 30%, 20em);
-}
-
-#banner_image_holder_div {
-	width: 20em;
-}
-
-#banner_image {
-	object-fit: cover;
-	width: 100%;
-	height: 100%;
-}
-
-#banner_image_content {
-	position: absolute;
-	overflow: hidden;
-	background-color: rgba(0, 0, 0, 0.95);
-	padding-left: 1em;
-	padding-bottom: 1em;
-	padding-top: 2em;
-	width: 100%;
-	bottom: 0em;
-}
-
-#banner_image_holder:hover {
-	max-height: 100%;
-	transform: scale(1.1);
-	height: auto;
 }
 
 #banner_content {
-	padding-left: 2em;
+	max-width: 100%;
 }
 
-#banner {
-	max-height: 700px;
+#banner_content h1 {
+	margin-bottom: 0.2em;
 }
 
-@media screen and (max-width: 980px) {
-	#banner_image_holder {
-		width: clamp(12em, 25%, 18em);
-	}
+.banner-subtitle {
+	color: #9fa3a6;
+	font-size: 1.1em;
+	margin-bottom: 1.5em !important;
+}
 
-	#banner_image_holder_div {
-		width: 100%;
-	}
+.banner-cards {
+	margin-top: 1.5em;
+}
+
+.banner-cards .card {
+	text-align: left;
+}
+
+.banner-cards .card h3 {
+	margin-bottom: 0.3em;
+}
+
+.banner-cards .card p {
+	margin: 0;
+	color: #d0d0d0;
 }
 
 @media screen and (max-width: 738px) {
 	#banner {
-		display: flex;
-		flex-direction: column;
-		visibility: visible;
-		max-height: none;
-	}
-
-	#main section#banner {
-		padding-left: 0;
-		padding-right: 0;
-	}
-
-	#banner .content {
-		padding-top: 1em;
-		margin-top: 1em;
-		margin-left: 1em;
-		margin-right: 1em;
-		width: 100%;
-	}
-
-	#banner_image {
-		width: 100%;
-		overflow: clip;
-		object-fit: cover;
-	}
-
-	#banner_image_holder {
-		align-items: center;
-		overflow: hidden;
-		padding: 1em 1em 1em 1em;
-		width: 100%;
-		height: auto;
-	}
-
-	#banner_image_holder:hover {}
-
-	/* Do nothing */
-
-	#banner_image_content {
-		position: relative;
-		width: 100%;
-	}
-
-	#banner .content {
-		align-items: center;
-		overflow: hidden;
-		width: 100%;
-		height: auto;
-	}
-
-	#banner_content.content {
-		padding: 1em 2em 0em 2em;
-		margin: 0;
-		width: 100%;
+		padding: 2em 0;
 	}
 }
