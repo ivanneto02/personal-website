@@ -62,7 +62,7 @@ class Home extends Component {
                         </div>
                         <div className="content emphasis4 dark" id="banner_content">
                             <h2>Introduction 👀</h2>
-                            <p className="card emphasis5 dark">
+                            <p className="card emphasis4 dark">
                                 Welcome to my personal website! Among other things, I enjoy web development as a side hobby.
                                 I sought out to build this website for one main reason: I really wanted more
                                 experience with Full-Stack Development. Computer Science is fun, but I really like to test the
@@ -72,19 +72,19 @@ class Home extends Component {
                             <hr></hr>
                             <h2> My Vision 🚀</h2>
                             <h3>For this website</h3>
-                            <p className="card emphasis5 dark">
+                            <p className="card emphasis4 dark">
                                 My website is a representation of all the web development skills I have learned throughout my career. It includes
                                 mostly personal topics like my Minecraft and Hobby projects, as well as some miscellaneous portfolio items. Although it
                                 is not meant to showcase my other Software Development skills, inclusions are made for entertainment purposes.
                             </p>
                             <h3>Professionally</h3>
-                            <p className="card emphasis5 dark">
+                            <p className="card emphasis4 dark">
                                 My vision in this area is that I wish to grow within a company that values applied Machine Learning research to accomplish
                                 every day tasks. Examples like Google or Meta come to mind. I wish to be part of their amazing lab experiences, as I have
                                 come to know they work on insanely fun and cutting edge projects.
                             </p>
                             <h3>Personally</h3>
-                            <p className="card emphasis5 dark">
+                            <p className="card emphasis4 dark">
                                 The goal in this area is continual improvement. Shaping most of how I view every day improvements, a Quality Assurance
                                 conference I attended back in High School heavily impacted my life. Continual improvement emphasizes discrete steps that we
                                 can improve in the workplace to ensure quality in a product. The product in question would be my understanding of Computer

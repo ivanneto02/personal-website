@@ -19,7 +19,7 @@
 	transition: all 0.3s ease;
 	overflow: hidden;
 	position: relative;
-	width: 20em;
+	width: clamp(15em, 30%, 20em);
 }
 
 #banner_image_holder_div {
@@ -55,6 +55,16 @@
 
 #banner {
 	max-height: 700px;
+}
+
+@media screen and (max-width: 980px) {
+	#banner_image_holder {
+		width: clamp(12em, 25%, 18em);
+	}
+
+	#banner_image_holder_div {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 738px) {

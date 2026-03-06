@@ -1,7 +1,11 @@
 .relevantArticles {
-	margin-top: 5em;
+	margin-top: 3em;
 }
 
 #main .wholeMarkdownSection .grid {
 	margin: 0;
+}
+
+.relevantArticles .card {
+	height: 100%;
 }

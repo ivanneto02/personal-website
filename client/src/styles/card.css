@@ -1,16 +1,19 @@
 .card {
-	/* background-color: #0A0A0A; */
+	background-color: #0D0D0D;
 	display: flex;
 	flex-direction: column;
 	border-radius: 8px;
+	border: 1px solid rgb(42, 42, 42);
 	padding: 1em;
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-	transition: transform 0.2s ease-in-out;
+	transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
 	overflow: hidden;
 }
 
 .card:hover {
-	transform: translateY(-5px);
+	transform: translateY(-4px);
+	box-shadow: 0 4px 16px rgba(134, 102, 189, 0.15);
+	border-color: #452678;
 }
 
 .card-content {
@@ -40,7 +43,7 @@
 	display: flex;
 	margin-top: 1em;
 	gap: 1em;
-	align-items: center;
+	align-items: baseline;
 }
 
 .bottomtitledate h3 {
@@ -51,8 +54,16 @@
 .bottomtitledate p {
 	margin: 0;
 	padding: 0;
+	color: #9fa3a6;
+	font-size: 0.9em;
 }
 
 .card .source {
 	margin: 0;
+	color: #8666bd;
+	font-size: 0.85em;
+}
+
+p.card {
+	padding: 1em 1.5em;
 }

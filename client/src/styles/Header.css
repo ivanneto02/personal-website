@@ -34,6 +34,20 @@
 	overflow: visible;
 }
 
+@media screen and (max-width: 1280px) {
+	#header {
+		margin-left: 4em;
+		margin-right: 4em;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	#header {
+		margin-left: 2em;
+		margin-right: 2em;
+	}
+}
+
 @media screen and (max-width: 738px) {
 	#header {
 		display: flex;

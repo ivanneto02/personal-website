@@ -5,3 +5,21 @@
 .content {
 	margin-left: 6em;
 }
+
+@media screen and (max-width: 1280px) {
+	.content {
+		margin-left: 4em;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.content {
+		margin-left: 2em;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.content {
+		margin-left: 0;
+	}
+}
