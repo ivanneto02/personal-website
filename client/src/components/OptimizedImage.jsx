@@ -53,9 +53,9 @@ const OptimizedImage = ({
             ref={imageRef}
             alt={alt}
             decoding={decoding}
-            fetchPriority={resolvedFetchPriority}
             loading={loading}
             src={shouldLoad ? src : EMPTY_IMAGE_SRC}
+            fetchpriority={resolvedFetchPriority}
             {...props}
         />
     );
