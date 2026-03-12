@@ -1,50 +1,54 @@
 .halfContainer {
-	display: flex;
-	flex-direction: row;
-	min-height: 5em;
+  display: flex;
+  flex-direction: row;
+  min-height: 5em;
 }
 
 .wholeMarkdownSection {
-	/* text-align: justify;
+  /* text-align: justify;
     text-justify: inter-word; */
-	width: 100%;
-	padding: 0 6em 0 6em;
+  width: 100%;
+  padding: 0 6em 0 6em;
 }
 
 .halfMarkdownSection {
-	width: 50%;
-	/* background-color: ; */
-	padding: 1em;
+  width: 50%;
+  /* background-color: ; */
+  padding: 1em;
 }
 
 .halfMarkdownSection+.halfMarkdownSection {
-	margin-left: 1em;
-	padding: 1em;
+  margin-left: 1em;
+  padding: 1em;
 }
 
 .articleImage {
-	width: 100%;
-	aspect-ratio: 16 / 9;
-	display: block;
-	object-fit: cover;
-	flex-grow: 0;
-	border-radius: 4px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  object-fit: cover;
+  flex-grow: 0;
+  border-radius: 4px;
+}
+
+.wholeMarkdownSection>.content>.card {
+  margin-bottom: 1em;
 }
 
 @media screen and (max-width: 1280px) {
-	.wholeMarkdownSection {
-		padding: 0 4em 0 4em;
-	}
+  .wholeMarkdownSection {
+    padding: 0 4em 0 4em;
+  }
 }
 
 @media screen and (max-width: 980px) {
-	.wholeMarkdownSection {
-		padding: 0 2em 0 2em;
-	}
+  .wholeMarkdownSection {
+    padding: 0 2em 0 2em;
+  }
 }
 
 @media screen and (max-width: 900px) {
-	#main section.wholeMarkdownSection {
-		padding: 1em 1em 1em 1em;
-	}
+  #main section.wholeMarkdownSection {
+    padding: 1em 1em 1em 1em;
+  }
 }
