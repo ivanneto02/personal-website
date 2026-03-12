@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { getManifestUrl } from "@utils/manifests.js";
 import { getImageUrl } from "@utils/images";
 import { fisherYatesShuffle } from "@utils/fisherYatesShuffle";
+import OptimizedImage from "./OptimizedImage";
 
 const ContentList = (props) => {
     const [pageInfo, setPageInfo] = useState([]);
@@ -41,7 +42,7 @@ const ContentList = (props) => {
                             {
                                 props.noimage ?
                                     <></> :
-                                    <img className="articleImage" alt="" src={getImageUrl(item.url + "/" + item.page + "/" + item.thumbnail)}></img>}
+                                    <OptimizedImage className="articleImage" alt="" src={getImageUrl(item.url + "/" + item.page + "/" + item.thumbnail)}></OptimizedImage>}
                         </a>
                     );
                 })

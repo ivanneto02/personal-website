@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { getImageUrl } from "@utils/images";
 import { getManifestUrl } from "../utils/manifests";
 import { fisherYatesShuffle } from "@utils/fisherYatesShuffle";
+import OptimizedImage from "./OptimizedImage";
 /*
  * In the home page, this component displays relevant articles I've written, to show
  * the user some options to where they could go! At most, I want nine articles but I may expand it in the future.
@@ -123,7 +124,7 @@ const RelevantArticles = () => {
                 {
                     articles.map((item, index) => (
                         <a className="card" key={index} href={item.route} target={item.target} rel="noreferrer">
-                            <img className="articleImage" src={item.img_src} alt="" />
+                            <OptimizedImage className="articleImage" src={item.img_src} alt="" />
                             <div className="bottomtitledate">
                                 <h3>{item.name}</h3>
                                 <p>{item.date}</p>

@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import OptimizedImage from "./OptimizedImage";
 
 import "@styles/Avatar.css"
 
@@ -8,7 +9,7 @@ class Avatar extends Component {
                         <div className="avatarHolder">
                                 <div className="avatar">
                                         <div className="avatarCircle">
-                                                <img id="avatarImage" src="images/avatar_placeholder.png" alt="img" />
+                                                <OptimizedImage id="avatarImage" src="images/avatar_placeholder.png" alt="img" loading="eager" />
                                         </div>
                                         <div className="avatarName">
                                                 Sign up | Log in

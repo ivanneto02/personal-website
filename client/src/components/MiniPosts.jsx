@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { getImageUrl } from "@utils/images";
 import { getManifestUrl } from "../utils/manifests";
 import { fisherYatesShuffle } from "@utils/fisherYatesShuffle";
+import OptimizedImage from "./OptimizedImage";
 
 /* Sets all the potential images that can be found on the sidebar */
 /* 
@@ -129,7 +130,7 @@ const MiniPosts = () => {
                 {
                     threePosts.map((item, index) => (
                         <article key={index}>
-                            <a href={item.route} className="image" target={item.target} rel="noreferrer"><img src={item.img_src} alt="" /></a>
+                            <a href={item.route} className="image" target={item.target} rel="noreferrer"><OptimizedImage src={item.img_src} alt="" /></a>
                             <p>{item.source} {" > "} {item.name}</p>
                         </article>
                     ))

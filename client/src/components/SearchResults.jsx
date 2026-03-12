@@ -5,6 +5,7 @@ import { getManifestUrl } from "../utils/manifests";
 import Fuse from "fuse.js";
 import { useSearchParams } from "react-router-dom";
 import ResultsNotFound from "./ResultNotFound";
+import OptimizedImage from "./OptimizedImage";
 
 /*
  * In the home page, this component displays relevant articles I've written, to show
@@ -143,9 +144,9 @@ const SearchResults = () => {
                 articles.length > 0 ? (
                     results.map((item, index) => (
                         <a className="card" key={index} href={item.route} target={item.target} rel="noreferrer">
-                            <div className="searchResult">
+                                <div className="searchResult">
                                 <div className="searchResultImage">
-                                    <img className="articleImage" src={item.img_src} alt="" />
+                                    <OptimizedImage className="articleImage" src={item.img_src} alt="" />
                                 </div>
                                 <div className="titledate">
                                     <h3>{item.name}</h3>
