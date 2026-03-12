@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { MDXProvider } from "@mdx-js/react";
+import OptimizedImage from "./OptimizedImage";
 
 /*
 Holds the setup for making MDX content available to the pages, without needing to specify
@@ -10,7 +12,9 @@ class MarkdownSection extends Component {
                 return (
                         <section className="wholeMarkdownSection">
                                 <header className="content">
-                                        {<this.props.MDXContent />}
+                                        <MDXProvider components={{ img: OptimizedImage }}>
+                                                {<this.props.MDXContent />}
+                                        </MDXProvider>
                                 </header>
                         </section>
                 );

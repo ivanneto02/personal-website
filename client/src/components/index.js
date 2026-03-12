@@ -26,6 +26,7 @@ import ResultsNotFound from "./ResultNotFound";
 import MainFooter from "./MainFooter";
 import FooterLink from "./FooterLink";
 import HeaderLink from "./HeaderLink";
+import OptimizedImage from "./OptimizedImage";
 
 export {
     AllTest, Contact, CoolStuff, Footer, Header, MajorPosts,
@@ -41,5 +42,6 @@ export {
     MainFooter,
     FooterLink,
     HeaderLink,
+    OptimizedImage,
     PageNotFound,
 }

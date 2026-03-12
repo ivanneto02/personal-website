@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { getImageUrl } from "@utils/images";
 import { getAllImagesUnderDirectory } from "@utils/getAllImagesUnderDirectory";
+import OptimizedImage from "./OptimizedImage";
 
 const RandomImageSection = (props) => {
 
@@ -31,7 +32,7 @@ const RandomImageSection = (props) => {
             {
                 images.map((item) => {
                     return (
-                        <img key={item.id} className="griditem emphasis4 dark card" src={getImageUrl(item.path)} alt=""></img>
+                        <OptimizedImage key={item.id} className="griditem emphasis4 dark card" src={getImageUrl(item.path)} alt=""></OptimizedImage>
                     )
                 })
             }

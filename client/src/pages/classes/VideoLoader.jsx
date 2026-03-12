@@ -1,5 +1,6 @@
 import { React } from "react";
 import { useState, useEffect } from "react";
+import OptimizedImage from "@components/OptimizedImage";
 
 function VideoLoader() {
     const [data, setData] = useState([]);
@@ -34,7 +35,7 @@ function VideoLoader() {
                         <h3>{item.name}</h3>
                         <p>{item.date}</p>
                     </div>
-                    <img alt={item.name} className="articleImage" src={"http://img.youtube.com/vi/" + item.id + "/0.jpg"}></img>
+                    <OptimizedImage alt={item.name} className="articleImage" src={"http://img.youtube.com/vi/" + item.id + "/0.jpg"}></OptimizedImage>
 
                 </a>
             ))}
