@@ -1,0 +1,40 @@
+.optimizedImageWrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.optimizedImageWrapper--intrinsic {
+    display: inline-block;
+    width: auto;
+}
+
+.optimizedImageSpinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: -1.25rem;
+    margin-left: -1.25rem;
+    border: 0.25rem solid rgba(255, 255, 255, 0.2);
+    border-top-color: rgba(255, 255, 255, 0.95);
+    border-radius: 50%;
+    animation: optimizedImageSpin 0.8s linear infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.optimizedImageSpinner--hidden {
+    display: none;
+}
+
+@keyframes optimizedImageSpin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -9,7 +9,7 @@ class Avatar extends Component {
                         <div className="avatarHolder">
                                 <div className="avatar">
                                         <div className="avatarCircle">
-                                                <OptimizedImage id="avatarImage" src="images/avatar_placeholder.png" alt="img" loading="eager" />
+                                                <OptimizedImage id="avatarImage" src="images/avatar_placeholder.png" alt="img" loading="eager" wrapperClassName="optimizedImageWrapper--intrinsic" />
                                         </div>
                                         <div className="avatarName">
                                                 Sign up | Log in
