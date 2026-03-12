@@ -112,14 +112,14 @@ const App = () => {
             {/* Set the routes for /server/cherry based on fetch from S3 */}
             {
               cherryRoutes.map((item) => (
-                <Route key={item.key} path={`/server/cherry/${item.route}`} element={<GenericMDXPageComponent filepath={`minecraft/SurvivalMultiplayer/Cherry/${item.page}`} filename={item.filename} title={item.title} pageBaseUrl={item.url} page={item.page} />} />
+                <Route key={`cherry-${item.route}`} path={`/server/cherry/${item.route}`} element={<GenericMDXPageComponent filepath={`minecraft/SurvivalMultiplayer/Cherry/${item.page}`} filename={item.filename} title={item.title} pageBaseUrl={item.url} page={item.page} />} />
               ))
             }
 
             {/* Set the routes for /server/valley based on fetch from S3 */}
             {
               valleyRoutes.map((item) => (
-                <Route key={item.key} path={`/server/valley/${item.route}`} element={<GenericMDXPageComponent filepath={`minecraft/SurvivalMultiplayer/Valley/${item.page}`} filename={item.filename} title={item.title} pageBaseUrl={item.url} page={item.page} />} />
+                <Route key={`valley-${item.route}`} path={`/server/valley/${item.route}`} element={<GenericMDXPageComponent filepath={`minecraft/SurvivalMultiplayer/Valley/${item.page}`} filename={item.filename} title={item.title} pageBaseUrl={item.url} page={item.page} />} />
               ))
             }
 
@@ -129,7 +129,7 @@ const App = () => {
             {/* Set the routes for /cybersecurity/bandit/{level} based on fetch from S3 */}
             {
               cybersecurityBanditRoutes.map((item) => (
-                <Route key={item.id} path={`/cybersecurity/bandit/${item.route}`} element={<GenericMDXPageComponent filepath={`learning/cybersecurity/bandit/${item.page}`} filename={item.filename} />} />
+                <Route key={`bandit-${item.route}`} path={`/cybersecurity/bandit/${item.route}`} element={<GenericMDXPageComponent filepath={`learning/cybersecurity/bandit/${item.page}`} filename={item.filename} />} />
               ))
             }
 
