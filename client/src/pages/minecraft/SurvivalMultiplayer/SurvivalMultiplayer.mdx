@@ -1,5 +1,5 @@
 import { getImageUrl } from "@utils/images"
-import { OptimizedImage } from "@components";
+import { OptimizedImage, SmartLink } from "@components";
 
 # Misoguchi.com
 
@@ -8,12 +8,12 @@ import { OptimizedImage } from "@components";
 Note: to access the world maps, please visit <a href="https://www.misoguchi.com/mcmap/#" target="_blank" rel="noreferrer">misoguchi.com/mcmap</a>.
 
 <div className="halfgrid">
-	<a href="/server/cherry" className="halfgriditem emphasis4 dark card">
+	<SmartLink href="/server/cherry" className="halfgriditem emphasis4 dark card">
 		### World 1 - Cherry Blossom
 		<OptimizedImage className="articleImage" src={getImageUrl("minecraftserver/cherry/thumbnail.png")} alt=""  />
-	</a>
-	<a href="/server/valley" className="halfgriditem emphasis4 dark card">
+	</SmartLink>
+	<SmartLink href="/server/valley" className="halfgriditem emphasis4 dark card">
 		### World 2 - Valley
 		<OptimizedImage className="articleImage" src={getImageUrl("minecraftserver/valley/thumbnail.png")} alt=""  />
-	</a>
+	</SmartLink>
 </div>

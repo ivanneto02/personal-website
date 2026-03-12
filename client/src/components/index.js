@@ -27,6 +27,7 @@ import MainFooter from "./MainFooter";
 import FooterLink from "./FooterLink";
 import HeaderLink from "./HeaderLink";
 import OptimizedImage from "./OptimizedImage";
+import SmartLink from "./SmartLink";
 
 export {
     AllTest, Contact, CoolStuff, Footer, Header, MajorPosts,
@@ -43,5 +44,6 @@ export {
     FooterLink,
     HeaderLink,
     OptimizedImage,
+    SmartLink,
     PageNotFound,
 }

@@ -4,6 +4,7 @@ import { getImageUrl } from "@utils/images";
 import { getManifestUrl } from "../utils/manifests";
 import { fisherYatesShuffle } from "@utils/fisherYatesShuffle";
 import OptimizedImage from "./OptimizedImage";
+import SmartLink from "./SmartLink";
 
 /* Sets all the potential images that can be found on the sidebar */
 /* 
@@ -130,7 +131,7 @@ const MiniPosts = () => {
                 {
                     threePosts.map((item, index) => (
                         <article key={index}>
-                            <a href={item.route} className="image" target={item.target} rel="noreferrer"><OptimizedImage src={item.img_src} alt="" /></a>
+                            <SmartLink href={item.route} className="image" target={item.target} rel="noreferrer"><OptimizedImage src={item.img_src} alt="" /></SmartLink>
                             <p>{item.source} {" > "} {item.name}</p>
                         </article>
                     ))

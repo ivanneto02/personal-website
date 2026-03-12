@@ -6,6 +6,7 @@ import Fuse from "fuse.js";
 import { useSearchParams } from "react-router-dom";
 import ResultsNotFound from "./ResultNotFound";
 import OptimizedImage from "./OptimizedImage";
+import SmartLink from "./SmartLink";
 
 /*
  * In the home page, this component displays relevant articles I've written, to show
@@ -143,8 +144,8 @@ const SearchResults = () => {
             {
                 articles.length > 0 ? (
                     results.map((item, index) => (
-                        <a className="card" key={index} href={item.route} target={item.target} rel="noreferrer">
-                                <div className="searchResult">
+                        <SmartLink className="card" key={index} href={item.route} target={item.target} rel="noreferrer">
+                            <div className="searchResult">
                                 <div className="searchResultImage">
                                     <OptimizedImage className="articleImage" src={item.img_src} alt="" />
                                 </div>
@@ -154,7 +155,7 @@ const SearchResults = () => {
                                     <p>{item.source}</p>
                                 </div>
                             </div>
-                        </a>
+                        </SmartLink>
                     ))
                 ) : <ResultsNotFound />
             }
